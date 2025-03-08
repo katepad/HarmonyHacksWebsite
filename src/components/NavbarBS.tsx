@@ -1,27 +1,17 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link, useLocation } from "react-router-dom";
 import logo from '../assets/harmonyHacksLogoWithTextGreen 2.svg';
+import '../styles/Global.css'; 
 
 export const NavbarBootstrap = () => {
     const location = useLocation();
 
-    const navStyle = {
-        fontSize: '1.5rem',
-        marginLeft: '1rem'
-    };
 
-    const brandStyle = {
-        fontSize: '1.5rem',
-        marginLeft: '1rem',
-        display: 'flex',
-        alignItems: 'center',
-        paddingTop: '0.5rem'
-    };
 
     return (
-        <Navbar bg="dark" variant="dark" expand="lg">
+        <Navbar className="custom-navbar" variant="dark" expand="lg">
             <Container>
-                <Navbar.Brand as={Link} to="/" style={brandStyle}>
+                <Navbar.Brand as={Link} to="/" className="navbar-brand">
                     <img
                         src={logo}
                         width="80"
@@ -38,7 +28,7 @@ export const NavbarBootstrap = () => {
                             as={Link} 
                             to="/about" 
                             active={location.pathname === '/about'}
-                            style={navStyle}
+                            className="navbar-link"
                         >
                             About Us
                         </Nav.Link>
@@ -46,7 +36,7 @@ export const NavbarBootstrap = () => {
                             as={Link} 
                             to="/events" 
                             active={location.pathname === '/events'}
-                            style={navStyle}
+                            className="navbar-link"
                         >
                             Events
                         </Nav.Link>
@@ -54,7 +44,7 @@ export const NavbarBootstrap = () => {
                             as={Link} 
                             to="/resources" 
                             active={location.pathname === '/resources'}
-                            style={navStyle}
+                            className="navbar-link"
                         >
                             Resources
                         </Nav.Link>
@@ -62,7 +52,7 @@ export const NavbarBootstrap = () => {
                             as={Link} 
                             to="/contact" 
                             active={location.pathname === '/contact'}
-                            style={navStyle}
+                            className="navbar-link"
                         >
                             Contact
                         </Nav.Link>

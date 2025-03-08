@@ -1,36 +1,19 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-  }
-  
-  nav {
-    background-color: #333;
-    padding: 10px;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin: 0 15px;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-  }
-  
-  h1 {
-    color: #333;
-    text-align: center;
-  }
-  
-  div {
-    padding: 20px;
-  }
+
+.custom-navbar {
+  background-color: #633160 !important;
+}
+
+.custom-navbar .navbar-brand {
+  font-family: 'Bungee', sans-serif;
+    font-style: normal;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  padding-top: 0.5rem;
+}
+
+.custom-navbar .nav-link {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
