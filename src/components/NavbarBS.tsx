@@ -1,6 +1,5 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link, useLocation } from "react-router-dom";
-import logo from '../assets/harmonyHacksLogoWithTextGreen 2.svg';
 import '../styles/Global.css'; 
 
 export const NavbarBootstrap = () => {
@@ -12,13 +11,8 @@ export const NavbarBootstrap = () => {
         <Navbar className="custom-navbar" variant="dark" expand="lg">
             <Container>
                 <Navbar.Brand as={Link} to="/" className="navbar-brand">
-                    <img
-                        src={logo}
-                        width="80"
-                        height="60"
-                        className="d-inline-block align-top me-3"
-                        alt="Harmony Hacks logo"
-                    />
+                    <div className="logo">
+                    </div>
                     HARMONY HACKS
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />

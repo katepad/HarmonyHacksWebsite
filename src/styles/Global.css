@@ -5,15 +5,25 @@
 
 .custom-navbar .navbar-brand {
   font-family: 'Bungee', sans-serif;
-    font-style: normal;
-  font-size: 1.5rem;
-  margin-left: 1rem;
+  font-style: normal;
+  font-size: 1.7rem;
   display: flex;
   align-items: center;
   padding-top: 0.5rem;
+  height: 5rem;
 }
 
 .custom-navbar .nav-link {
   font-size: 1.5rem;
-  margin-left: 1rem;
+  margin-left: 2rem;
+}
+
+.logo {
+  width: 80px;  /* Adjust size */
+  height: 80px; /* Adjust size */
+  background-image: url('../assets/harmonyHacksLogoWithTextGreen.svg'); /* Path to the logo */
+  background-size: cover; 
+  background-position: center;  /* Position the image in the center */
+  margin-right: 1rem;  /* Space between logo and brand text */
+  ;
 }
