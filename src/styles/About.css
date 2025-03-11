@@ -1,0 +1,24 @@
+.about-history-section {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: left;
+}
+
+.about-history-content {
+    padding: 2rem;
+    margin-left: 5rem;
+}
+
+.about-history-picture {
+    box-shadow: 0 1.563rem 1.563rem #DF9DCF;
+    border-radius: 2rem;
+
+    background-image: url('../assets/firstGbm7.jpg');
+    background-size: cover; 
+    background-position: center;  /* Position the image in the center */
+
+    width: 30rem;
+    height: 25rem;
+}
