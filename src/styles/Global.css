@@ -32,31 +32,26 @@
   font-family: "Ubuntu", sans-serif;
   font-size: 2.5rem;
   color: #A23E8C;
+  margin-top: 3rem;
+  margin-left: 5rem;
 }
 
 .page-h2 {
   font-family: "Urbanist", sans-serif;
   font-size: 2rem;
+  font-weight: 600; /* Semi-Bold */
   color: #A23E8C;
   padding-bottom: 1rem;
 }
 
 .page-p {
   font-family: "Work Sans", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   color: #633160;
-}
-
-.div-green {
-  background: #CBEFD7;
-  padding: 0.5rem;
-  margin: 0.5rem;
-  width: 100%;
 }
 
 .div-purple {
   background: #A23E8C;
   padding: 0.5rem;
-  margin: 0.5rem;
   width: 100%;
 }

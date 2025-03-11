@@ -1,24 +1,35 @@
 .about-history-section {
-    margin-top: 2rem;
+    margin-top: 3rem;
+    margin-right: 4rem;
+    margin-bottom: 5rem;
+    margin-left: 4rem;
     display: flex;
     flex-direction: row;
     align-items: left;
-    justify-content: left;
+    justify-content: space-evenly;
 }
 
-.about-history-content {
-    padding: 2rem;
-    margin-left: 5rem;
-}
-
-.about-history-picture {
+.about-history-img-div {
     box-shadow: 0 1.563rem 1.563rem #DF9DCF;
     border-radius: 2rem;
 
     background-image: url('../assets/firstGbm7.jpg');
-    background-size: cover; 
-    background-position: center;  /* Position the image in the center */
 
-    width: 30rem;
-    height: 25rem;
+    background-size: contain; /* Show whole img */
+    background-repeat: no-repeat; /* Don't let image repeat to fill */
+    background-position: center;  /* Position the image in the center */
+    background-size: 100%;
+
+    width: 35rem;
+    height: auto;
+}
+
+.about-history-content-div {
+    margin-left: 5rem;
+    width:  45rem;
+    height: auto;
+}
+
+.about-founders-section {
+    margin-bottom: 0rem;
 }
