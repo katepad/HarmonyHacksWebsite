@@ -1,4 +1,6 @@
 
+/* ======================================== START OF NAV BAR CSS ======================================== */
+
 .custom-navbar {
   background-color: #633160 !important;
 }
@@ -28,29 +30,50 @@
   ;
 }
 
+/* ======================================== END OF NAV BAR CSS ======================================== */
+
 .page-h1 {
   font-family: "Ubuntu", sans-serif;
-  font-size: 2.5rem;
-  color: #A23E8C;
+  font-size: 3rem;
+  font-weight: 700;
   margin-top: 3rem;
-  margin-left: 5rem;
 }
 
 .page-h2 {
   font-family: "Urbanist", sans-serif;
-  font-size: 2rem;
-  font-weight: 600; /* Semi-Bold */
-  color: #A23E8C;
+  font-size: 2.5rem;
+  font-weight: 700; /* Semi-Bold */
   padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 
 .page-p {
   font-family: "Work Sans", sans-serif;
   font-size: 1.15rem;
+}
+
+/* use this to make text h1 green */
+.color-green {
+  color: #CBEFD7;
+}
+
+/* use this to make h1,h2 purple */
+.color-purple {
+  color: #A23E8C;
+}
+
+/* use this to make paragraph text dark purple */
+.color-darkpurple {
   color: #633160;
 }
 
-.div-purple {
+/* use this to make paragraph text white */
+.color-white {
+  color: #F5F5F5;
+}
+
+/* use this to make a section purple */
+.section-purple {
   background: #A23E8C;
   padding: 0.5rem;
   width: 100%;

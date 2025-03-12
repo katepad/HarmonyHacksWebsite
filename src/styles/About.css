@@ -1,7 +1,7 @@
 .about-history-section {
     margin-top: 3rem;
     margin-right: 4rem;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
     margin-left: 4rem;
     display: flex;
     flex-direction: row;
@@ -31,5 +31,32 @@
 }
 
 .about-founders-section {
-    margin-bottom: 0rem;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: left;
+}
+
+.about-founders-content-div {
+    width:  45rem;
+    height: auto;
+    margin-left: 5rem;
+}
+
+.about-founders-img-div {
+    margin-left: 4rem;
+    margin-top: 5rem;
+
+    box-shadow: 0 1.563rem 1.563rem #CBEFD7;
+    border-radius: 2rem;
+
+    background-image: url('../assets/firstGbm7.jpg');
+
+    background-size: contain; /* Show whole img */
+    background-repeat: no-repeat; /* Don't let image repeat to fill */
+    background-position: center;  /* Position the image in the center */
+    background-size: 100%;
+
+    width: 35rem;
+    height: auto;
 }

@@ -5,8 +5,6 @@ import '../styles/Global.css';
 export const NavbarBootstrap = () => {
     const location = useLocation();
 
-
-
     return (
         <Navbar className="custom-navbar" variant="dark" expand="lg">
             <Container>
