@@ -3,31 +3,39 @@
 
 .custom-navbar {
   background-color: #633160 !important;
+  
+  flex-direction: row;
+  align-items: left;
+  height: 4.75rem;
+}
+
+.logo {
+  width: 50px;  /* Adjust size */
+  height: 50px; /* Adjust size */
+
+  background-image: url('../assets/harmonyHacksLogoNoText.png'); /* Path to the logo */
+  background-size: cover; 
+  background-position: center;  /* Position the image in the center */
+  background-size: 150%;
+
+  margin-right: 1.5rem;  /* Space between logo and brand text */
+  border-radius: 50%; /* crops image as circle */
 }
 
 .custom-navbar .navbar-brand {
+
   font-family: 'Bungee', sans-serif;
   font-style: normal;
   font-size: 1.7rem;
+
   display: flex;
-  align-items: center;
-  padding-top: 0.5rem;
-  height: 5rem;
+  /*align-items: center;*/
+  padding:0.5rem;
 }
 
 .custom-navbar .nav-link {
   font-size: 1.5rem;
   margin-left: 2rem;
-}
-
-.logo {
-  width: 80px;  /* Adjust size */
-  height: 80px; /* Adjust size */
-  background-image: url('../assets/harmonyHacksLogoWithTextGreen.svg'); /* Path to the logo */
-  background-size: cover; 
-  background-position: center;  /* Position the image in the center */
-  margin-right: 1rem;  /* Space between logo and brand text */
-  ;
 }
 
 /* ======================================== END OF NAV BAR CSS ======================================== */

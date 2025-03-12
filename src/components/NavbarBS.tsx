@@ -8,9 +8,8 @@ export const NavbarBootstrap = () => {
     return (
         <Navbar className="custom-navbar" variant="dark" expand="lg">
             <Container>
+                <div className="logo" />
                 <Navbar.Brand as={Link} to="/" className="navbar-brand">
-                    <div className="logo">
-                    </div>
                     HARMONY HACKS
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
