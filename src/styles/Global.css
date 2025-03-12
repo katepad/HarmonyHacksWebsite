@@ -40,6 +40,30 @@
 
 /* ======================================== END OF NAV BAR CSS ======================================== */
 
+
+/* ======================================== SCROLL BAR ELEMENTS ======================================== */
+
+::-webkit-scrollbar {
+  width: 0.75rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #DF9DCF;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #F2AAD7;
+}
+
+/* ======================================== END OF SCROLL BAR ELEMENTS ======================================== */
+
+
+/* ======================================== COLORS AND HEADING PRESETS ======================================== */
+
 .page-h1 {
   font-family: "Ubuntu", sans-serif;
   font-size: 3rem;
@@ -86,3 +110,5 @@
   padding: 0.5rem;
   width: 100%;
 }
+
+/* ======================================== END OF COLORS AND HEADING PRESETS ======================================== */
