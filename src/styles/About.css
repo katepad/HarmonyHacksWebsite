@@ -1,3 +1,6 @@
+
+/* ============================== HISTORY SECTION ============================== */
+
 .about-history-section {
     margin-top: 3rem;
     margin-right: 4rem;
@@ -7,13 +10,15 @@
     flex-direction: row;
     align-items: left;
     justify-content: space-evenly;
+
+    height: auto;
 }
 
 .about-history-img-div {
     box-shadow: 0 1.563rem 1.563rem #DF9DCF;
     border-radius: 2rem;
 
-    background-image: url('../assets/firstGbm7.jpg');
+    background-image: url('../assets/firstGbm2.jpg');
 
     background-size: contain; /* Show whole img */
     background-repeat: no-repeat; /* Don't let image repeat to fill */
@@ -21,31 +26,37 @@
     background-size: 100%;
 
     width: 35rem;
-    height: auto;
 }
 
 .about-history-content-div {
     margin-left: 5rem;
     width:  45rem;
-    height: auto;
 }
+
+/* ============================== END OF HISTORY SECTION ============================== */
+
+
+
+/* ============================== ABOUT FOUNDERS SECTION ============================== */
 
 .about-founders-section {
     display: flex;
     flex-direction: row;
     align-items: left;
     justify-content: left;
+
+    height: 45rem;
 }
 
 .about-founders-content-div {
+    margin-left: 5rem;
     width:  45rem;
     height: auto;
-    margin-left: 5rem;
 }
 
 .about-founders-img-div {
     margin-left: 4rem;
-    margin-top: 5rem;
+    margin-top: 2rem;
 
     box-shadow: 0 1.563rem 1.563rem #CBEFD7;
     border-radius: 2rem;
@@ -58,5 +69,7 @@
     background-size: 100%;
 
     width: 35rem;
-    height: auto;
+    height: 23rem;
 }
+
+/* ============================== END OF ABOUT FOUNDERS SECTION ============================== */
