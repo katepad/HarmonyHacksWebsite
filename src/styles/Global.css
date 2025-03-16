@@ -79,6 +79,14 @@
   padding-top: 1rem;
 }
 
+.page-h3 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
 .page-p {
   font-family: "Work Sans", sans-serif;
   font-size: 1.15rem;

@@ -1,0 +1,86 @@
+
+.contact-us-section {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    margin-right: 5rem;
+    margin-left: 5rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: left;
+
+    height: 25rem;
+}
+
+.contact-form-img {
+    box-shadow: 0 1.563rem 1.563rem #DF9DCF;
+    border-radius: 2rem;
+
+    background-image: url('../assets/firstStudentOrgFair5.jpg');
+
+    background-repeat: no-repeat; /* Don't let image repeat to fill */
+    background-position-y: -500px;
+    background-position-x: right;
+    background-size: 180%;
+
+    width: 550px;
+
+    margin-right: 4rem;
+
+}
+
+.contact-form-div {
+    height: auto;
+    width: 50rem;
+
+
+    background-color: #F5F5F5;
+    box-shadow: 0 1.563rem 1.563rem #DF9DCF;
+    border-radius: 2rem;
+
+    padding:2rem;
+}
+
+.contact-submit-button {
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+
+    margin: 0rem 1rem;
+
+    color: #F5F5F5;
+    background: #D02F9E;
+    border: none;
+    border-radius: 0.75rem;
+
+    font-family: "Urbanist", sans-serif;
+    font-weight: bold;
+    font-size: 1.25rem;
+    transition: background-color 0.25s;
+
+}
+
+.contact-submit-button:hover {
+    background: #A23E8C;
+}
+
+.contact-p {
+    font-family: "Urbanist", sans-serif;
+    color: #A23E8C;
+    font-size: 1.2rem;
+}
+
+.contact-inputs {
+    width: 18rem;
+    height: 2rem;
+
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+
+    font-family: "Work Sans", sans-serif;
+    color: #633160;
+
+    border-radius: 0.5rem;
+    border: 1px solid #633160;
+
+}
