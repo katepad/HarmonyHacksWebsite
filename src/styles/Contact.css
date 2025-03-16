@@ -16,17 +16,13 @@
 .contact-form-img {
     box-shadow: 0 1.563rem 1.563rem #DF9DCF;
     border-radius: 2rem;
+    margin-right: 4rem;
 
-    background-image: url('../assets/firstStudentOrgFair5.jpg');
-
-    background-repeat: no-repeat; /* Don't let image repeat to fill */
-    background-position-y: -500px;
-    background-position-x: right;
+    object-fit: cover;
     background-size: 180%;
 
-    width: 550px;
-
-    margin-right: 4rem;
+    width: 500px; 
+    height: 400px;
 
 }
 
