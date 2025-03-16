@@ -14,18 +14,13 @@
     height: auto;
 }
 
-.about-history-img-div {
+.about-history-img {
     box-shadow: 0 1.563rem 1.563rem #DF9DCF;
     border-radius: 2rem;
 
-    background-image: url('../assets/firstGbm2.jpg');
-
-    background-size: contain; /* Show whole img */
-    background-repeat: no-repeat; /* Don't let image repeat to fill */
-    background-position: center;  /* Position the image in the center */
-    background-size: 100%;
-
-    width: 35rem;
+    height: auto;
+    width: auto; 
+    max-width: 500px; 
 }
 
 .about-history-content-div {
@@ -54,22 +49,16 @@
     height: auto;
 }
 
-.about-founders-img-div {
-    margin-left: 4rem;
+.about-founders-img {
+    margin-left: 5rem;
     margin-top: 2rem;
 
-    box-shadow: 0 1.563rem 1.563rem #CBEFD7;
+    box-shadow: 0 1.563rem 1.563rem #DF9DCF;
     border-radius: 2rem;
 
-    background-image: url('../assets/firstGbm7.jpg');
-
-    background-size: contain; /* Show whole img */
-    background-repeat: no-repeat; /* Don't let image repeat to fill */
-    background-position: center;  /* Position the image in the center */
-    background-size: 100%;
-
-    width: 35rem;
-    height: 23rem;
+    height: auto;
+    width: auto; 
+    max-width: 500px; 
 }
 
 /* ============================== END OF ABOUT FOUNDERS SECTION ============================== */
@@ -80,24 +69,6 @@
 
 .indent {
     margin-left: 5.5rem;
-}
-
-.about-board-card-img {
-
-    margin-bottom: 2rem;
-    margin-left: 1.75rem;
-    border-radius: 50%;
-
-    background-image: url('../assets/temp.png');
-
-    background-size: contain; /* Show whole img */
-    background-repeat: no-repeat; /* Don't let image repeat to fill */
-    background-position: center;  /* Position the image in the center */
-    background-size: 100%;
-    justify-items: center;
-
-    width: 10rem;
-    height: 10rem;
 }
 
 .about-h3 {
@@ -119,12 +90,15 @@
     background-color: #F5F5F5;
     /*box-shadow: 0 1.563rem 1.563rem #DF9DCF;*/
     border-radius: 2rem;
-
-    padding: 3rem;
     
-    margin-top: 1rem;
-    margin-bottom: 3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
     margin-right: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     height: 25rem;
     width: 19.5rem;
@@ -134,4 +108,13 @@
 
 .about-board-card:hover {
     box-shadow: 0 1.563rem 1.563rem #DF9DCF;
+}
+
+.about-board-card-img {
+
+    margin-bottom: 2rem;
+    border-radius: 50%;
+
+    width: 10rem;
+    height: 10rem;
 }
