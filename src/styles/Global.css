@@ -104,6 +104,11 @@
   color: #F5F5F5;
 }
 
+/* use this to make paragraph text pink */
+.color-pink {
+  color: #D02F9E;
+}
+
 /* use this to make a section purple */
 .section-purple {
   background: #A23E8C;

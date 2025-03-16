@@ -45,7 +45,7 @@
     align-items: left;
     justify-content: left;
 
-    height: 45rem;
+    height: 30rem;
 }
 
 .about-founders-content-div {
@@ -73,3 +73,65 @@
 }
 
 /* ============================== END OF ABOUT FOUNDERS SECTION ============================== */
+
+
+
+/* ============================== ABOUT CURRENT BOARD SECTION ============================== */
+
+.indent {
+    margin-left: 5.5rem;
+}
+
+.about-board-card-img {
+
+    margin-bottom: 2rem;
+    margin-left: 1.75rem;
+    border-radius: 50%;
+
+    background-image: url('../assets/temp.png');
+
+    background-size: contain; /* Show whole img */
+    background-repeat: no-repeat; /* Don't let image repeat to fill */
+    background-position: center;  /* Position the image in the center */
+    background-size: 100%;
+    justify-items: center;
+
+    width: 10rem;
+    height: 10rem;
+}
+
+.about-h3 {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.about-board-cards-row {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: left;
+
+    height: auto;
+}
+
+.about-board-card {
+    background-color: #F5F5F5;
+    /*box-shadow: 0 1.563rem 1.563rem #DF9DCF;*/
+    border-radius: 2rem;
+
+    padding: 3rem;
+    
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    margin-right: 2rem;
+
+    height: 25rem;
+    width: 19.5rem;
+
+    transition: box-shadow 0.5s;
+}
+
+.about-board-card:hover {
+    box-shadow: 0 1.563rem 1.563rem #DF9DCF;
+}
