@@ -1,4 +1,32 @@
+/* ============================== TEXT OVERWRITES ============================== */
 
+.contact-h3 {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+    padding-top: 0.5rem;
+}
+
+.contact-h2 {
+    font-family: "Urbanist", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700; /* Semi-Bold */
+
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+}
+
+.contact-p {
+    font-family: "Urbanist", sans-serif;
+    color: #A23E8C;
+    font-size: 1.2rem;
+}
+
+/* ============================== END OF TEXT OVERWRITES ============================== */
+
+
+/* ============================== CONTACT FORM SECTION ============================== */
 .contact-us-section {
     margin-top: 2rem;
     margin-bottom: 4rem;
@@ -40,9 +68,8 @@
 
 .contact-submit-button {
     padding: 0.5rem 1.5rem;
+    margin-top: 0.5rem;
     cursor: pointer;
-
-    margin: 0rem 1rem;
 
     color: #F5F5F5;
     background: #D02F9E;
@@ -53,24 +80,17 @@
     font-weight: bold;
     font-size: 1.25rem;
     transition: background-color 0.25s;
-
 }
 
 .contact-submit-button:hover {
     background: #A23E8C;
 }
 
-.contact-p {
-    font-family: "Urbanist", sans-serif;
-    color: #A23E8C;
-    font-size: 1.2rem;
-}
-
 .contact-inputs {
     width: 18rem;
     height: 2rem;
 
-    padding-left: 1.5rem;
+    padding-left: 1rem;
     margin-bottom: 1rem;
 
     font-family: "Work Sans", sans-serif;
@@ -79,4 +99,113 @@
     border-radius: 0.5rem;
     border: 1px solid #633160;
 
+}
+
+.msg-input {
+    max-height: 6rem;
+    min-height: 2rem;
+    width: 18rem;
+    height: 6rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.form-left-side {
+    padding-right: 0.5rem;
+}
+
+.form-right-side {
+    padding-left: 0.5rem;
+}
+
+/* ============================== END OF CONTACT FORM SECTION ============================== */
+
+
+/* ============================== TESTIMONIAL SECTION ============================== */
+.contact-testimonial-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+
+    height: auto;
+}
+
+.contact-testimonial-content-div {
+    height: auto;
+    width:  50rem;
+
+}
+
+.contact-testimonial-img {
+    box-shadow: 0 1.563rem 1.563rem #CBEFD7;
+    border-radius: 2rem;
+
+    height: auto;
+    width: auto; 
+    max-height: 500px; 
+
+    margin-top: 2rem;
+}
+
+/* ============================== END OF TESTIMONIAL SECTION ============================== */
+
+.arrow-button-right {
+    rotate: -90deg;
+    cursor: pointer;
+
+    margin-top: 15rem;
+    margin-right: 1.1rem;
+
+    color: #F5F5F5;
+    background: none;
+    border: none;
+
+    height: 5rem;
+    width: 5rem;
+
+    font-family: "Urbanist", sans-serif;
+    font-weight: bold;
+    font-size: 5rem;
+
+    transition: color 0.3s, transform 0.3s ease-in-out;
+
+}
+
+.arrow-button-left {
+    rotate: 90deg;
+    cursor: pointer;
+
+    margin-top: 15rem;
+    margin-left: 1.1rem;
+
+    color: #F5F5F5;
+    background: none;
+    border: none;
+
+    height: 5rem;
+    width: 5rem;
+
+    font-family: "Urbanist", sans-serif;
+    font-weight: bold;
+    font-size: 5rem;
+
+    transition: color 0.3s, transform 0.3s ease-in-out;
+
+}
+
+.arrow-button-left:hover {
+    color: #CBEFD7;
+    transform: scale(1.1);
+}
+
+.arrow-button-right:hover {
+    color: #CBEFD7;
+    transform: scale(1.1);
 }
