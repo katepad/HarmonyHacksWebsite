@@ -1,6 +1,16 @@
 
+import contactData from "../data/About.json"; 
 import '../styles/Global.css'; 
 import '../styles/About.css';
+
+type BoardMember = {
+  "id": number;
+  "firstName": string;
+  "lastName": string;
+  "position": string,
+  "description": string;
+  "image": string;
+};
 
 const About = () => {
     return (
@@ -48,66 +58,19 @@ const Founders = () => {
 
 const Board = () => {
   return (
-    <section className = "about-board-section">
+    <section className="about-board-section">
+      <h2 className="page-h2 color-purple indent">Meet the '24-'25 Board</h2>
 
-      <br/> <h2 className = "page-h2 color-purple indent"> Meet the '24-'25 Board </h2>
-
-      {/* I would have to use JS to generate the correc amount of cards and rows for every year */}
-
-      <div className = "about-board-cards-row indent">
-        <div className = "about-board-card">
-          <img className = "about-board-card-img" src="/assets/temp.png" alt="Temporary Picture" />
-          <h3 className = "about-h3 color-darkpurple"> FirstName LastName </h3>
-          <h3 className = "about-h3 color-darkpurple"> Position </h3>
-          <p className = "page-p color-pink"> A lil bio here. </p>
-        </div>
-        <div className = "about-board-card">
-          <img className = "about-board-card-img" src="/assets/temp.png" alt="Temporary Picture" />
-          <h3 className = "about-h3 color-darkpurple"> FirstName LastName </h3>
-          <h3 className = "about-h3 color-darkpurple"> Position </h3>
-          <p className = "page-p color-pink"> A lil bio here. </p>
-        </div>
-        <div className = "about-board-card">
-          <img className = "about-board-card-img" src="/assets/temp.png" alt="Temporary Picture" />
-          <h3 className = "about-h3 color-darkpurple"> FirstName LastName </h3>
-          <h3 className = "about-h3 color-darkpurple"> Position </h3>
-          <p className = "page-p color-pink"> A lil bio here. </p>
-        </div>
-        <div className = "about-board-card">
-          <img className = "about-board-card-img" src="/assets/temp.png" alt="Temporary Picture" />
-          <h3 className = "about-h3 color-darkpurple"> FirstName LastName </h3>
-          <h3 className = "about-h3 color-darkpurple"> Position </h3>
-          <p className = "page-p color-pink"> A lil bio here. </p>
-        </div>
+      <div className="about-board-cards-container">
+        {contactData.map((member: BoardMember) => (
+          <div key={member.id} className="about-board-card">
+            <img className="about-board-card-img" src={member.image || "/assets/temp.png"} alt={`${member.firstName} ${member.lastName}`} />
+            <h3 className="about-h3 color-darkpurple">{member.firstName} {member.lastName}</h3>
+            <h3 className="about-h3 color-darkpurple">{member.position}</h3>
+            <p className="page-p color-pink">{member.description}</p>
+          </div>
+        ))}
       </div>
-
-      <div className = "about-board-cards-row indent">
-        <div className = "about-board-card">
-          <img className = "about-board-card-img" src="/assets/temp.png" alt="Temporary Picture" />
-          <h3 className = "about-h3 color-darkpurple"> FirstName LastName </h3>
-          <h3 className = "about-h3 color-darkpurple"> Position </h3>
-          <p className = "page-p color-pink"> A lil bio here. </p>
-        </div>
-        <div className = "about-board-card">
-          <img className = "about-board-card-img" src="/assets/temp.png" alt="Temporary Picture" />
-          <h3 className = "about-h3 color-darkpurple"> FirstName LastName </h3>
-          <h3 className = "about-h3 color-darkpurple"> Position </h3>
-          <p className = "page-p color-pink"> A lil bio here. </p>
-        </div>
-        <div className = "about-board-card">
-          <img className = "about-board-card-img" src="/assets/temp.png" alt="Temporary Picture" />
-          <h3 className = "about-h3 color-darkpurple"> FirstName LastName </h3>
-          <h3 className = "about-h3 color-darkpurple"> Position </h3>
-          <p className = "page-p color-pink"> A lil bio here. </p>
-        </div>
-        <div className = "about-board-card">
-          <img className = "about-board-card-img" src="/assets/temp.png" alt="Temporary Picture" />
-          <h3 className = "about-h3 color-darkpurple"> FirstName LastName </h3>
-          <h3 className = "about-h3 color-darkpurple"> Position </h3>
-          <p className = "page-p color-pink"> A lil bio here. </p>
-        </div>
-      </div>
-
     </section>
   );
 };
