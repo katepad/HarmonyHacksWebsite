@@ -59,6 +59,10 @@
   background: #F2AAD7;
 }
 
+body {
+  overflow-x: hidden
+}
+
 /* ======================================== END OF SCROLL BAR ELEMENTS ======================================== */
 
 
