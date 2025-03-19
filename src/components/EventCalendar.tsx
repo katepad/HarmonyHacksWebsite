@@ -51,6 +51,14 @@ const EventCalendar: React.FC = () => {
                 location: "Community Hall",
                 type: "Fundraisers",
             },
+            {
+                id: "3",
+                title: "Workshop on AI",
+                start: new Date(2025, 2, 19, 18, 0),
+                end: new Date(2025, 2, 19, 21, 0),
+                location: "SBSB 1102",
+                type: "GBM Events"
+            },
         ];
         setEvents(mockEvents);
     }, []);

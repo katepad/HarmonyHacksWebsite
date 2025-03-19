@@ -1,8 +1,6 @@
 .calendar-container {
   padding: 20px;
-  background: linear-gradient(to bottom, #e5fce9, #fce4ec);  /* pastel green-pink blend */
   border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .calendar-header {
@@ -14,10 +12,10 @@
 }
 
 .calendar-month {
-  font-size: 48px;
+  font-size: 70px;
   font-weight: bold;
-  color: #633160;
   font-family: 'Urbanist';
+  color: #A23E8C;
   margin: 0;
 }
 
@@ -30,23 +28,77 @@
   background: transparent;
   border: none;
   font-size: 46px;
-  color: #633160;
+  color: #A23E8C;
   cursor: pointer;
 }
 
+/*Could be the problem */
 .rbc-calendar {
   background-color: #f8e9f1;
   border-radius: 10px;
 }
 
-/* Events styled with color-coded chips */
-.event-chip {
-  font-size: 0.8rem;
+
+.event-chip.gbmevents {
+  background-color: #dfe6d5; /* soft gray-green */
+  color: #5d7a24;           /* bold green text */
+  border-radius: 20px;
+  padding: 4px 10px;
   font-weight: bold;
-  border-radius: 8px;
-  padding: 4px 6px;
-  color: white;
-  text-align: center;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.event-chip.gbmevents::before {
+  content: "";
+  background-color: #6a8e0e;  /* green circle */
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+}
+
+/* Workshops */
+.event-chip.workshops {
+  background-color: #eec9e5; /* pastel pink */
+  color: #5e2750;            /* deep purple text */
+  border-radius: 20px;
+  padding: 4px 10px;
+  font-weight: bold;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.event-chip.workshops::before {
+  content: "";
+  background-color: #5e2750; /* purple circle */
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+}
+
+/* Fundraisers */
+.event-chip.fundraisers {
+  background-color: #ffe2d5; /* light orange background */
+  color: #911e1e;            /* deep red text */
+  border-radius: 20px;
+  padding: 4px 10px;
+  font-weight: bold;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.event-chip.fundraisers::before {
+  content: "";
+  background-color: #911e1e;  /* red circle */
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
 }
 
 .event-module {
