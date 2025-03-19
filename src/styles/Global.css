@@ -3,18 +3,14 @@
 
 .custom-navbar {
   background-color: #633160 !important;
-  box-shadow: 0 1rem 1.563rem #121629;
+  box-shadow: 0 0.3rem 2rem #482c47;
   flex-direction: row;
   align-items: left;
   height: 4.75rem;
 }
 
 .custom-navbar.scrolled {
-  background-color: #633160 !important; /* Darker navbar when scrolling */
   padding: 10px 0;
-  box-shadow: 0 1rem 1.563rem #121629; /*121629*/
-  opacity: 0.95;
-  backdrop-filter: blur(0.25rem);
 }
 
 .logo {
