@@ -1,5 +1,15 @@
+
+import contactData from "../data/Testimonials.json";
 import '../styles/Global.css'; 
 import '../styles/Contact.css';
+
+type Testimonial = {
+  "id": number;
+  "firstName": string;
+  "lastName": string;
+  "description": string;
+  "image": string;
+};
 
 const Contact = () => {
   return (
@@ -10,7 +20,6 @@ const Contact = () => {
     </>
   );
 };
-
 
 const Form = () => {
   return (
@@ -70,18 +79,18 @@ const Testimonial = () => {
         <button className = "arrow-button-left"> ♡ </button>
       </div>
 
-      <div className = "contact-testimonial-content-div">
-        <div className = "contact-testimonial-text-div">
-          <h2 className = "contact-h2 color-green"> Member Testimonials </h2>
-          <h3 className = "page-h3 color-white"> FirstName LastName </h3>
-          <p className = "contact-testimonial-p color-white"> In the heart of London, in a cozy little town called Sanrioville, there lived a bright and curious kitten named Hello Kitty. From a young age, she was fascinated by puzzles, patterns, and how things worked. While her friends enjoyed baking and playing outside, Kitty spent hours tinkering with her toy robot, trying to make it walk on its own. </p>
-          <br/>
-          <p className = "contact-testimonial-p color-white">  One day, her school announced a coding competition where students had to create a program that solved a real-world problem. Kitty was thrilled! She had never written a single line of code before, but that didn’t stop her. Determined, she rushed home and searched for beginner coding tutorials on her computer. </p>
+      {contactData.map((member: Testimonial) => (
+        <div key={member.id} className = "contact-testimonial-content-div">
+          <div className = "contact-testimonial-text-div">
+            <h2 className = "contact-h2 color-green"> Member Testimonials </h2>
+            <h3 className = "page-h3 color-white">{member.firstName} {member.lastName}</h3>
+            <p className = "contact-testimonial-p color-white"> {member.description} </p>
+          </div>
+          <div className = "contact-testimonial-div">
+            <img className = "contact-testimonial-img" src={member.image || "/assets/temp.png"} alt={`${member.firstName} ${member.lastName}`} />
+          </div>
         </div>
-        <div className = "contact-testimonial-div">
-          <img className = "contact-testimonial-img" src="/assets/titocTemp.jpg" alt="First GBM with Harmony Hacks Founders" />
-        </div>
-      </div>
+      ))}
 
       <div className="button-div">
         <button className = "arrow-button-right"> ♡ </button>

@@ -178,7 +178,7 @@
     width:  auto;
     max-height: 50rem;
 
-    margin-right: 3rem;
+    margin-right: 6rem;
 }
 
 .contact-testimonial-div {
@@ -194,7 +194,8 @@
 
     height: auto;
     width: auto; 
-    max-height: 500px; 
+    max-width: 500px; 
+    max-width: 400px; 
 
     margin-top: 2rem;
 }
@@ -218,7 +219,6 @@
     font-size: 5rem;
 
     transition: color 0.3s, transform 0.3s ease-in-out;
-
 }
 
 .arrow-button-left {
@@ -240,7 +240,6 @@
     font-size: 5rem;
 
     transition: color 0.3s, transform 0.3s ease-in-out;
-
 }
 
 .arrow-button-left:hover {

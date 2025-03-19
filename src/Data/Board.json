@@ -5,7 +5,7 @@
         "lastName": "Cardoso",
         "position": "Co-President",
         "description": "A lil bio #1.",
-        "image": "/assets/temp.png"
+        "image": "/assets/currentBoard/rosemary.png"
     },
     {
         "id": 2,
@@ -13,7 +13,7 @@
         "lastName": "Robbins",
         "position": "Co-President",
         "description": "A lil bio #2.",
-        "image": "/assets/temp.png"
+        "image": "/assets/currentBoard/robbi.png"
     },
     {
         "id": 3,
@@ -21,7 +21,7 @@
         "lastName": "Sanchez Garcia",
         "position": "Vice President",
         "description": "A lil bio #3.",
-        "image": "/assets/temp.png"
+        "image": "/assets/currentBoard/estrella.png"
     },
     {
         "id": 4,
@@ -29,7 +29,7 @@
         "lastName": "Raphael",
         "position": "Treasurer",
         "description": "A lil bio #4.",
-        "image": "/assets/temp.png"
+        "image": "/assets/currentBoard/natalie.png"
     },
     {
         "id": 5,
@@ -37,7 +37,7 @@
         "lastName": "Tucker",
         "position": "Secretary",
         "description": "A lil bio #5.",
-        "image": "/assets/temp.png"
+        "image": "/assets/currentBoard/taylor.png"
     },
     {
         "id": 6,
@@ -45,7 +45,7 @@
         "lastName": "Byfield",
         "position": "Media Team",
         "description": "A lil bio #6.",
-        "image": "/assets/temp.png"
+        "image": "/assets/currentBoard/elisa.png"
     },
     {
         "id": 7,
@@ -53,7 +53,7 @@
         "lastName": "Paduganao",
         "position": "Media Team",
         "description": "A lil bio #7.",
-        "image": "/assets/temp.png"
+        "image": "/assets/currentBoard/kate.png"
     },
     {
         "id": 8,
@@ -61,6 +61,6 @@
         "lastName": "Rodas Montejo",
         "position": "Media Team",
         "description": "A lil bio #8.",
-        "image": "/assets/temp.png"
+        "image": "/assets/currentBoard/erica.png"
     }
 ]

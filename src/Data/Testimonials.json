@@ -1,0 +1,9 @@
+[
+    {
+        "id": 1,
+        "firstName": "Jane",
+        "lastName": "Doe",
+        "description": "A lil description #1.",
+        "image": "/assets/temp.png"
+    }
+]

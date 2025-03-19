@@ -1,5 +1,5 @@
 
-import contactData from "../data/About.json"; 
+import contactData from "../data/Board.json"; 
 import '../styles/Global.css'; 
 import '../styles/About.css';
 
