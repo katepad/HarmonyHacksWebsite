@@ -1,0 +1,117 @@
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 16px;
+    padding: 16px;
+  }
+  
+  .photo-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .photo-gallery img:hover {
+    transform: scale(1.05);
+}
+
+
+.recent-event-rectangle {
+    max-width: max-content;
+    background: #DF9DCF;
+}
+
+
+.club-overview{
+    
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-size: 70px;
+
+    color: #A23E8C;
+}
+
+.club-overview-img{
+    flex: 1;
+    width: 450px;
+    height: 450px;
+}
+
+.club-overview-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.club-overview-content-div {
+    flex: 1;
+    min-width: 300px; /* Prevents items from shrinking too much */
+}
+
+.mission-statement{
+    
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-size: 70px;
+
+    background: #A23E8C;
+}
+
+.mission-statement-img{
+    flex: 1;
+    width: 450px;
+    height: 450px;
+}
+
+.mission-statement-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    gap: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.mission-statement-content-div {
+    flex: 1;
+    min-width: 300px; /* Prevents items from shrinking too much */
+}
+
+.mission-statement-h1 {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 2.5rem;
+    color: #CBEFD7;
+}
+
+.mission-statement-p {
+    font-family: "Work Sans", sans-serif;
+    font-size: 1.2rem;
+    color: #fdfffe;
+}
+
+.recent-events-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.recent-events-content-div {
+    flex: 1;
+    min-width: 300px; /* Prevents items from shrinking too much */
+}

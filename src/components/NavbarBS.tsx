@@ -1,12 +1,28 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link, useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
 import '../styles/Global.css'; 
 
 export const NavbarBootstrap = () => {
     const location = useLocation();
+    const [scrolled, setScrolled] = useState(false);
+
+        useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 50) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        }; 
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []); 
+
 
     return (
-        <Navbar className="custom-navbar" variant="dark" expand="lg">
+        <Navbar className={`custom-navbar ${scrolled ? "scrolled" : ""} sticky-top`} variant="dark" expand="lg">
             <Container>
                 <div className="logo" />
                 <Navbar.Brand as={Link} to="/" className="navbar-brand">
