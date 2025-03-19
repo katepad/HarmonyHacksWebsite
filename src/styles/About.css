@@ -1,24 +1,203 @@
+
+/* ============================== HISTORY SECTION ============================== */
+
 .about-history-section {
-    margin-top: 2rem;
+    margin-top: 2.4rem;
+    margin-right: 4rem;
+    margin-bottom: 4rem;
+    margin-left: 4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: space-evenly;
+
+    height: auto;
+}
+
+.about-history-img {
+    box-shadow: 0 1.563rem 1.563rem #DF9DCF;
+    border-radius: 2rem;
+
+    height: auto;
+    width: auto; 
+    max-width: 500px; 
+}
+
+.about-history-content-div {
+    margin-left: 5rem;
+    width:  45rem;
+}
+
+/* ============================== END OF HISTORY SECTION ============================== */
+
+
+/* ============================== ABOUT FOUNDERS SECTION ============================== */
+
+.about-founders-section {
     display: flex;
     flex-direction: row;
     align-items: left;
     justify-content: left;
+    height: auto;
 }
 
-.about-history-content {
-    padding: 2rem;
+.about-founders-content-div {
     margin-left: 5rem;
+    width:  45rem;
+    height: auto;
+    margin-bottom: 4rem;
 }
 
-.about-history-picture {
-    box-shadow: 0 1.563rem 1.563rem #DF9DCF;
+.about-founders-img {
+    margin-left: 5rem;
+    margin-top: 2rem;
+    margin-right: 5rem;
+
+    box-shadow: 0 1.563rem 1.563rem #CBEFD7;
     border-radius: 2rem;
 
-    background-image: url('../assets/firstGbm7.jpg');
-    background-size: cover; 
-    background-position: center;  /* Position the image in the center */
-
-    width: 30rem;
-    height: 25rem;
+    height: auto;
+    width: auto; 
+    max-width: 500px; 
 }
+
+/* ============================== END OF ABOUT FOUNDERS SECTION ============================== */
+
+
+/* ============================== ABOUT CURRENT BOARD SECTION ============================== */
+
+.indent {
+    margin-left: 5.5rem;
+}
+
+.about-h3 {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.about-board-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.about-board-card {
+    background-color: #F5F5F5;
+    box-shadow: 0rem 1.3rem 1.5rem #DF9DCF;
+    border-radius: 2rem;
+    
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    margin-right: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 25rem;
+    width: 19.5rem;
+
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+.about-board-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0rem 1rem 1.5rem #A23E8C;
+}
+
+.about-board-card-img {
+
+    margin-bottom: 1rem;
+    border-radius: 50%;
+
+    width: 10rem;
+    height: 10rem;
+}
+
+/* ============================== END OF ABOUT CURRENT BOARD SECTION ==============================*/
+
+
+/* ============================== RESPONSIVE SCREEN #1 ============================== */
+
+@media only screen and (max-width: 1250px) {
+
+    /* ========== HISTORY SECTION ========== */
+    
+    .about-history-section {
+        flex-direction: row;
+    }
+
+    .about-history-img {
+        margin-top: 5rem;
+    }
+
+    /* ========== END OF HISTORY SECTION ========== */
+
+
+    /* ========== FOUNDERS SECTION ========== */
+    
+    .about-founders-img {
+        margin-top: 13rem;
+    }
+
+    /* ========== END OF HISTORY SECTION ========== */
+
+}
+
+/* ============================== END OF RESPONSIVE SCREEN #1 ============================== */
+
+
+/* ============================== RESPONSIVE SCREEN #2 ============================== */
+
+@media only screen and (max-width: 1100px) {
+
+    /* ========== HISTORY SECTION ========== */
+
+    .about-history-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-history-img {
+        margin-top: 0rem;
+        margin-bottom: 3rem;
+    }
+
+    .about-history-content-div {
+        width: auto;
+        margin: 0.2rem;
+    }
+
+    /* ========== END OF HISTORY SECTION ========== */
+
+
+    /* ========== FOUNDERS SECTION ========== */
+
+    .about-founders-section {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .about-founders-img {
+        margin-top: 5rem;
+        margin-bottom: 4rem;
+    }
+
+    .about-founders-content-div {
+        margin-bottom: 5rem;
+        width: auto;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    /* ========== END OF HISTORY SECTION ========== */
+
+}
+
+/* ============================== END OF RESPONSIVE SCREEN #2 ============================== */

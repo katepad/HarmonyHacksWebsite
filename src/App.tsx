@@ -12,15 +12,13 @@ const App: React.FC = () => {
     <Router>
       <div>
         <NavbarBootstrap />
-        <div className="container mt-4">
-          <Routes>
+        <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/events" element={<Events />} />
             <Route path="/resources" element={<Resources />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
-        </div>
       </div>
     </Router>
   );

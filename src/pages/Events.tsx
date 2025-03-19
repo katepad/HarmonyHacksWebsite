@@ -1,8 +1,9 @@
+import EventCalendar from "../components/EventCalendar";
+
 const Events = () => {
   return (
     <div>
-      <h1>EVENTS!</h1>
-      <p>This is the Events page.</p>
+      <EventCalendar />
     </div>
   );
 };

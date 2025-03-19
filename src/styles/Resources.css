@@ -1,0 +1,91 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .card {
+    background-color: #F6E3EF;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    padding-bottom: 60px; /* Add space for button */
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-title {
+    color: #633160;
+    font-size: 1.5rem;
+    margin: 16px;
+  }
+  
+  .card-description {
+    color: #A52B93;
+    font-size: 1rem;
+    margin: 0 16px 16px;
+  }
+  
+  .card-btn {
+    display: block;
+    background-color: #b5749f;
+    color: #D02F9E;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 1px solid #2C2C2C;
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    right: 16px;
+    text-align: center;
+  }
+  
+  .card-btn:hover {
+    background-color: #d562af;
+  }
+
+  .filter-search {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.tag {
+    color: #F6E3EF;
+    padding: 5px 15px;
+    background-color: #A52B93;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    
+}
+
+.tag.selected {
+  background-color: #333;
+  color: white;
+  border-color: #333;
+}
+
+.tag:hover {
+  transform: scale(1.1);
+  
+}
+  
