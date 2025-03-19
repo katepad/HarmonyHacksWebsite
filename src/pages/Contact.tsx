@@ -54,7 +54,9 @@ const Form = () => {
                 <option value = "General Inquiry"> General Inquiry </option>
                 <option value = "Event Inquiry"> Event Inquiry </option>
                 <option value = "Collab Inquiry"> Collaboration Inquiry </option>
-                <option value = "Submit Testimonial" > Submit Testimonial</option>
+                <option value = "Submit Testimonial" > Submit Testimonial </option>
+                <option value = "Submit Feedback" > Submit Feedback </option>
+                <option value = "Submit Club Idea" > Submit Club Idea </option>
                 <option value = "Other"> Other </option>
               </select>
 
