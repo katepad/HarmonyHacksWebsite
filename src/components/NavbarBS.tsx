@@ -35,7 +35,7 @@ export const NavbarBootstrap = () => {
                             as={Link} 
                             to="/about" 
                             active={location.pathname === '/about'}
-                            className="navbar-link"
+                            className={"navbar-link navbar-button"}
                         >
                             About Us
                         </Nav.Link>
@@ -43,7 +43,7 @@ export const NavbarBootstrap = () => {
                             as={Link} 
                             to="/events" 
                             active={location.pathname === '/events'}
-                            className="navbar-link"
+                            className={"navbar-link navbar-button"}
                         >
                             Events
                         </Nav.Link>
@@ -51,7 +51,7 @@ export const NavbarBootstrap = () => {
                             as={Link} 
                             to="/resources" 
                             active={location.pathname === '/resources'}
-                            className="navbar-link"
+                            className={"navbar-link navbar-button"}
                         >
                             Resources
                         </Nav.Link>
@@ -59,7 +59,7 @@ export const NavbarBootstrap = () => {
                             as={Link} 
                             to="/contact" 
                             active={location.pathname === '/contact'}
-                            className="navbar-link"
+                            className={"navbar-link navbar-button"}
                         >
                             Contact
                         </Nav.Link>
