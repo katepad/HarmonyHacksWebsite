@@ -28,6 +28,11 @@
     font-size: 1.15rem;
 }
 
+.about-board-section .page-h2 {
+    margin-left: 5.5rem;
+    margin-top: 3rem;
+}
+
 /* ============================== END OF TEXT OVERWRITES ============================== */
 
 
@@ -318,6 +323,10 @@
 @media only screen and (max-width: 1000px) {
 
     /* ==================== CONTACT FORM SECTION ==================== */
+
+    .about-board-section .page-h2 {
+        margin-left: 3rem;
+    }
 
     .contact-h3 {
         font-size: 1.15rem;
