@@ -151,10 +151,14 @@
 
 
 /* ============================== TESTIMONIAL SECTION ============================== */
+
 .contact-testimonial-section {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+
+    position:relative;
 
     padding-top: 2rem;
     padding-bottom: 3rem;
@@ -173,83 +177,65 @@
     height: auto;
 }
 
-.contact-testimonial-text-div {
-    height: auto;
-    width:  auto;
-    max-height: 50rem;
-
-    margin-right: 6rem;
-}
-
 .contact-testimonial-div {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.contact-testimonial-text-div {
+    height: auto;
+    width:  auto;
+    max-width: 30rem;
+
+    margin-right: 6rem;
+}
 
 .contact-testimonial-img {
     box-shadow: 0 1.563rem 1.563rem #CBEFD7;
     border-radius: 2rem;
 
-    height: auto;
-    width: auto; 
-    max-width: 500px; 
-    max-width: 400px; 
+    height: 400px; 
+    width: 400px;
+
+    object-fit: cover;
+    background-size: 180%;
 
     margin-top: 2rem;
 }
 
-.arrow-button-right {
-    rotate: -90deg;
+.arrow-button-left, .arrow-button-right {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Ensure perfect centering */
+    
     cursor: pointer;
-
-    margin-top: 15rem;
-    margin-right: 1.1rem;
-
     color: #F5F5F5;
     background: none;
     border: none;
-
+    
     height: 5rem;
     width: 5rem;
-
+    
     font-family: "Urbanist", sans-serif;
     font-weight: bold;
     font-size: 5rem;
-
-    transition: color 0.3s, transform 0.3s ease-in-out;
+    
+    transition: all 0.3s ease-in-out;
 }
 
 .arrow-button-left {
+    left: 1rem; /* Adjust as needed */
     rotate: 90deg;
-    cursor: pointer;
-
-    margin-top: 15rem;
-    margin-left: 1.1rem;
-
-    color: #F5F5F5;
-    background: none;
-    border: none;
-
-    height: 5rem;
-    width: 5rem;
-
-    font-family: "Urbanist", sans-serif;
-    font-weight: bold;
-    font-size: 5rem;
-
-    transition: color 0.3s, transform 0.3s ease-in-out;
 }
 
-.arrow-button-left:hover {
-    color: #CBEFD7;
-    transform: scale(1.1);
+.arrow-button-right {
+    right: 1rem; /* Adjust as needed */
+    rotate: -90deg;
 }
 
-.arrow-button-right:hover {
+.arrow-button-left:hover, .arrow-button-right:hover {
     color: #CBEFD7;
-    transform: scale(1.1);
 }
 
 /* ============================== END OF TESTIMONIAL SECTION ============================== */
@@ -287,6 +273,10 @@
 
     /* ==================== TESTIMONIALS SECTION ==================== */
 
+    .contact-testimonial-content-div {
+        margin: 5rem;
+    }
+
     .contact-testimonial-p {
         font-size: 1rem;
     }
@@ -296,7 +286,8 @@
     }
     
     .contact-testimonial-img {
-        height: 350px; 
+        height: 300px; 
+        width: 300px;
         margin-top: 4rem;
     }
     

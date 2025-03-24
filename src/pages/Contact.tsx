@@ -1,15 +1,7 @@
 
-import contactData from "../data/Testimonials.json";
 import '../styles/Global.css'; 
 import '../styles/Contact.css';
-
-type Testimonial = {
-  "id": number;
-  "firstName": string;
-  "lastName": string;
-  "description": string;
-  "image": string;
-};
+import Testimonial from "../components/Testimonial.tsx";
 
 const Contact = () => {
   return (
@@ -72,35 +64,6 @@ const Form = () => {
     </section>
   );
 };
-
-const Testimonial = () => {
-  return (
-    <section className= {"contact-testimonial-section section-purple"} >
-
-      <div className="button-div">
-        <button className = "arrow-button-left"> ♡ </button>
-      </div>
-
-      {contactData.map((member: Testimonial) => (
-        <div key={member.id} className = "contact-testimonial-content-div">
-          <div className = "contact-testimonial-text-div">
-            <h2 className = "contact-h2 color-green"> Member Testimonials </h2>
-            <h3 className = "page-h3 color-white">{member.firstName} {member.lastName}</h3>
-            <p className = "contact-testimonial-p color-white"> {member.description} </p>
-          </div>
-          <div className = "contact-testimonial-div">
-            <img className = "contact-testimonial-img" src={member.image || "/assets/temp.png"} alt={`${member.firstName} ${member.lastName}`} />
-          </div>
-        </div>
-      ))}
-
-      <div className="button-div">
-        <button className = "arrow-button-right"> ♡ </button>
-      </div>
-
-    </section>
-  );
-}
 
 export default Contact;
   
