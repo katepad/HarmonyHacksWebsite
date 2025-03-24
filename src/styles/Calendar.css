@@ -1,6 +1,6 @@
+/* ======================================== CALENDAR + HEADER ELEMENTS ======================================== */
 .calendar-container {
   padding: 20px;
-  border-radius: 15px;
 }
 
 .calendar-header {
@@ -32,87 +32,156 @@
   cursor: pointer;
 }
 
-/*Could be the problem */
-.rbc-calendar {
-  background-color: #f8e9f1;
-  border-radius: 10px;
+.calendar-content {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start; /* Top alignment */
+  margin-top: 10px; /* Add spacing from header if needed */
 }
 
+/* ======================================== END OF CALENDAR + HEADER ELEMENTS ======================================== */
+
+
+/* ======================================== CALENDAR CONTENTS ELEMENTS ======================================== */
+
+/* Global changes for calendar*/
+.rbc-calendar {
+  flex: 3;
+}
+
+/* Override default event styles from react-big-calendar */
+.rbc-event, .rbc-event-content {
+  background: none !important;  /* Remove default background */
+  border: none !important;      /* Remove default border */
+  padding: 0 !important;        /* Prevent unwanted spacing */
+}
+
+
+/* Edit tiles of the month*/
+.rbc-day-bg, .rbc-off-range-bg {
+  background: #f6e3ef;
+}
+
+/* Edit date of each cell */
+.rbc-date-cell {
+  color: #A23E8C;
+  font-size: 0.8rem;
+  font-family: 'Work Sans', sans-serif;
+  padding: 5px; /* Inner padding for better spacing */
+  position: relative;
+}
+
+/* Edit date of each cell (off-range) */
+.rbc-off-range {
+  color: #e4c0d4 !important;
+}
+
+/* Style the row container */
+.rbc-month-header {
+  background-color: white;  /* pastel pink for the whole header row */
+}
+
+/* Style the day names (each column) */
+.rbc-header {
+  color: #A23E8C;
+  font-family: "Work Sans";
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* ======================================== END OF CALENDAR CONTENTS ELEMENTS ======================================== */
+
+/* ======================================== EVENT CHIP ELEMENTS ======================================== */
+
+
+.event-chip {
+  border-radius: 20px;
+  padding: 4px 10px;
+  font-weight: bold;
+  font-size: clamp(0.6rem, 1vw, 0.8rem); /* Responsive font size */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap; /* */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.event-chip::before {
+  content: "";
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+}
 
 .event-chip.gbmevents {
   background-color: #dfe6d5; /* soft gray-green */
   color: #5d7a24;           /* bold green text */
-  border-radius: 20px;
-  padding: 4px 10px;
-  font-weight: bold;
-  font-size: 0.8rem;
-  display: flex;
-  align-items: center;
-  gap: 8px;
 }
 
 .event-chip.gbmevents::before {
-  content: "";
   background-color: #6a8e0e;  /* green circle */
-  border-radius: 50%;
-  width: 12px;
-  height: 12px;
 }
 
 /* Workshops */
 .event-chip.workshops {
   background-color: #eec9e5; /* pastel pink */
   color: #5e2750;            /* deep purple text */
-  border-radius: 20px;
-  padding: 4px 10px;
-  font-weight: bold;
-  font-size: 0.8rem;
-  display: flex;
-  align-items: center;
-  gap: 8px;
 }
 
 .event-chip.workshops::before {
-  content: "";
   background-color: #5e2750; /* purple circle */
-  border-radius: 50%;
-  width: 12px;
-  height: 12px;
 }
 
 /* Fundraisers */
 .event-chip.fundraisers {
   background-color: #ffe2d5; /* light orange background */
   color: #911e1e;            /* deep red text */
-  border-radius: 20px;
-  padding: 4px 10px;
-  font-weight: bold;
-  font-size: 0.8rem;
-  display: flex;
-  align-items: center;
-  gap: 8px;
 }
 
 .event-chip.fundraisers::before {
-  content: "";
   background-color: #911e1e;  /* red circle */
-  border-radius: 50%;
-  width: 12px;
-  height: 12px;
 }
 
-.event-module {
-  margin-top: 20px;
+/* ======================================== END OF EVENT CHIP ELEMENTS ======================================== */
+
+/* ======================================== EVENT MODULE ELEMENTS ======================================== */
+
+.event-module { 
+  position: relative; /* Makes sure the close icon is in position */
+  flex: 1;
   padding: 20px;
-  background-color: #fce4ec;
-  border: 2px solid #633160;
+  background-color: #f6e3ef;
   border-radius: 15px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  max-width: 350px;
+  margin-top: 0; /* Aligns the top of the module with top of calendar */
+}
+
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: #A23E8C;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.close-icon:hover {
+  color: #E155AD;
 }
 
 .event-module h3 {
   margin-top: 0;
-  color: #633160;
+  color: #A23E8C;
 }
 
 .rsvp-form {
@@ -129,21 +198,18 @@
 }
 
 .rsvp-form button {
-  background-color: #c95fa7;
+  background-color: #D02F9E;
   color: white;
   border: none;
   padding: 10px;
   border-radius: 8px;
   cursor: pointer;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: 'Urbanist';
 }
 
-.close-button {
-  margin-top: 10px;
-  background: transparent;
-  color: #633160;
-  border: 2px solid #633160;
-  padding: 6px 12px;
-  border-radius: 8px;
-  cursor: pointer;
+.rsvp-form button:hover {
+  background-color: #E155AD;
 }
+
+/* ======================================== END OF EVENT MODULE ELEMENTS ======================================== */
