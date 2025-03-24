@@ -3,10 +3,15 @@
 
 .custom-navbar {
   background-color: #633160 !important;
-  
+  box-shadow: 0 0.3rem 2rem #482c47;
   flex-direction: row;
   align-items: left;
   height: 4.75rem;
+}
+
+
+.custom-navbar.scrolled {
+  padding: 10px 0;
 }
 
 .logo {
@@ -34,9 +39,36 @@
 }
 
 .custom-navbar .nav-link {
+  color:#fff2fe;
   font-size: 1.5rem;
   margin-left: 2rem;
 }
+
+/* Ensure the button has hover effect */
+.navbar-button {
+  margin-left: 10px;
+  padding: 10px 10px;
+  border-radius: 30px; 
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: #fff2fe !important; /* Ensures default text color */
+}
+
+/* Hover effect: Make sure it applies */
+.custom-navbar .nav-link.navbar-button:hover {
+  background-color: #BCACCA !important; /* Light purple */
+  color: #633160 !important; /* Darker purple text */
+}
+
+.navbar-button.active {
+  background-color: #BCACCA !important; /* Light purple */
+  color: #633160 !important;
+
+}
+
 
 /* ======================================== END OF NAV BAR CSS ======================================== */
 
