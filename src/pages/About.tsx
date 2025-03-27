@@ -63,11 +63,11 @@ const Board = () => {
 
       <div className="about-board-cards-container">
         {contactData.map((member: BoardMember) => (
-          <div key={member.id} className="about-board-card">
-            <img className="about-board-card-img" src={member.image || "/assets/temp.png"} alt={`${member.firstName} ${member.lastName}`} />
-            <h3 className="about-h3 color-darkpurple">{member.firstName} {member.lastName}</h3>
-            <h3 className="about-h3 color-darkpurple">{member.position}</h3>
-            <p className="page-p color-pink">{member.description}</p>
+          <div key={member.board_id} className="about-board-card">
+            <img className="about-board-card-img" src={member.board_image || "/assets/temp.png"} alt={`${member.board_firstName} ${member.board_lastName}`} />
+            <h3 className="about-h3 color-darkpurple">{member.board_firstName} {member.board_lastName}</h3>
+            <h3 className="about-h3 color-darkpurple">{member.board_position}</h3>
+            <p className="page-p color-pink">{member.board_description}</p>
           </div>
         ))}
       </div>

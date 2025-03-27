@@ -33,14 +33,14 @@ const Testimonial = () => {
       <div className="contact-testimonial-content-div">
         <div className="contact-testimonial-text-div">
           <h2 className="contact-h2 color-green"> Member Testimonials </h2>
-          <h3 className="page-h3 color-white">{member.firstName} {member.lastName}</h3>
-          <p className="contact-testimonial-p color-white">{member.description}</p>
+          <h3 className="page-h3 color-white">{member.testimonial_firstName} {member.testimonial_lastName}</h3>
+          <p className="contact-testimonial-p color-white">{member.testimonial_description}</p>
         </div>
         <div className="contact-testimonial-div">
           <img 
             className="contact-testimonial-img" 
-            src={member.image || "/assets/temp.png"} 
-            alt={`${member.firstName} ${member.lastName}`} 
+            src={member.testimonial_image || "/assets/temp.png"} 
+            alt={`${member.testimonial_firstName} ${member.testimonial_lastName}`} 
           />
         </div>
       </div>

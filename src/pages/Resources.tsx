@@ -48,13 +48,13 @@ const Resources: React.FC = () => {
         ) : (
           filteredResources.map((resource, index) => (
             <div key={index} className="card">
-              {resource.imgSrc && resource.imgAlt && (
-                <img src={resource.imgSrc} alt={resource.imgAlt} className="card-img" />
+              {resource.resource_image && resource.resource_imgAlt && (
+                <img src={resource.resource_image} alt={resource.resource_imgAlt} className="card-img" />
               )}
-              {resource.title && <h1 className="card-title">{resource.title}</h1>}
-              {resource.description && <p className="card-description">{resource.description}</p>}
-              {resource.buttonText && resource.link && (
-                <a href={resource.link} className="card-btn">
+              {resource.resource_title && <h1 className="card-title">{resource.resource_title}</h1>}
+              {resource.resource_description && <p className="card-description">{resource.resource_description}</p>}
+              {resource.buttonText && resource.resource_link && (
+                <a href={resource.resource_link} className="card-btn">
                   {resource.buttonText}
                 </a>
               )}
