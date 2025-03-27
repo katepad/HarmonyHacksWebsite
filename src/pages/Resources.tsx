@@ -3,12 +3,13 @@ import resourcesData from "../data/resources.json";
 import "../styles/Resources.css"; 
 
 interface CardProps {
-  imgSrc?: string;
-  imgAlt?: string;
-  title?: string;
-  description?: string;
+  resource_id?: number,
+  resource_image?: string;
+  resource_imgAlt?: string;
+  resource_title?: string;
+  resource_description?: string;
   buttonText?: string;
-  link?: string;
+  resource_link?: string;
   tag?: string;
 }
 

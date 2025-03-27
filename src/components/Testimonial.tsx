@@ -2,11 +2,11 @@ import { useState } from "react";
 import contactData from "../Data/Testimonials.json";
 
 type Testimonial = {
-  id: number;
-  firstName: string;
-  lastName: string;
-  description: string;
-  image: string;
+  testimonial_id: number;
+  testimonial_firstName: string;
+  testimonial_lastName: string;
+  testimonial_description: string;
+  testimonial_image: string;
 };
 
 const Testimonial = () => {

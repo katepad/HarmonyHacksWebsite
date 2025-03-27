@@ -4,12 +4,12 @@ import '../styles/Global.css';
 import '../styles/About.css';
 
 type BoardMember = {
-  "id": number;
-  "firstName": string;
-  "lastName": string;
-  "position": string,
-  "description": string;
-  "image": string;
+  "board_id": number;
+  "board_firstName": string;
+  "board_lastName": string;
+  "board_position": string,
+  "board_description": string;
+  "board_image": string;
 };
 
 const About = () => {

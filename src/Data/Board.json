@@ -1,66 +1,66 @@
 [
     {
-        "id": 1,
-        "firstName": "Rosemary",
-        "lastName": "Cardoso",
-        "position": "Co-President",
-        "description": "A lil bio #1.",
-        "image": "/assets/currentBoard/rosemary.png"
+        "board_id": 1,
+        "board_firstName": "Rosemary",
+        "board_lastName": "Cardoso",
+        "board_position": "Co-President",
+        "board_description": "A lil bio #1.",
+        "board_image": "/assets/currentBoard/rosemary.png"
     },
     {
-        "id": 2,
-        "firstName": "Havanna",
-        "lastName": "Robbins",
-        "position": "Co-President",
-        "description": "A lil bio #2.",
-        "image": "/assets/currentBoard/robbi.png"
+        "board_id": 2,
+        "board_firstName": "Havanna",
+        "board_lastName": "Robbins",
+        "board_position": "Co-President",
+        "board_description": "A lil bio #2.",
+        "board_image": "/assets/currentBoard/robbi.png"
     },
     {
-        "id": 3,
-        "firstName": "Estrella",
-        "lastName": "Sanchez Garcia",
-        "position": "Vice President",
-        "description": "A lil bio #3.",
-        "image": "/assets/currentBoard/estrella.png"
+        "board_id": 3,
+        "board_firstName": "Estrella",
+        "board_lastName": "Sanchez Garcia",
+        "board_position": "Vice President",
+        "board_description": "A lil bio #3.",
+        "board_image": "/assets/currentBoard/estrella.png"
     },
     {
-        "id": 4,
-        "firstName": "Natalie",
-        "lastName": "Raphael",
-        "position": "Treasurer",
-        "description": "A lil bio #4.",
-        "image": "/assets/currentBoard/natalie.png"
+        "board_id": 4,
+        "board_firstName": "Natalie",
+        "board_lastName": "Raphael",
+        "board_position": "Treasurer",
+        "board_description": "A lil bio #4.",
+        "board_image": "/assets/currentBoard/natalie.png"
     },
     {
-        "id": 5,
-        "firstName": "Taylor",
-        "lastName": "Tucker",
-        "position": "Secretary",
-        "description": "A lil bio #5.",
-        "image": "/assets/currentBoard/taylor.png"
+        "board_id": 5,
+        "board_firstName": "Taylor",
+        "board_lastName": "Tucker",
+        "board_position": "Secretary",
+        "board_description": "A lil bio #5.",
+        "board_image": "/assets/currentBoard/taylor.png"
     },
     {
-        "id": 6,
-        "firstName": "Elisa",
-        "lastName": "Byfield",
-        "position": "Media Team",
-        "description": "A lil bio #6.",
-        "image": "/assets/currentBoard/elisa.png"
+        "board_id": 6,
+        "board_firstName": "Elisa",
+        "board_lastName": "Byfield",
+        "board_position": "Media Team",
+        "board_description": "A lil bio #6.",
+        "board_image": "/assets/currentBoard/elisa.png"
     },
     {
-        "id": 7,
-        "firstName": "Kate",
-        "lastName": "Paduganao",
-        "position": "Media Team",
-        "description": "A lil bio #7.",
-        "image": "/assets/currentBoard/kate.png"
+        "board_id": 7,
+        "board_firstName": "Kate",
+        "board_lastName": "Paduganao",
+        "board_position": "Media Team",
+        "board_description": "A lil bio #7.",
+        "board_image": "/assets/currentBoard/kate.png"
     },
     {
-        "id": 8,
-        "firstName": "Erica",
-        "lastName": "Rodas Montejo",
-        "position": "Media Team",
-        "description": "A lil bio #8.",
-        "image": "/assets/currentBoard/erica.png"
+        "board_id": 8,
+        "board_firstName": "Erica",
+        "board_lastName": "Rodas Montejo",
+        "board_position": "Media Team",
+        "board_description": "A lil bio #8.",
+        "board_image": "/assets/currentBoard/erica.png"
     }
 ]
