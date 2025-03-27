@@ -41,6 +41,7 @@ const Resources: React.FC = () => {
 
   return (
     <div>
+      <h1 className="page-h1 color-purple" style={{ marginLeft: "5rem"}}> Resources </h1>
       <Filters setFilter={setFilter} />
       <div className="card-container">
         {filteredResources.length === 0 ? (

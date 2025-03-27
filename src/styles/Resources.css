@@ -43,11 +43,11 @@
   .card-btn {
     display: block;
     background-color: #b5749f;
-    color: #D02F9E;
+    color: #FFFFFF;
     padding: 12px 24px;
     text-decoration: none;
     border-radius: 8px;
-    border: 1px solid #2C2C2C;
+    border: 1px solid #71296c;
     position: absolute;
     bottom: 16px;
     left: 16px;
@@ -69,20 +69,20 @@
 }
 
 .tag {
-    color: #F6E3EF;
-    padding: 5px 15px;
-    background-color: #A52B93;
-    border-radius: 20px;
-    font-size: 20px;
-    cursor: pointer;
-    border: 1px solid transparent;
-    
+  color: #F6E3EF;
+  padding: 5px 15px;
+  background-color: #A52B93;
+  border-radius: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  margin-top: 1rem;
 }
 
 .tag.selected {
-  background-color: #333;
+  background-color: #71296c;
   color: white;
-  border-color: #333;
+  border-color: #71296c;
 }
 
 .tag:hover {

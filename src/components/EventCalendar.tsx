@@ -71,7 +71,7 @@ const EventCalendar: React.FC = () => {
     return (
         <div className= "calendar-container">
             <div className = "calendar-header">
-                <h2 className = "calendar-month">
+                <h2 className = "page-h1 calendar-month">
                     {moment(currentDate).format("MMMM YYYY")}
                 </h2>
                 <div className = "nav-buttons">

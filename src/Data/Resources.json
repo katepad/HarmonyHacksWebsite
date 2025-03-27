@@ -1,7 +1,7 @@
 [
     {
       "resource_id": 1,
-      "resource_image": "https://png.pngtree.com/png-vector/20210629/ourmid/pngtree-silhouette-sunset-beach-badge-png-image_3522126.jpg",
+      "resource_image": "https://static.wikia.nocookie.net/peppapig/images/c/c8/Rebecca_Rabbit.png",
       "resource_imgAlt": "Image 1 description",
       "resource_title": "Resource 1",
       "resource_description": "Description for resource 1.",
@@ -10,7 +10,7 @@
     },
     {
       "resource_id": 2,
-      "resource_image": "https://png.pngtree.com/png-vector/20210629/ourmid/pngtree-silhouette-sunset-beach-badge-png-image_3522126.jpg",
+      "resource_image": "https://static.wikia.nocookie.net/peppapig/images/c/c8/Rebecca_Rabbit.png",
       "resource_imgAlt": "Image 2 description",
       "resource_title": "Resource 2",
       "resource_description": "Description for resource 2.",
@@ -19,7 +19,7 @@
     },
     {
       "resource_id": 3,
-      "resource_image": "https://png.pngtree.com/png-vector/20210629/ourmid/pngtree-silhouette-sunset-beach-badge-png-image_3522126.jpg",
+      "resource_image": "https://static.wikia.nocookie.net/peppapig/images/c/c8/Rebecca_Rabbit.png",
       "resource_imgAlt": "Image 3 description",
       "resource_title": "Resource 3",
       "resource_description": "Description for resource 3.",
@@ -28,7 +28,7 @@
     },
     {
       "resource_id": 4,
-      "resource_image": "https://png.pngtree.com/png-vector/20210629/ourmid/pngtree-silhouette-sunset-beach-badge-png-image_3522126.jpg",
+      "resource_image": "https://static.wikia.nocookie.net/peppapig/images/c/c8/Rebecca_Rabbit.png",
       "resource_imgAlt": "Image 4 description",
       "resource_title": "Resource 4",
       "resource_description": "Description for resource 4.",
@@ -37,7 +37,7 @@
     },
     {
       "resource_id": 5,
-      "resource_image": "https://png.pngtree.com/png-vector/20210629/ourmid/pngtree-silhouette-sunset-beach-badge-png-image_3522126.jpg",
+      "resource_image": "https://static.wikia.nocookie.net/peppapig/images/c/c8/Rebecca_Rabbit.png",
       "resource_imgAlt": "Image 5 description",
       "resource_title": "Resource 5",
       "resource_description": "Description for resource 5.",
@@ -68,6 +68,24 @@
       "resource_imgAlt": "Image 8 description",
       "resource_title": "Resource 8",
       "resource_description": "Description for resource 8.",
+      "buttonText": "Learn More",
+      "resource_link": "https://example.com/resource6"
+    },
+    {
+      "resource_id": 9,
+      "resource_image": "https://static.wikia.nocookie.net/peppapig/images/c/c8/Rebecca_Rabbit.png",
+      "resource_imgAlt": "Image 9 description",
+      "resource_title": "Resource 9",
+      "resource_description": "Description for resource 9.",
+      "buttonText": "Learn More",
+      "resource_link": "https://example.com/resource6"
+    },
+    {
+      "resource_id": 10,
+      "resource_image": "https://static.wikia.nocookie.net/peppapig/images/c/c8/Rebecca_Rabbit.png",
+      "resource_imgAlt": "Image 10 description",
+      "resource_title": "Resource 10",
+      "resource_description": "Description for resource 10.",
       "buttonText": "Learn More",
       "resource_link": "https://example.com/resource6"
     }

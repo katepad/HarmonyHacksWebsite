@@ -12,11 +12,8 @@
 }
 
 .calendar-month {
-  font-size: 70px;
-  font-weight: bold;
-  font-family: 'Urbanist';
   color: #A23E8C;
-  margin: 0;
+  margin-left: 3rem;
 }
 
 .nav-buttons {
