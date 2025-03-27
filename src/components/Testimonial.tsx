@@ -1,3 +1,4 @@
+import '../styles/Global.css';
 import { useState } from "react";
 import contactData from "../Data/Testimonials.json";
 

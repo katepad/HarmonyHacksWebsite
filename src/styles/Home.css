@@ -2,7 +2,7 @@
     position: relative;
     width: 100vw; /* Full width */
     max-width: 100%; /* Ensures no overflow */
-    height: 400px; /* Keep the previous height */
+    height: 40rem; /* Keep the previous height */
     overflow: hidden;
 }
   
@@ -17,6 +17,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover; /* Ensures it fills the horizontal space */
+    object-position: center;
     transition: opacity 0.5s ease-in-out;
 }
   
@@ -91,9 +92,13 @@
 }
 
 .club-overview-img{
+    box-shadow: 0 1.563rem 1.563rem #DF9DCF;
+    border-radius: 2rem;
     flex: 1;
-    width: 450px;
-    height: 450px;
+    width: auto;
+    height: auto;
+    max-width: 500px;
+    margin-left:5rem;
 }
 
 .club-overview-container {
@@ -102,10 +107,10 @@
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 
 .club-overview-content-div {
@@ -122,8 +127,12 @@
 }
 
 .mission-statement-img{
-    width: 450px;
-    height: 450px;
+    box-shadow: 0 1.563rem 1.563rem #CBEFD7;
+    border-radius: 2rem;
+
+    max-width: 500px;
+    width: auto;
+    height: auto;
 }
 
 .mission-statement-container {
@@ -132,10 +141,10 @@
     align-items: center;
     justify-content: space-between; 
     gap: 20px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 
 .mission-statement-content-div {
@@ -143,16 +152,14 @@
     min-width: 300px; /* Prevents items from shrinking too much */
 }
 
-.mission-statement-h1 {
-    font-family: "Ubuntu", sans-serif;
-    font-size: 2.5rem;
+.mission-statement-h2 {
     color: #CBEFD7;
+    margin-left: 5rem;
 }
 
 .mission-statement-p {
-    font-family: "Work Sans", sans-serif;
-    font-size: 1.2rem;
     color: #fdfffe;
+    margin-left: 5rem;
 }
 
 .recent-events-container {
@@ -161,10 +168,10 @@
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .recent-events-content-div {
@@ -172,12 +179,10 @@
     min-width: 300px; /* Prevents items from shrinking too much */
 }
 
-.recent-events-h1 {
-    font-family: "Ubuntu", sans-serif;
-    font-size: 2.5rem;
+.recent-events-h2 {
     color: #A23E8C;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .recent-events-p {
@@ -205,6 +210,7 @@
   display: flex;
   justify-content: space-between;
   width: 80%; /* Adjust width to fit 3 cards */
+  height:450px;
 }
 
 .card {
@@ -263,8 +269,12 @@
 }
 
 .join-us-img {
-  width: 450px;
-  height: 450px;
+    box-shadow: 0 1.563rem 1.563rem #CBEFD7;
+    border-radius: 2rem;
+    flex: 1;
+    width: auto;
+    height: auto;
+    max-width: 500px;
 }
 
 .join-us-container {
@@ -274,25 +284,19 @@
   gap: 20px;
   padding: 20px;
   flex-wrap: wrap; 
-  padding-bottom: 20px;
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-bottom: 6rem;
+  padding-top: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
   
 }
 
-.join-us-h1 {
-  font-family: "Ubuntu", sans-serif;
-  font-size: 2.5rem;
-  color: #A23E8C;
-  margin-left: 20px;
+.join-us-h2 {
+  margin-left: 5rem;
 }
 
 .join-us-p {
-  font-family: "Work Sans", sans-serif;
-  font-size: 1.2rem;
-  color: #633160;
-  margin-left: 20px;
+  margin-left: 5rem;
 }
 
 .join-us-content-div {
@@ -302,4 +306,38 @@
 
 .join-statement-div {
   flex: 1; /* Take up the remaining space for text */
+}
+
+.arrow-left, .arrow-right {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Ensure perfect centering */
+    
+    cursor: pointer;
+    color: #DF9DCF;
+    background: none;
+    border: none;
+    
+    height: 5rem;
+    width: 5rem;
+    
+    font-family: "Urbanist", sans-serif;
+    font-weight: bold;
+    font-size: 5rem;
+    
+    transition: all 0.3s ease-in-out;
+}
+
+.arrow-left {
+    left: 1rem; /* Adjust as needed */
+    rotate: 90deg;
+}
+
+.arrow-right {
+    right: 1rem; /* Adjust as needed */
+    rotate: -90deg;
+}
+
+.arrow-left:hover, .arrow-right:hover {
+    color: #A23E8C;
 }
