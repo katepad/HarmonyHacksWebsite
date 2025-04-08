@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { NavbarBootstrap } from './components/NavbarBS';
+import Footer from './components/Footer';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import About from './pages/About';
@@ -36,20 +37,29 @@ const App: React.FC = () => {
         } />
 
         {/* Public routes */}
-        <Route path="/*" element={
-          <>
-            <NavbarBootstrap />
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/events" element={<Events />} />
-              <Route path="/resources" element={<Resources />} />
-              <Route path="/contact" element={<Contact />} />
-            </Routes>
-          </>
-        } />
-      </Routes>
+        <Route
+  path="/*"
+  element={
+    <>
+      <NavbarBootstrap />
+      <div className="d-flex flex-column min-vh-100">
+        <main className="flex-grow-1">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/events" element={<Events />} />
+            <Route path="/resources" element={<Resources />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </>
+  }
+/>
+      </Routes> 
     </Router>
+    
   );
 };
 
