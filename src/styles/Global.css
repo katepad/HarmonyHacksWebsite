@@ -169,7 +169,6 @@ body {
   background-color: #633160; 
   color: white;
   text-align: center;
-  margin-top: auto;
 }
 
 .footer .container {
@@ -177,22 +176,34 @@ body {
 }
 
 .footer h5 {
-  text-transform: uppercase;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
 }
 
 .footer ul {
   list-style: none;
   padding-left: 0;
   margin-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem; /* Optional: adds space between logos */
+  align-items: center;
+}
+
+.footer img {
+  scale: 75%
 }
 
 .footer a {
   color: white;
   text-decoration: none;
-}
-
-.footer a:hover {
-  text-decoration: underline;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 .footer .bottom-bar {

@@ -5,40 +5,33 @@ const Footer: React.FC = () => {
   return (
     <footer className="footer">
       <div className="container">
-        <div className="row">
-          {/* About */}
-          <div className="col-lg-6 col-md-12 mb-4 mb-md-0">
-            <h5>Harmony Hacks</h5>
-            <p>
-              Empowering CSUSM and high school students through innovation, coding, and collaboration.
-            </p>
-          </div>
-
-          {/* Links */}
-          <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5>Links</h5>
-            <ul>
-              <li><a href="/about">About Us</a></li>
-              <li><a href="/events">Events</a></li>
-              <li><a href="/resources">Resources</a></li>
-              <li><a href="/contact">Contact</a></li>
-            </ul>
-          </div>
-
-          {/* Socials */}
-          <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5>Follow Us</h5>
-            <ul>
-              <li><a href="#">Instagram</a></li>
-              <li><a href="#">Twitter</a></li>
-              <li><a href="#">LinkedIn</a></li>
-            </ul>
-          </div>
+        <h5>Follow Us</h5>
+          <ul>
+            <li>
+              <a href = "https://discord.gg/9eK7e3XR6U" target="_blank">
+                <img src="/assets/logos/discord_logo.png" alt="Discord" />
+              </a>
+            </li>
+            <li>
+              <a href = "https://www.instagram.com/csusmharmonyhacks" target="_blank">
+                <img src="/assets/logos/instagram_logo.png" alt="Instagram" />
+              </a>
+            </li>
+            <li>
+              <a href = "https://open.spotify.com/playlist/1T8du2cVHZqBFgwtfAKYbE?si=gHQplIXXRjS0KVgW90y6yA&pi=u-ItcXYbNKRo6f" target="_blank">
+                <img src="/assets/logos/spotify_logo.png" alt="Spotify" />
+              </a>
+            </li>
+            <li>
+              <a href = "https://www.tiktok.com/@harmonyhackscsusm" target="_blank">
+                <img src="/assets/logos/tiktok_logo.png" alt="TikTok" />
+              </a>
+            </li>
+          </ul>
         </div>
-      </div>
 
-      <div className="bottom-bar text-center">
-        © 2025 Harmony Hacks — All rights reserved.
+        <div className="bottom-bar text-center">
+          © 2025 Harmony Hacks — All rights reserved.
       </div>
     </footer>
   );
