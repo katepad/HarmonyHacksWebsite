@@ -41,13 +41,17 @@
 .custom-navbar .nav-link {
   color:#fff2fe;
   font-size: 1.5rem;
-  margin-left: 2rem;
 }
 
 /* Ensure the button has hover effect */
 .navbar-button {
-  margin-left: 10px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  
   padding: 10px 10px;
+  min-width: 140px;
+  text-align: center;
+
   border-radius: 30px; 
   font-weight: bold;
   transition: all 0.3s ease-in-out;
@@ -61,12 +65,15 @@
 .custom-navbar .nav-link.navbar-button:hover {
   background-color: #BCACCA !important; /* Light purple */
   color: #633160 !important; /* Darker purple text */
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .navbar-button.active {
   background-color: #BCACCA !important; /* Light purple */
-  color: #633160 !important;
-
+  color: #633160 !important; /* Darker purple text */
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 
@@ -161,3 +168,52 @@ body {
 }
 
 /* ======================================== END OF COLORS AND HEADING PRESETS ======================================== */
+
+/* ======================================== FOOTER ELEMENTS ========================================================== */
+
+/* Footer.css */
+.footer {
+  background-color: #633160; 
+  color: white;
+  text-align: center;
+}
+
+.footer .container {
+  padding: 1rem;
+}
+
+.footer h5 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem; /* Optional: adds space between logos */
+  align-items: center;
+}
+
+.footer img {
+  scale: 75%
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.footer .bottom-bar {
+  background-color: #633160; /* Bootstrap secondary equivalent */
+  padding: 0.75rem;
+}
