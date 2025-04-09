@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollToTop from "./components/ScrollToTop";
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { NavbarBootstrap } from './components/NavbarBS';
 import Footer from './components/Footer';
@@ -23,6 +24,7 @@ const App: React.FC = () => {
 
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         {/* Admin routes */}
         <Route path="/login" element={<LoginPage />} />
