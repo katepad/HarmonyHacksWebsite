@@ -13,7 +13,7 @@ const LoginPage: React.FC = () => {
     e.preventDefault();
     try {
       await login(username, password);
-      navigate('/admin');
+      navigate('/admin/dashboard');
     } catch (err) {
       setError('Invalid credentials');
     }

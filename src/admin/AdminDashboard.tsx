@@ -1,73 +1,72 @@
 import React from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
-import AdminNavbar from './components/AdminNavbar';
+import { useNavigate } from 'react-router-dom';
 
 const AdminDashboard: React.FC = () => {
+  const navigate = useNavigate();
+
   return (
-    <div className="d-flex">
-      <AdminNavbar />
-      <Container 
-        className="p-4" 
-        style={{ marginLeft: '250px' }}
-      >
-        <h2 className="mb-4">Dashboard</h2>
-        <Row className="g-4">
-          <Col md={4}>
-            <Card>
-              <Card.Body>
-                <Card.Title>Manage Resources</Card.Title>
-                <Card.Text>
-                  Add, edit, or remove resources from the website.
-                </Card.Text>
-                <Button 
-                  variant="primary" 
-                  className="w-100"
-                  style={{ backgroundColor: '#A52B93', borderColor: '#A52B93' }}
-                >
-                  Edit Resources
-                </Button>
-              </Card.Body>
-            </Card>
-          </Col>
+    <Container className="p-4">
+      <h2 className="mb-4">Admin Dashboard</h2>
+      <Row className="g-4">
+        <Col md={4}>
+          <Card>
+            <Card.Body>
+              <Card.Title>Resources</Card.Title>
+              <Card.Text>
+                Manage website resources and content.
+              </Card.Text>
+              <Button 
+                variant="primary" 
+                className="w-100"
+                style={{ backgroundColor: '#A52B93', borderColor: '#A52B93' }}
+                onClick={() => navigate('/admin/resources')}
+              >
+                Manage Resources
+              </Button>
+            </Card.Body>
+          </Card>
+        </Col>
 
-          <Col md={4}>
-            <Card>
-              <Card.Body>
-                <Card.Title>Manage Events</Card.Title>
-                <Card.Text>
-                  Create and manage upcoming events.
-                </Card.Text>
-                <Button 
-                  variant="primary" 
-                  className="w-100"
-                  style={{ backgroundColor: '#A52B93', borderColor: '#A52B93' }}
-                >
-                  Edit Events
-                </Button>
-              </Card.Body>
-            </Card>
-          </Col>
+        <Col md={4}>
+          <Card>
+            <Card.Body>
+              <Card.Title>Events</Card.Title>
+              <Card.Text>
+                Manage upcoming events and schedules.
+              </Card.Text>
+              <Button 
+                variant="primary" 
+                className="w-100"
+                style={{ backgroundColor: '#A52B93', borderColor: '#A52B93' }}
+                onClick={() => navigate('/admin/events')}
+              >
+                Manage Events
+              </Button>
+            </Card.Body>
+          </Card>
+        </Col>
 
-          <Col md={4}>
-            <Card>
-              <Card.Body>
-                <Card.Title>User Messages</Card.Title>
-                <Card.Text>
-                  View and respond to user messages.
-                </Card.Text>
-                <Button 
-                  variant="primary" 
-                  className="w-100"
-                  style={{ backgroundColor: '#A52B93', borderColor: '#A52B93' }}
-                >
-                  View Messages
-                </Button>
-              </Card.Body>
-            </Card>
-          </Col>
-        </Row>
-      </Container>
-    </div>
+        <Col md={4}>
+          <Card>
+            <Card.Body>
+              <Card.Title>Content</Card.Title>
+              <Card.Text>
+                Manage website pages and content.
+              </Card.Text>
+              <Button 
+                variant="primary" 
+                className="w-100"
+                style={{ backgroundColor: '#A52B93', borderColor: '#A52B93' }}
+                onClick={() => navigate('/admin/about')}
+              >
+                Manage Content
+              </Button>
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
+    </Container>
   );
 };
 
