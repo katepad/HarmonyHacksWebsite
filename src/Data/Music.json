@@ -1,0 +1,32 @@
+[
+    {
+      "title": "coconut mall ♡",
+      "filename": "assets/music/Coconut Mall - Mario Kart Wii OST.mp3",
+      "autoplay": true,
+      "loop": true
+    },
+    {
+      "title": "food mart ♡",
+      "filename": "assets/music/Food Mart - Tomodachi Life OST.mp3",
+      "autoplay": true,
+      "loop": true
+    },
+    {
+      "title": "friends ♡",
+      "filename": "assets/music/Friends Theme (Reunited) - Pokémon X & Y [OST].mp3",
+      "autoplay": true,
+      "loop": true
+    },
+    {
+      "title": "mii maker ♡",
+      "filename": "assets/music/Mii Editor - Mii Maker (Wii U) Music.mp3",
+      "autoplay": true,
+      "loop": true
+    },
+    {
+      "title": "frappe snowland sherbet land ♡",
+      "filename": "assets/music/OC ReMix #1107_ Mario Kart 64 'Frappe Cafe Vibe' [Frappe SnowlandSherbet Land] by Joshua Morse.mp3",
+      "autoplay": true,
+      "loop": true
+    }
+]
