@@ -1,0 +1,78 @@
+
+.admin-board-section h2 {
+    text-align: center;
+}
+
+.admin-board-form p {
+    font-family: "Urbanist", sans-serif;
+    color: #A23E8C;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.admin-board-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.admin-board-card {
+    background-color: #F5F5F5;
+    box-shadow: 0rem 0.5rem 1.5rem #DF9DCF;
+    border-radius: 2rem;
+    
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    height: 10rem;
+    width: 40rem;
+    gap: 3rem;
+}
+
+.admin-board-img {
+    border-radius: 50%;
+
+    width: 8rem;
+    height: 8rem;
+}
+
+.admin-board-cards-container p {
+    font-size: 1rem;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 700;
+}
+
+.admin-board-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.admin-board-buttons button {
+    width: 6rem;
+    height: 2rem;
+
+    color: #F5F5F5;
+    background: #D02F9E;
+    border: none;
+    border-radius: 0.75rem;
+    cursor: pointer;
+
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: background-color 0.25s;
+}
+
+.admin-board-buttons button:hover {
+    background: #A23E8C;
+}

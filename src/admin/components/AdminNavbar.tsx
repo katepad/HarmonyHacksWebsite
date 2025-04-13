@@ -33,21 +33,22 @@ const AdminNavbar: React.FC = () => {
         Dashboard
       </Nav.Link>
 
+      {/* Gallery */}
       <Nav.Link 
         as={Link} 
         to="/admin/home" 
         className="text-white mb-2"
       >
-        Home
+        Gallery
       </Nav.Link>
 
-      {/* Resources */}
+      {/* Current Board */}
       <Nav.Link 
         as={Link} 
-        to="/admin/resources" 
+        to="/admin/about" 
         className="text-white mb-2"
       >
-        Resources
+        Current Board
       </Nav.Link>
       
       {/* Events */}
@@ -59,13 +60,22 @@ const AdminNavbar: React.FC = () => {
         Events
       </Nav.Link>
 
-      {/* Contact Us */}
+      {/* Resources */}
+      <Nav.Link 
+        as={Link} 
+        to="/admin/resources" 
+        className="text-white mb-2"
+      >
+        Resources
+      </Nav.Link>
+
+      {/* Member Testimonials */}
       <Nav.Link 
         as={Link} 
         to="/admin/contact" 
         className="text-white mb-2"
       >
-        Contact
+        Member Testimonials
       </Nav.Link>
 
       {/* Music */}
@@ -76,15 +86,6 @@ const AdminNavbar: React.FC = () => {
         className="text-white mb-2"
       >
         Music
-      </Nav.Link>
-
-      {/* About Us */}
-      <Nav.Link 
-        as={Link} 
-        to="/admin/about" 
-        className="text-white mb-2"
-      >
-        About Us
       </Nav.Link>
 
       <Button 

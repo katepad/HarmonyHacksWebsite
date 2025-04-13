@@ -1,66 +1,58 @@
 [
     {
-        "board_id": 1,
-        "board_firstName": "Rosemary",
-        "board_lastName": "Cardoso",
+        "id": 1,
+        "board_name": "Rosemary Cardoso",
         "board_position": "Co-President",
-        "board_description": "A lil bio #1.",
+        "board_email": "cardo062@csusm.edu",
         "board_image": "/assets/currentBoard/rosemary.png"
     },
     {
-        "board_id": 2,
-        "board_firstName": "Havanna",
-        "board_lastName": "Robbins",
+        "id": 2,
+        "board_name": "Havanna Robbins",
         "board_position": "Co-President",
-        "board_description": "A lil bio #2.",
+        "board_email": "robbi058@csusm.edu",
         "board_image": "/assets/currentBoard/robbi.png"
     },
     {
-        "board_id": 3,
-        "board_firstName": "Estrella",
-        "board_lastName": "Sanchez Garcia",
+        "id": 3,
+        "board_name": "Estrella Sanchez Garcia",
         "board_position": "Vice President",
-        "board_description": "A lil bio #3.",
+        "board_email": "sanch1068@csusm.edu",
         "board_image": "/assets/currentBoard/estrella.png"
     },
     {
-        "board_id": 4,
-        "board_firstName": "Natalie",
-        "board_lastName": "Raphael",
+        "id": 4,
+        "board_name": "Natalie Raphael",
         "board_position": "Treasurer",
-        "board_description": "A lil bio #4.",
+        "board_email": "rapha007@csusm.edu",
         "board_image": "/assets/currentBoard/natalie.png"
     },
     {
-        "board_id": 5,
-        "board_firstName": "Taylor",
-        "board_lastName": "Tucker",
+        "id": 5,
+        "board_name": "Taylor Tucker",
         "board_position": "Secretary",
-        "board_description": "A lil bio #5.",
+        "board_email": "tucke077@csusm.edu",
         "board_image": "/assets/currentBoard/taylor.png"
     },
     {
-        "board_id": 6,
-        "board_firstName": "Elisa",
-        "board_lastName": "Byfield",
+        "id": 6,
+        "board_name": "Elisa Byfield",
         "board_position": "Media Team",
-        "board_description": "A lil bio #6.",
+        "board_email": "byfie003@csusm.edu",
         "board_image": "/assets/currentBoard/elisa.png"
     },
     {
-        "board_id": 7,
-        "board_firstName": "Kate",
-        "board_lastName": "Paduganao",
+        "id": 7,
+        "board_name": "Kate Paduganao",
         "board_position": "Media Team",
-        "board_description": "A lil bio #7.",
+        "board_email": "padug001@csusm.edu",
         "board_image": "/assets/currentBoard/kate.png"
     },
     {
-        "board_id": 8,
-        "board_firstName": "Erica",
-        "board_lastName": "Rodas Montejo",
+        "id": 8,
+        "board_name": "Erica Rodas Montejo",
         "board_position": "Media Team",
-        "board_description": "A lil bio #8.",
+        "board_email": "rodas019@csusm.edu",
         "board_image": "/assets/currentBoard/erica.png"
     }
 ]
