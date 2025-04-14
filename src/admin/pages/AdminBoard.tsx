@@ -1,6 +1,7 @@
 
 import contactData from "../../data/Board.json"; 
-import '../styles/AdminBoard.css';
+import '../styles/AdminBoard.css'; 
+
 
 const AdminBoard = () => {
 
