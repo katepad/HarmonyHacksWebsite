@@ -34,7 +34,7 @@ const Form = () => {
         <input type = "text" name = "name" className = "contact-inputs" required/>
 
         <p className = "color-purple"> Testimonial: </p>
-        <textarea name="position" className="contact-inputs" required></textarea>
+        <textarea name="testimonial" className="contact-inputs" required></textarea>
 
       </div>
 

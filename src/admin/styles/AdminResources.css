@@ -56,7 +56,7 @@
 
 .admin-resource-img {
     border-radius: 10%;
-
+    object-fit: cover;
     width: 8rem;
     height: 8rem;
 }

@@ -1,8 +1,10 @@
 
 
 const AdminUpcomingEvents = () => {
-    return <h2>Upcoming Events Dashboard</h2>;
-  };
-  
-  export default AdminUpcomingEvents;
+  return (
+    <h2 className = "page-h2 color-purple">Manage Upcoming Events</h2>
+  );
+};
+
+export default AdminUpcomingEvents;
   
