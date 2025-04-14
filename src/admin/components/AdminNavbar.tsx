@@ -36,7 +36,7 @@ const AdminNavbar: React.FC = () => {
       {/* Gallery */}
       <Nav.Link 
         as={Link} 
-        to="/admin/home" 
+        to="/admin/gallery" 
         className="text-white mb-2"
       >
         Gallery
@@ -45,7 +45,7 @@ const AdminNavbar: React.FC = () => {
       {/* Current Board */}
       <Nav.Link 
         as={Link} 
-        to="/admin/about" 
+        to="/admin/board" 
         className="text-white mb-2"
       >
         Current Board
@@ -81,7 +81,7 @@ const AdminNavbar: React.FC = () => {
       {/* Member Testimonials */}
       <Nav.Link 
         as={Link} 
-        to="/admin/contact" 
+        to="/admin/testimonials" 
         className="text-white mb-2"
       >
         Member Testimonials

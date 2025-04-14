@@ -7,7 +7,7 @@ const AdminBoard = () => {
 
   return (
     <>
-      <h2>Current Board Dashboard</h2> ;
+      <h2 className = "page-h2 color-purple">Manage Board Members</h2> ;
       <Form />
       <Board />
     </>
@@ -28,6 +28,9 @@ const Form = () => {
 
       <div>
 
+        <h2 className = "color-darkpurple"> Add Board Member: </h2>
+        <br />
+
         <p className = "color-purple"> Name: </p>
         <input type = "text" name = "name" className = "contact-inputs" required/>
 
@@ -39,7 +42,7 @@ const Form = () => {
 
       </div>
 
-      <button className = "contact-submit-button" type = "submit"> Add </button>
+      <button className = "add-button" type = "submit"> Add </button>
 
     </form>
   );

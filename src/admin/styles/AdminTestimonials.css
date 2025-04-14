@@ -1,5 +1,5 @@
 
-.admin-resource-form {
+.admin-testimonial-form {
     display: flex;
     flex-direction: column;
     justify-self: center;
@@ -17,25 +17,25 @@
     width: auto;
 }
 
-.admin-resource-section h2 {
+.admin-testimonial-section h2 {
     text-align: center;
 }
 
-.admin-resource-form p {
+.admin-testimonial-form p {
     font-family: "Urbanist", sans-serif;
     color: #A23E8C;
     font-size: 1.2rem;
     font-weight: 500;
 }
 
-.admin-resource-cards-container {
+.admin-testimonial-cards-container {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
 }
 
-.admin-resource-card {
+.admin-testimonial-card {
     background-color: #F5F5F5;
     box-shadow: 0rem 0.5rem 1.5rem #DF9DCF;
     border-radius: 2rem;
@@ -54,20 +54,20 @@
     gap: 3rem;
 }
 
-.admin-resource-img {
+.admin-testimonial-img {
     border-radius: 10%;
-
+    object-fit: cover;
     width: 8rem;
     height: 8rem;
 }
 
-.admin-resource-cards-container p {
+.admin-testimonial-cards-container p {
     font-size: 1rem;
     font-family: "Urbanist", sans-serif;
     font-weight: 700;
 }
 
-.admin-resource-buttons {
+.admin-testimonial-buttons {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -75,7 +75,7 @@
     gap: 1rem;
 }
 
-.admin-resource-buttons button {
+.admin-testimonial-buttons button {
     width: 6rem;
     height: 2rem;
 
@@ -91,6 +91,6 @@
     transition: background-color 0.25s;
 }
 
-.admin-resource-buttons button:hover {
+.admin-testimonial-buttons button:hover {
     background: #A23E8C;
 }

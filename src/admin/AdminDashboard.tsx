@@ -7,7 +7,7 @@ const AdminDashboard: React.FC = () => {
 
   return (
     <Container className="p-4">
-      <h2 className="mb-4">Admin Dashboard</h2>
+      <h2 className = "page-h2 color-purple">Manage Board Members</h2> ;
       <Row className="g-4">
         <Col md={4}>
           <Card>
@@ -31,7 +31,7 @@ const AdminDashboard: React.FC = () => {
         <Col md={4}>
           <Card>
             <Card.Body>
-              <Card.Title>Events</Card.Title>
+              <Card.Title>Upcoming Events</Card.Title>
               <Card.Text>
                 Manage upcoming events and schedules.
               </Card.Text>
@@ -39,7 +39,7 @@ const AdminDashboard: React.FC = () => {
                 variant="primary" 
                 className="w-100"
                 style={{ backgroundColor: '#A52B93', borderColor: '#A52B93' }}
-                onClick={() => navigate('/admin/events')}
+                onClick={() => navigate('/admin/upcomingEvents')}
               >
                 Manage Events
               </Button>
@@ -50,15 +50,15 @@ const AdminDashboard: React.FC = () => {
         <Col md={4}>
           <Card>
             <Card.Body>
-              <Card.Title>Content</Card.Title>
+              <Card.Title>Board Members</Card.Title>
               <Card.Text>
-                Manage website pages and content.
+                Manage the current board members.
               </Card.Text>
               <Button 
                 variant="primary" 
                 className="w-100"
                 style={{ backgroundColor: '#A52B93', borderColor: '#A52B93' }}
-                onClick={() => navigate('/admin/about')}
+                onClick={() => navigate('/admin/board')}
               >
                 Manage Content
               </Button>

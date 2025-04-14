@@ -5,7 +5,7 @@ import '../styles/AdminResources.css';
 const AdminResources = () => {
   return (
     <>
-      <h2>Resources Dashboard</h2> ;
+      <h2 className = "page-h2 color-purple">Manage Resources</h2> ;
       <Form />
       <Resources />
     </>
@@ -27,6 +27,9 @@ const Form = () => {
 
       <div>
 
+        <h2 className = "color-darkpurple"> Add Resource: </h2>
+        <br />
+
         <p className = "color-purple"> Title: </p>
         <input type = "text" name = "title" className = "contact-inputs" required/>
 
@@ -38,7 +41,7 @@ const Form = () => {
 
       </div>
 
-      <button className = "contact-submit-button" type = "submit"> Add </button>
+      <button className = "add-button" type = "submit"> Add </button>
 
     </form>
   );

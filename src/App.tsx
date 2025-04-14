@@ -9,9 +9,9 @@ import Resources from './pages/Resources';
 import Events from './pages/Events';
 import LoginPage from './admin/adminLogin';
 import AdminDashboard from './admin/AdminDashboard';
-import AdminHome from './admin/pages/AdminGallery';
-import AdminContact from './admin/pages/AdminTestimonials';
-import AdminAbout from './admin/pages/AdminBoard';
+import AdminGallery from './admin/pages/AdminGallery';
+import AdminTestimonials from './admin/pages/AdminTestimonials';
+import AdminBoard from './admin/pages/AdminBoard';
 import AdminResources from './admin/pages/AdminResources';
 import AdminRecentEvents from './admin/pages/AdminRecentEvents';
 import AdminUpcomingEvents from './admin/pages/AdminUpcomingEvents';
@@ -34,13 +34,13 @@ const App: React.FC = () => {
               <div style={{ marginLeft: '250px', width: '100%', padding: '20px' }}>
                 <Routes>
                   <Route path="/" element={<AdminDashboard />} />
-                  <Route path="/home" element={<AdminHome />} />
+                  <Route path="/gallery" element={<AdminGallery />} />
                   <Route path="/resources" element={<AdminResources />} />
                   <Route path="/recentEvents" element={<AdminRecentEvents />} />
                   <Route path="/upcomingEvents" element={<AdminUpcomingEvents />} />
-                  <Route path="/contact" element={<AdminContact />} />
+                  <Route path="/testimonials" element={<AdminTestimonials />} />
                   <Route path="/music" element={<AdminMusic />} />
-                  <Route path="/about" element={<AdminAbout />} />
+                  <Route path="/board" element={<AdminBoard />} />
                 </Routes>
               </div>
             </div>

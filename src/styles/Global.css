@@ -217,3 +217,28 @@ body {
   background-color: #633160; /* Bootstrap secondary equivalent */
   padding: 0.75rem;
 }
+
+/* ======================================== ADMIN DASHBOARD STUFF ========================================================== */
+
+.add-button {
+  padding: 0.5rem 1.5rem;
+  margin-top: 2rem;
+  margin-left: 9rem;
+  cursor: pointer;
+
+  width: 8rem;
+
+  color: #F5F5F5;
+  background: #D02F9E;
+  border: none;
+  border-radius: 0.75rem;
+
+  font-family: "Urbanist", sans-serif;
+  font-weight: bold;
+  font-size: 1.25rem;
+  transition: background-color 0.25s;
+}
+
+.add-button:hover {
+  background: #A23E8C;
+}
