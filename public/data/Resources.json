@@ -1,19 +1,19 @@
 [
     {
       "id": 1,
-      "resource_image": "https://static.wikia.nocookie.net/peppapig/images/c/c8/Rebecca_Rabbit.png",
+      "resource_image": "https://picsum.photos/300/200",
       "resource_title": "Resource 1",
       "resource_description": "Description for resource 1.",
       "resource_link": "https://example.com/resource1",
-      "resource_tag": "temp"
+      "resource_tag": "New"
     },
     {
       "id": 2,
-      "resource_image": "https://static.wikia.nocookie.net/peppapig/images/c/c8/Rebecca_Rabbit.png",
+      "resource_image": "https://picsum.photos/300/201",
       "resource_title": "Resource 2",
       "resource_description": "Description for resource 2.",
       "resource_link": "https://example.com/resource2",
-      "resource_tag": "temp"
+      "resource_tag": "Trending"
     },
     {
       "id": 3,
