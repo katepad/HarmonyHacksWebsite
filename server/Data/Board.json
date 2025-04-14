@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "board_name": "Rosemary Cardoso",
+        "board_position": "Co-President",
+        "board_email": "cardo062@csusm.edu",
+        "board_image": "/assets/currentBoard/rosemary.png"
+    },
+    {
+        "id": 2,
+        "board_name": "Havanna Robbins",
+        "board_position": "Co-President",
+        "board_email": "robbi058@csusm.edu",
+        "board_image": "/assets/currentBoard/robbi.png"
+    },
+    {
+        "id": 3,
+        "board_name": "Estrella Sanchez Garcia",
+        "board_position": "Vice President",
+        "board_email": "sanch1068@csusm.edu",
+        "board_image": "/assets/currentBoard/estrella.png"
+    },
+    {
+        "id": 4,
+        "board_name": "Natalie Raphael",
+        "board_position": "Treasurer",
+        "board_email": "rapha007@csusm.edu",
+        "board_image": "/assets/currentBoard/natalie.png"
+    },
+    {
+        "id": 5,
+        "board_name": "Taylor Tucker",
+        "board_position": "Secretary",
+        "board_email": "tucke077@csusm.edu",
+        "board_image": "/assets/currentBoard/taylor.png"
+    },
+    {
+        "id": 6,
+        "board_name": "Elisa Byfield",
+        "board_position": "Media Team",
+        "board_email": "byfie003@csusm.edu",
+        "board_image": "/assets/currentBoard/elisa.png"
+    },
+    {
+        "id": 7,
+        "board_name": "Kate Paduganao",
+        "board_position": "Media Team",
+        "board_email": "padug001@csusm.edu",
+        "board_image": "/assets/currentBoard/kate.png"
+    },
+    {
+        "id": 8,
+        "board_name": "Erica Rodas Montejo",
+        "board_position": "Media Team",
+        "board_email": "rodas019@csusm.edu",
+        "board_image": "/assets/currentBoard/erica.png"
+    }
+]
