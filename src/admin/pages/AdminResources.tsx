@@ -19,6 +19,7 @@ type Resources = {
   "resource_title": string;
   "resource_description": string;
   "resource_link": string;
+  "resource_tag": string;
 };
 
 const Form = () => {
@@ -38,6 +39,13 @@ const Form = () => {
 
         <p className = "color-purple"> Link: </p>
         <input type = "text" name = "link" className = "contact-inputs" required/>
+
+        <p className = "contact-p color-purple"> Tag: </p>
+          <select name = "tag" className = "contact-inputs">
+            <option value = "Tag 1"> Tag 1 </option>
+            <option value = "Tag 2"> Tag 2 </option>
+            <option value = "Tag 3"> Tag 3 </option>
+          </select>
 
       </div>
 
@@ -75,9 +83,10 @@ const Resources = () => {
               <img className="admin-resource-img" src={resource.resource_image || "/assets/temp.png"} alt={`${resource.resource_title}`} />
             </div>
             <div>
-              <p className="color-darkpurple">Title: {resource.resource_title}</p>
-              <p className="color-pink">Decription: {resource.resource_description}</p>
-              <p className="color-darkpurple"> Link: <a href = {resource.resource_link} target="_blank"> <span> {resource.resource_link} </span> </a> </p>
+              <p className="color-pink"> Title: {resource.resource_title}</p>
+              <p className="color-darkpurple"> Decription: {resource.resource_description}</p>
+              <p className="color-pink"> Link: <a href = {resource.resource_link} target="_blank"> <span> {resource.resource_link} </span> </a> </p>
+              <p className="color-darkpurple"> Tag: {resource.resource_tag} </p>
             </div>
             <div className = "admin-board-buttons">
               <button className = "admin-board-delete-button" type = "submit"> Delete </button>
