@@ -3,12 +3,10 @@ import resourcesData from "../data/resources.json";
 import "../styles/Resources.css"; 
 
 interface CardProps {
-  resource_id?: number,
+  id?: number,
   resource_image?: string;
-  resource_imgAlt?: string;
   resource_title?: string;
   resource_description?: string;
-  buttonText?: string;
   resource_link?: string;
   tag?: string;
 }
@@ -49,14 +47,14 @@ const Resources: React.FC = () => {
         ) : (
           filteredResources.map((resource, index) => (
             <div key={index} className="card">
-              {resource.resource_image && resource.resource_imgAlt && (
-                <img src={resource.resource_image} alt={resource.resource_imgAlt} className="card-img" />
+              {resource.resource_image && (
+                <img src={resource.resource_image} alt="Resource image here." className="card-img" />
               )}
               {resource.resource_title && <h1 className="card-title">{resource.resource_title}</h1>}
               {resource.resource_description && <p className="card-description">{resource.resource_description}</p>}
-              {resource.buttonText && resource.resource_link && (
+              {resource.resource_link && (
                 <a href={resource.resource_link} className="card-btn">
-                  {resource.buttonText}
+                  Learn More
                 </a>
               )}
             </div>

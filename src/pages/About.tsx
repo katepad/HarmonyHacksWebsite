@@ -6,7 +6,7 @@ import '../styles/About.css';
 type BoardMember = {
   "id": number;
   "board_name": string;
-  "board_position": string,
+  "board_position": string;
   "board_email": string;
   "board_image": string;
 };

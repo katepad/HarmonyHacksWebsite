@@ -1,7 +1,6 @@
 
 import contactData from "../../data/Board.json"; 
-import '../styles/AdminBoard.css'; 
-import '../../server/controller/board'
+import '../styles/AdminBoard.css';
 
 const AdminBoard = () => {
 
@@ -17,7 +16,7 @@ const AdminBoard = () => {
 type BoardMember = {
   "id": number;
   "board_name": string;
-  "board_position": string,
+  "board_position": string;
   "board_email": string;
   "board_image": string;
 };
