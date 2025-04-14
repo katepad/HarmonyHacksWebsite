@@ -1,5 +1,5 @@
 
-import contactData from "../../data/Board.json"; 
+import { useState, useEffect } from "react";
 import '../styles/AdminBoard.css'; 
 
 
@@ -46,13 +46,27 @@ const Form = () => {
 };
 
 const Board = () => {
+
+  const [board, setBoard] = useState<BoardMember[]>([]);
+    
+  useEffect(() => {
+    fetch("/data/Board.json")
+      .then((res) => res.json())
+      .then((data) => {
+        console.log("Loaded Board JSON:", data);
+        setBoard(data);
+      })
+      .catch((err) => console.error("Failed to load Board JSON:", err));
+  }, []);
+
   return (
+    
     <section className="admin-board-section">
 
       <h2 className="page-h2 color-purple">Current Board</h2>
 
       <div className="admin-board-cards-container">
-        {contactData.map((member: BoardMember) => (
+        {board.map((member: BoardMember) => (
           <div key={member.id} className="admin-board-card">
             <div>
               <img className="admin-board-img" src={member.board_image || "/assets/temp.png"} alt={`${member.board_name}`} />

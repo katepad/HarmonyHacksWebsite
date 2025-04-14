@@ -13,7 +13,8 @@ import AdminHome from './admin/pages/AdminGallery';
 import AdminContact from './admin/pages/AdminTestimonials';
 import AdminAbout from './admin/pages/AdminBoard';
 import AdminResources from './admin/pages/AdminResources';
-import AdminEvents from './admin/pages/AdminEvents';
+import AdminRecentEvents from './admin/pages/AdminRecentEvents';
+import AdminUpcomingEvents from './admin/pages/AdminUpcomingEvents';
 import AdminMusic from './admin/pages/AdminMusic';
 import ProtectedRoute from './admin/components/ProtectedRoute';
 import AdminNavbar from './admin/components/AdminNavbar';
@@ -35,7 +36,8 @@ const App: React.FC = () => {
                   <Route path="/" element={<AdminDashboard />} />
                   <Route path="/home" element={<AdminHome />} />
                   <Route path="/resources" element={<AdminResources />} />
-                  <Route path="/events" element={<AdminEvents />} />
+                  <Route path="/recentEvents" element={<AdminRecentEvents />} />
+                  <Route path="/upcomingEvents" element={<AdminUpcomingEvents />} />
                   <Route path="/contact" element={<AdminContact />} />
                   <Route path="/music" element={<AdminMusic />} />
                   <Route path="/about" element={<AdminAbout />} />

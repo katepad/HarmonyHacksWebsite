@@ -1,5 +1,5 @@
 
-import contactData from "../data/Board.json"; 
+import { useState, useEffect } from "react";
 import '../styles/Global.css'; 
 import '../styles/About.css';
 
@@ -56,19 +56,38 @@ const Founders = () => {
 };
 
 const Board = () => {
+  const [board, setBoard] = useState<BoardMember[]>([]);
+
+  useEffect(() => {
+    fetch("/data/Board.json")
+      .then((res) => res.json())
+      .then((data) => {
+        console.log("Loaded Board JSON:", data);
+        setBoard(data);
+      })
+      .catch((err) => console.error("Failed to load Board JSON:", err));
+  }, []);
+
   return (
     <section className="about-board-section">
       <h2 className="page-h2 color-purple">Meet the Current Board</h2>
-
       <div className="about-board-cards-container">
-        {contactData.map((member: BoardMember) => (
-          <div key={member.id} className="about-board-card">
-            <img className="about-board-card-img" src={member.board_image || "/assets/temp.png"} alt={`${member.board_name}`} />
-            <h3 className="about-h3 color-darkpurple">{member.board_name}</h3>
-            <h3 className="about-h3 color-darkpurple">{member.board_position}</h3>
-            <p className="page-p color-pink">{member.board_email}</p>
-          </div>
-        ))}
+        {board.length === 0 ? (
+          <p>No board members found.</p>
+        ) : (
+          board.map((member) => (
+            <div key={member.id} className="about-board-card">
+              <img
+                className="about-board-card-img"
+                src={member.board_image || "/assets/temp.png"}
+                alt={member.board_name}
+              />
+              <h3 className="about-h3 color-darkpurple">{member.board_name}</h3>
+              <h3 className="about-h3 color-darkpurple">{member.board_position}</h3>
+              <p className="page-p color-pink">{member.board_email}</p>
+            </div>
+          ))
+        )}
       </div>
     </section>
   );

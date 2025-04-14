@@ -51,13 +51,22 @@ const AdminNavbar: React.FC = () => {
         Current Board
       </Nav.Link>
       
+      {/* Recent Events */}
+      <Nav.Link 
+        as={Link} 
+        to="/admin/recentEvents" 
+        className="text-white mb-2"
+      >
+        Recent Events
+      </Nav.Link>
+
       {/* Events */}
       <Nav.Link 
         as={Link} 
-        to="/admin/events" 
+        to="/admin/Upcomingevents" 
         className="text-white mb-2"
       >
-        Events
+        Upcoming Events
       </Nav.Link>
 
       {/* Resources */}
