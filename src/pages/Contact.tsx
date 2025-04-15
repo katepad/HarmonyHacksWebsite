@@ -1,4 +1,3 @@
-
 import '../styles/Global.css'; 
 import '../styles/Contact.css';
 import Testimonial from "../components/Testimonial.tsx";
@@ -66,4 +65,3 @@ const Form = () => {
 };
 
 export default Contact;
-  
