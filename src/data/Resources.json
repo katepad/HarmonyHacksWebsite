@@ -1,83 +1,82 @@
 [
-    {
-      "id": 1,
-      "resource_image": "https://picsum.photos/300/200",
-      "resource_title": "Resource 1",
-      "resource_description": "Description for resource 1.",
-      "resource_link": "https://example.com/resource1",
-      "resource_tag": "New"
-    },
-    {
-      "id": 2,
-      "resource_image": "https://picsum.photos/300/201",
-      "resource_title": "Resource 2",
-      "resource_description": "Description for resource 2.",
-      "resource_link": "https://example.com/resource2",
-      "resource_tag": "Trending"
-    },
-    {
-      "id": 3,
-      "resource_image": "https://static.wikia.nocookie.net/peppapig/images/c/c8/Rebecca_Rabbit.png",
-      "resource_title": "Resource 3",
-      "resource_description": "Description for resource 3.",
-      "resource_link": "https://example.com/resource3",
-      "resource_tag": "temp"
-    },
-    {
-      "id": 4,
-      "resource_image": "https://static.wikia.nocookie.net/peppapig/images/c/c8/Rebecca_Rabbit.png",
-      "resource_title": "Resource 4",
-      "resource_description": "Description for resource 4.",
-      "resource_link": "https://example.com/resource4",
-      "resource_tag": "temp"
-    },
-    {
-      "id": 5,
-      "resource_image": "https://static.wikia.nocookie.net/peppapig/images/c/c8/Rebecca_Rabbit.png",
-      "resource_title": "Resource 5",
-      "resource_description": "Description for resource 5.",
-      "resource_link": "https://example.com/resource5",
-      "resource_tag": "temp"
-    },
-    {
-      "id": 6,
-      "resource_image": "https://static.wikia.nocookie.net/peppapig/images/c/c8/Rebecca_Rabbit.png",
-      "resource_title": "Resource 6",
-      "resource_description": "Description for resource 6.",
-      "resource_link": "https://example.com/resource6",
-      "resource_tag": "temp"
-    },
-    {
-      "id": 7,
-      "resource_image": "https://static.wikia.nocookie.net/peppapig/images/c/c8/Rebecca_Rabbit.png",
-      "resource_title": "Resource 7",
-      "resource_description": "Description for resource 7.",
-      "resource_link": "https://example.com/resource6",
-      "resource_tag": "temp"
-    },
-    {
-      "id": 8,
-      "resource_image": "https://static.wikia.nocookie.net/peppapig/images/c/c8/Rebecca_Rabbit.png",
-      "resource_title": "Resource 8",
-      "resource_description": "Description for resource 8.",
-      "resource_link": "https://example.com/resource6",
-      "resource_tag": "temp"
-    },
-    {
-      "id": 9,
-      "resource_image": "https://static.wikia.nocookie.net/peppapig/images/c/c8/Rebecca_Rabbit.png",
-      "resource_title": "Resource 9",
-      "resource_description": "Description for resource 9.",
-      "resource_link": "https://example.com/resource6",
-      "resource_tag": "temp"
-    },
-    {
-      "id": 10,
-      "resource_image": "https://static.wikia.nocookie.net/peppapig/images/c/c8/Rebecca_Rabbit.png",
-      "resource_title": "Resource 10",
-      "resource_description": "Description for resource 10.",
-      "resource_link": "https://example.com/resource6",
-      "resource_tag": "temp"
-    }
+  {
+    "id": 1,
+    "resource_image": "https://cdn.shopify.com/s/files/1/0899/1470/files/banner-family-hub-daddy-pig.png",
+    "resource_title": "Resource 1",
+    "resource_description": "Description for resource 1.",
+    "resource_link": "https://example.com/resource1",
+    "resource_tag": "New"
+  },
+  {
+    "id": 2,
+    "resource_image": "https://picsum.photos/300/201",
+    "resource_title": "Resource 2",
+    "resource_description": "Description for resource 2.",
+    "resource_link": "https://example.com/resource2",
+    "resource_tag": "Trending"
+  },
+  {
+    "id": 3,
+    "resource_image": "https://static.wikia.nocookie.net/peppapig/images/c/c8/Rebecca_Rabbit.png",
+    "resource_title": "Resource 3",
+    "resource_description": "Description for resource 3.",
+    "resource_link": "https://example.com/resource3",
+    "resource_tag": "temp"
+  },
+  {
+    "id": 4,
+    "resource_image": "https://static.wikia.nocookie.net/peppapig/images/c/c8/Rebecca_Rabbit.png",
+    "resource_title": "Resource 4",
+    "resource_description": "Description for resource 4.",
+    "resource_link": "https://example.com/resource4",
+    "resource_tag": "temp"
+  },
+  {
+    "id": 5,
+    "resource_image": "https://static.wikia.nocookie.net/peppapig/images/c/c8/Rebecca_Rabbit.png",
+    "resource_title": "Resource 5",
+    "resource_description": "Description for resource 5.",
+    "resource_link": "https://example.com/resource5",
+    "resource_tag": "temp"
+  },
+  {
+    "id": 6,
+    "resource_image": "https://static.wikia.nocookie.net/peppapig/images/c/c8/Rebecca_Rabbit.png",
+    "resource_title": "Resource 6",
+    "resource_description": "Description for resource 6.",
+    "resource_link": "https://example.com/resource6",
+    "resource_tag": "temp"
+  },
+  {
+    "id": 7,
+    "resource_image": "https://static.wikia.nocookie.net/peppapig/images/c/c8/Rebecca_Rabbit.png",
+    "resource_title": "Resource 7",
+    "resource_description": "Description for resource 7.",
+    "resource_link": "https://example.com/resource6",
+    "resource_tag": "temp"
+  },
+  {
+    "id": 8,
+    "resource_image": "https://static.wikia.nocookie.net/peppapig/images/c/c8/Rebecca_Rabbit.png",
+    "resource_title": "Resource 8",
+    "resource_description": "Description for resource 8.",
+    "resource_link": "https://example.com/resource6",
+    "resource_tag": "temp"
+  },
+  {
+    "id": 9,
+    "resource_image": "https://static.wikia.nocookie.net/peppapig/images/c/c8/Rebecca_Rabbit.png",
+    "resource_title": "Resource 9",
+    "resource_description": "Description for resource 9.",
+    "resource_link": "https://example.com/resource6",
+    "resource_tag": "temp"
+  },
+  {
+    "id": 10,
+    "resource_image": "https://static.wikia.nocookie.net/peppapig/images/c/c8/Rebecca_Rabbit.png",
+    "resource_title": "Resource 10",
+    "resource_description": "Description for resource 10.",
+    "resource_link": "https://example.com/resource6",
+    "resource_tag": "temp"
+  }
 ]
-  
