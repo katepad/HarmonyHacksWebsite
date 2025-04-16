@@ -46,6 +46,8 @@
     transform: rotate(-45deg);
     cursor: pointer;
     transition: background-color 0.3s;
+    padding: 10px;
+    margin-right: 20px;
 }
   
 .heart::before,

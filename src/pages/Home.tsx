@@ -70,10 +70,10 @@ const ClubOverview = () => {
         <div className="club-overview-content-div">
           <h2 className="page-h2">Club Overview</h2>
             <p className="page-p color-darkpurple">
-              In the heart of London, in a cozy little town called Sanrioville, there lived a bright and curious kitten named Hello Kitty. From a young age, she was fascinated by puzzles, patterns, and how things worked. While her friends enjoyed baking and playing outside, Kitty spent hours tinkering with her toy robot, trying to make it walk on its own.
+              Harmony Hacks is a student led organization at California State University San Marcos.We are dedicated to empowering women in computing and fostering a supportive community for those that are interested in technology. We host a variety of events throughout the semester, including hackathons,social bonding activities, tabling for outreach, and technical workshops to come. Our club meets bi-weekly, usually in the ViaSat building and is open to all students.
             </p>
             <p className="page-p color-darkpurple">
-              One day, her school announced a coding competition where students had to create a program that solved a real-world problem. Kitty was thrilled! She had never written a single line of code before, but that didn’t stop her. Determined, she rushed home and searched for beginner coding tutorials on her computer. 
+              Members can expect to gain leadership experience, engage in peer mentoring, and collaboration between different clubs to create small scale projects. What sets Harmony hacks apart is our unique theme of integration of music and coding and our commitment to mentoring high school students to bridge the gap between education and industry at every level.
             </p>
         </div>
       <div>
@@ -92,8 +92,7 @@ const MissionStatement = () => {
         <div className="mission-statement-content-div">
           <div>
             <h2 className = "page-h2 mission-statement-h2 "> Mission Statement </h2>
-            <p className = "page-p mission-statement-p"> Harmony Hacks builds on the successes and lessons learned from Women’s Hackathon @ CSUSM, taking into consideration the unique schedule challenges faced by busy high schoolers and their need for support due to relative lack of experience. </p>
-            <p className = "page-p mission-statement-p"> We aim to create events and workshops that foster a supportive community for women in computing, providing a space for those passionate about technology to connect, collaborate, and grow alongside like-minded peers.The workshops will focus on honing participants' skills while challenging common stereotypes about who belongs in the computing field. We aim to emphasize that perfection isn’t the goal, and it's okay to feel like you don’t always fit the mold, those differences can be used to empower and inspire others. By sharing our personal experience being in the field we hope to resonate with all. Although our primary mission is to create an inclusive space for women in computing, we warmly welcome anyone who shares our values and supports our goals to join and grow with us. As we move forward with our vision , we hope to recruit various participants to mentor high school girls to build their coding skills and compete in a hackathon.</p>
+            <p className = "page-p mission-statement-p"> Harmony Hacks is dedicated to fostering an inclusive and supportive community for women in computing—one where creativity, growth, and collaboration thrive. Through club-led events and activities, we empower women to develop their skills, challenge stereotypes, and share their unique voices. We emphasize that perfection isn’t the goal—confidence, curiosity, and connection are. While our mission centers on uplifting women in tech, we warmly welcome anyone who shares our values to join us in shaping a more diverse and inspiring future in computing.. </p>
           </div>
         </div>
       </div>
