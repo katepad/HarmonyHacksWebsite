@@ -1,14 +1,12 @@
-
 import contactData from "../data/Board.json"; 
 import '../styles/Global.css'; 
 import '../styles/About.css';
 
 type BoardMember = {
-  "board_id": number;
-  "board_firstName": string;
-  "board_lastName": string;
-  "board_position": string,
-  "board_description": string;
+  "id": number;
+  "board_name": string;
+  "board_position": string;
+  "board_email": string;
   "board_image": string;
 };
 
@@ -59,15 +57,15 @@ const Founders = () => {
 const Board = () => {
   return (
     <section className="about-board-section">
-      <h2 className="page-h2 color-purple">Meet the '24-'25 Board</h2>
+      <h2 className="page-h2 color-purple">Meet the Current Board</h2>
 
       <div className="about-board-cards-container">
         {contactData.map((member: BoardMember) => (
-          <div key={member.board_id} className="about-board-card">
-            <img className="about-board-card-img" src={member.board_image || "/assets/temp.png"} alt={`${member.board_firstName} ${member.board_lastName}`} />
-            <h3 className="about-h3 color-darkpurple">{member.board_firstName} {member.board_lastName}</h3>
+          <div key={member.id} className="about-board-card">
+            <img className="about-board-card-img" src={member.board_image || "/assets/temp.png"} alt={`${member.board_name}`} />
+            <h3 className="about-h3 color-darkpurple">{member.board_name}</h3>
             <h3 className="about-h3 color-darkpurple">{member.board_position}</h3>
-            <p className="page-p color-pink">{member.board_description}</p>
+            <p className="page-p color-pink">{member.board_email}</p>
           </div>
         ))}
       </div>

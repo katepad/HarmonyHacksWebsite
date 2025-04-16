@@ -18,12 +18,12 @@ const Testimonial = () => {
   };
 
   const handlePrev = () => {
-    setCurrentIndex((prevIndex) => 
+    setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? contactData.length - 1 : prevIndex - 1
     );
   };
 
-  const member = contactData[currentIndex];
+  const member: Testimonial = contactData[currentIndex];
 
   return (
     <section className="contact-testimonial-section section-purple">
@@ -34,14 +34,18 @@ const Testimonial = () => {
       <div className="contact-testimonial-content-div">
         <div className="contact-testimonial-text-div">
           <h2 className="contact-h2 color-green"> Member Testimonials </h2>
-          <h3 className="page-h3 color-white">{member.testimonial_firstName} {member.testimonial_lastName}</h3>
-          <p className="contact-testimonial-p color-white">{member.testimonial_description}</p>
+          <h3 className="page-h3 color-white">
+            {member.testimonial_firstName} {member.testimonial_lastName}
+          </h3>
+          <p className="contact-testimonial-p color-white">
+            {member.testimonial_description}
+          </p>
         </div>
         <div className="contact-testimonial-div">
-          <img 
-            className="contact-testimonial-img" 
-            src={member.testimonial_image || "/assets/temp.png"} 
-            alt={`${member.testimonial_firstName} ${member.testimonial_lastName}`} 
+          <img
+            className="contact-testimonial-img"
+            src={member.testimonial_image || "/assets/temp.png"}
+            alt={`${member.testimonial_firstName} ${member.testimonial_lastName}`}
           />
         </div>
       </div>

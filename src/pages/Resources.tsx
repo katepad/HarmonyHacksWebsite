@@ -1,22 +1,20 @@
 import React, { useState } from "react";
-import resourcesData from "../data/resources.json"; 
 import "../styles/Resources.css"; 
+import resourceData from "../Data/Resources.json"; // ✅ Assumes you're using resolveJsonModule
 
-interface CardProps {
-  resource_id?: number,
-  resource_image?: string;
-  resource_imgAlt?: string;
-  resource_title?: string;
-  resource_description?: string;
-  buttonText?: string;
-  resource_link?: string;
-  tag?: string;
+interface Resource {
+  id: number;
+  resource_image: string;
+  resource_title: string;
+  resource_description: string;
+  resource_link: string;
+  resource_tag: string;
 }
 
 const Filters: React.FC<{ setFilter: (filter: string) => void }> = ({ setFilter }) => {
   return (
     <div className="filter-search">
-      {["All", "New", "Trending", "Coming Soon", "Seasonal"].map((tag) => (
+      {["All", "New", "Trending", "Coming Soon", "Seasonal", "temp"].map((tag) => (
         <button
           key={tag}
           className="tag"
@@ -32,33 +30,39 @@ const Filters: React.FC<{ setFilter: (filter: string) => void }> = ({ setFilter 
 
 const Resources: React.FC = () => {
   const [filter, setFilter] = useState<string>("All");
-  const [resources] = useState<CardProps[]>(resourcesData);
+  const [resources] = useState<Resource[]>(resourceData); // ✅ Types match JSON
 
-  // Filter logic
-  const filteredResources = resources.filter((resource) => 
-    filter === "All" || resource.tag === filter
+  const filteredResources = resources.filter(
+    (resource) => filter === "All" || resource.resource_tag === filter
   );
 
   return (
     <div>
-      <h1 className="page-h1 color-purple" style={{ marginLeft: "5rem"}}> Resources </h1>
+      <h1 className="page-h1 color-purple" style={{ marginLeft: "5rem" }}>
+        Resources
+      </h1>
       <Filters setFilter={setFilter} />
       <div className="card-container">
         {filteredResources.length === 0 ? (
           <p>No resources found.</p>
         ) : (
-          filteredResources.map((resource, index) => (
-            <div key={index} className="card">
-              {resource.resource_image && resource.resource_imgAlt && (
-                <img src={resource.resource_image} alt={resource.resource_imgAlt} className="card-img" />
-              )}
-              {resource.resource_title && <h1 className="card-title">{resource.resource_title}</h1>}
-              {resource.resource_description && <p className="card-description">{resource.resource_description}</p>}
-              {resource.buttonText && resource.resource_link && (
-                <a href={resource.resource_link} className="card-btn">
-                  {resource.buttonText}
-                </a>
-              )}
+          filteredResources.map((resource) => (
+            <div key={resource.id} className="card">
+              <img
+                src={resource.resource_image}
+                alt={resource.resource_title}
+                className="card-img"
+              />
+              <h1 className="card-title">{resource.resource_title}</h1>
+              <p className="card-description">{resource.resource_description}</p>
+              <a
+                href={resource.resource_link}
+                className="card-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Learn More
+              </a>
             </div>
           ))
         )}
