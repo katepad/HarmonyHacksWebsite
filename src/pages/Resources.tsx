@@ -14,7 +14,7 @@ interface Resource {
 const Filters: React.FC<{ setFilter: (filter: string) => void }> = ({ setFilter }) => {
   return (
     <div className="filter-search">
-      {["All", "New", "Trending", "Coming Soon", "Seasonal", "temp"].map((tag) => (
+      {["All", "Harmony Hacks", "Student Resources", "Financial Aid", "Academic", "Food", "Career"].map((tag) => (
         <button
           key={tag}
           className="tag"
@@ -30,7 +30,7 @@ const Filters: React.FC<{ setFilter: (filter: string) => void }> = ({ setFilter 
 
 const Resources: React.FC = () => {
   const [filter, setFilter] = useState<string>("All");
-  const [resources] = useState<Resource[]>(resourceData); // ✅ Types match JSON
+  const [resources] = useState<Resource[]>(resourceData); 
 
   const filteredResources = resources.filter(
     (resource) => filter === "All" || resource.resource_tag === filter
