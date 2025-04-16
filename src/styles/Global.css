@@ -133,6 +133,7 @@ body {
 .page-p {
   font-family: "Work Sans", sans-serif;
   font-size: 1.15rem;
+  text-decoration: none;
 }
 
 /* use this to make text h1 green */
@@ -241,4 +242,9 @@ body {
 
 .add-button:hover {
   background: #A23E8C;
+}
+
+.bold {
+  font-weight: bold;
+  text-decoration: none;
 }

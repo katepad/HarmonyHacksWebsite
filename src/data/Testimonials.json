@@ -1,10 +1,10 @@
 [
     {
       "testimonial_id": 1,
-      "testimonial_firstName": "Jane",
-      "testimonial_lastName": "Doe",
-      "testimonial_description": "I loved harmony hacks so much! I met so many other women who were passionate about computer science!",
-      "testimonial_image": "https://images.squarespace-cdn.com/content/v1/560a0ff7e4b0a427e3b4a476/1660091590876-67A1F3DZ60BBY2BQ3734/csusm-graduation-portrait-sanmarcos-southern-california-photographer-2.jpg"
+      "testimonial_firstName": "Kate Paduganao",
+      "testimonial_lastName": "- Former Co-Founder and Media Team Member",
+      "testimonial_description": "This club helped me find and connect with like-minded women who shared my passion of empowering young women to be inspired, prepared, and confident to take on a computer science related field as a future career. I appreciated seeing how our events helped create a safe space for women to feel comfortable in such a male-dominated field! I'm so excited for the future of our club and the lasting impact we aim to create.",
+      "testimonial_image": "/assets/currentBoard/kate.png"
     },
     {
       "testimonial_id": 2,
