@@ -10,6 +10,7 @@ import Events from './pages/Events';
 import ScrollToTop from './components/ScrollToTop';
 import Music from './components/Music';
 import { MusicProvider } from './context/MusicContext';
+import EarlyMilestones from './pages/EarlyMilestones';
 
 const App: React.FC = () => {
   return (
