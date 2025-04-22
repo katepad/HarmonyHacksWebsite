@@ -8,17 +8,19 @@ import About from './pages/About';
 import Resources from './pages/Resources';
 import Events from './pages/Events';
 import ScrollToTop from './components/ScrollToTop';
-import EarlyMilestones from './pages/EarlyMilestones';
+import Music from './components/Music';
+import { MusicProvider } from './context/MusicContext';
 
 const App: React.FC = () => {
   return (
     <Router>
       <ScrollToTop />
+      <MusicProvider>
+        <Music />
       <Routes>
-
         {/* Public routes */}
         <Route
-          path="/*"
+          path="/"
           element={
             <>
               <NavbarBootstrap />
@@ -39,6 +41,7 @@ const App: React.FC = () => {
           }
         />
       </Routes>
+      </MusicProvider>
     </Router>
   );
 };

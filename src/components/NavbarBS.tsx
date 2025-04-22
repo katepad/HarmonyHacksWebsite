@@ -30,7 +30,7 @@ export const NavbarBootstrap = () => {
                 <Navbar.Offcanvas
                     id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel"
-                    placement="end" // 👈 Slide in from the right
+                    placement="end" //Slide in from the right
                     className="custom-offcanvas"
                 >
                     <Offcanvas.Header closeButton>
