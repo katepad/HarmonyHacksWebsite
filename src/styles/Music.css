@@ -4,13 +4,12 @@
   left: 1rem;
   background: white;
   border-radius: 10px;
-  padding: 1rem;
+  padding: 1.5rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   font-family: "Work Sans", sans-serif;
   z-index: 999;
-  width: 250px;
+  width: 18rem;
 }
-
 
 .music-title {
   font-family: 'Bungee', sans-serif;
@@ -19,14 +18,34 @@
   text-align: center;
   margin-bottom: 0.5rem;
   font-size: 0.9rem;
+  color:#633160
 }
 
+.music-artist {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color:#A23E8C
+}
+
+.music-artist {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color:#A23E8C
+}
 
 .controls {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 0.5rem;
+  gap: 2.5rem;
 }
 
 
@@ -35,77 +54,105 @@
 }
 
 
-button {
-  background-color: #DF9DCF;
-  border: none;
-  border-radius: 6px;
-  padding: 6px 10px;
+.music-arrow-button-left, .music-arrow-button-right {  
   cursor: pointer;
+  color: #DF9DCF;
+  background: none;
+  border: none;
+  
+  font-family: "Urbanist", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  
+  transition: all 0.3s ease-in-out;
 }
 
-
-button:hover {
-  background-color: #633160;
+.music-arrow-button-left {
+  rotate: 90deg;
 }
 
+.music-arrow-button-right {
+  rotate: -90deg;
+}
+
+.music-arrow-button-left:hover, .music-arrow-button-right:hover {
+  color: #633160;
+}
+
+.play-pause-button {
+  cursor: pointer;
+  color: #DF9DCF;
+  background: none;
+  border: none;
+  
+  font-family: "Urbanist", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  
+  transition: all 0.3s ease-in-out;
+}
+
+.play-pause-button:hover {
+  color: #633160;
+}
 
 /* Base slider style */
 input[type="range"] {
-    -webkit-appearance: none;
-    width: 100%;
-    height: 6px;
-    background: #ddd;
-    border-radius: 3px;
-    outline: none;
-  }
- 
-  /* Track color */
-  input[type="range"]::-webkit-slider-runnable-track {
-    background: #CBEFD7; /* Hot pink track */
-    height: 6px;
-    border-radius: 3px;
-  }
- 
-  input[type="range"]::-moz-range-track {
-    background: #ff69b4;
-    height: 6px;
-    border-radius: 3px;
-  }
- 
-  input[type="range"]::-ms-track {
-    background: #ff69b4;
-    height: 6px;
-    border-radius: 3px;
-    border-color: transparent;
-    color: transparent;
-  }
- 
-  /* Thumb color */
-  input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    background: #ff1493; /* Deeper pink thumb */
-    border: none;
-    height: 16px;
-    width: 16px;
-    border-radius: 50%;
-    cursor: pointer;
-    margin-top: -5px; /* centers the thumb */
-  }
- 
-  input[type="range"]::-moz-range-thumb {
-    background: #CBEFD7;
-    border: none;
-    height: 16px;
-    width: 16px;
-    border-radius: 50%;
-    cursor: pointer;
-  }
- 
-  input[type="range"]::-ms-thumb {
-    background: #CBEFD7;
-    border: none;
-    height: 16px;
-    width: 16px;
-    border-radius: 50%;
-    cursor: pointer;
-  }
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  background: #ddd;
+  border-radius: 3px;
+  outline: none;
+}
+
+/* Track color */
+input[type="range"]::-webkit-slider-runnable-track {
+  background: #CBEFD7; /* Hot pink track */
+  height: 6px;
+  border-radius: 3px;
+}
+
+input[type="range"]::-moz-range-track {
+  background: #A23E8C;
+  height: 6px;
+  border-radius: 3px;
+}
+
+input[type="range"]::-ms-track {
+  background: #A23E8C;
+  height: 6px;
+  border-radius: 3px;
+  border-color: transparent;
+  color: transparent;
+}
+
+/* Thumb color */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: #A23E8C; /* Deeper pink thumb */
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -5px; /* centers the thumb */
+}
+
+input[type="range"]::-moz-range-thumb {
+  background: #CBEFD7;
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type="range"]::-ms-thumb {
+  background: #CBEFD7;
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  cursor: pointer;
+}

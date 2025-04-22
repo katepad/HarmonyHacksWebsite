@@ -1,24 +1,28 @@
 [
   {
-    "title": "♡ junimo squad ♡",
+    "title": "♡ junimo dance ♡",
+    "artist": "junimo squad",
     "filename": "junimoSquadMusic.mp3",
     "autoplay": true,
     "loop": true
   },
   {
-    "title": "♡ firewall flowers ♡",
+    "title": "♡ disrupt ♡",
+    "artist": "firewall flowers",
     "filename": "firewallFlowersMusic.mp3",
     "autoplay": true,
     "loop": true
   },
   {
     "title": "♡ cryptic flow ♡",
+    "artist": "code blooded",
     "filename": "codeBloodedCrypticFlow.mp3",
     "autoplay": true,
     "loop": true
   },
   {
-    "title": "♡ the girls who can ♡",
+    "title": "♡ we can. so we will. ♡",
+    "artist": "the girls who can",
     "filename": "theGirlsWhoCanMusic.mp3",
     "autoplay": true,
     "loop": true

@@ -104,7 +104,12 @@ const MissionStatement = () => {
         <div className="mission-statement-content-div">
           <div>
             <h2 className = "page-h2 mission-statement-h2 "> Mission Statement </h2>
-            <p className = "page-p mission-statement-p"> Harmony Hacks is dedicated to fostering an inclusive and supportive community for women in computing—one where creativity, growth, and collaboration thrive. Through club-led events and activities, we empower women to develop their skills, challenge stereotypes, and share their unique voices. We emphasize that perfection isn’t the goal—confidence, curiosity, and connection are. While our mission centers on uplifting women in tech, we warmly welcome anyone who shares our values to join us in shaping a more diverse and inspiring future in computing.. </p>
+            <p className = "page-p mission-statement-p"> At Harmony Hacks, our mission is to create an inclusive and empowering community where women in computing can thrive. We aim to cultivate confidence, creativity, and curiosity—not perfection—through meaningful experiences that encourage personal growth and technical exploration.
+            </p>
+            <p className = "page-p mission-statement-p"> Through workshops, events, and outreach, we challenge outdated stereotypes and amplify diverse voices in tech. While our focus is on uplifting women and underrepresented groups in computing, we welcome all students who believe in building a more inclusive, collaborative, and inspiring future.
+            </p>
+            <p className = "page-p mission-statement-p"> Together, we’re not just learning to code; We’re creating a culture of support, leadership, and innovation.
+            </p>
           </div>
         </div>
       </div>

@@ -11,6 +11,7 @@ interface MusicContextType {
     volume: number;
     play: () => void;
     pause: () => void;
+    previous: () => void;
     next: () => void;
     setVolume: (v: number) => void;
     audioRef: React.RefObject<HTMLAudioElement | null>; // ← fix here
@@ -75,11 +76,13 @@ export const MusicProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   const play = () => setIsPlaying(true);
   const pause = () => setIsPlaying(false);
   const next = () => setTrackIndex((prev) => (prev + 1) % musicData.length);
+  const previous = () =>
+    setTrackIndex((prev) => (prev - 1 + musicData.length) % musicData.length);
   const setVolume = (v: number) => setVolumeState(v);
 
 
   return (
-    <MusicContext.Provider value={{ currentTrack, isPlaying, play, pause, next, volume, setVolume, audioRef }}>
+    <MusicContext.Provider value={{ currentTrack, isPlaying, play, pause, next, previous, volume, setVolume, audioRef }}>
       <audio
         ref={audioRef}
         src={`/assets/music/${currentTrack.filename}`}
