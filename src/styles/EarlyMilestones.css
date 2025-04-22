@@ -1,0 +1,35 @@
+.milestones-section {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 5rem;
+    padding-top: 2rem;
+}
+
+.milestone-img {
+    align-self: left;
+    border-radius: 1rem;
+
+    height: auto;
+    width: auto; 
+    max-height: 12rem; 
+
+    margin-top:2rem;
+    margin-right: 2rem;
+}
+
+.milestone-content-div {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+    height: auto;
+    gap: 2rem;
+}
+
+.date-text {
+    font-family: "Work Sans", sans-serif;
+    text-decoration: none;
+}

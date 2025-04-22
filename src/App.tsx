@@ -8,6 +8,7 @@ import About from './pages/About';
 import Resources from './pages/Resources';
 import Events from './pages/Events';
 import ScrollToTop from './components/ScrollToTop';
+import EarlyMilestones from './pages/EarlyMilestones';
 
 const App: React.FC = () => {
   return (
@@ -29,6 +30,7 @@ const App: React.FC = () => {
                     <Route path="/events" element={<Events />} />
                     <Route path="/resources" element={<Resources />} />
                     <Route path="/contact" element={<Contact />} />
+                    <Route path="/earlyMilestones" element={<EarlyMilestones />} />
                   </Routes>
                 </main>
                 <Footer />
