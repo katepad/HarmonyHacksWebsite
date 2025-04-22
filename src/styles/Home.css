@@ -1,8 +1,8 @@
 .photo-gallery-header {
     position: relative;
-    width: 100vw; /* Full width */
-    max-width: 100%; /* Ensures no overflow */
-    height: 40rem; /* Keep the previous height */
+    width: 100vw;
+    max-width: 100%;
+    height: 40rem;
     overflow: hidden;
 }
   
@@ -16,7 +16,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures it fills the horizontal space */
+    object-fit: cover;
     object-position: center;
     transition: opacity 0.5s ease-in-out;
 }
@@ -75,7 +75,7 @@
 }
   
 .heart:hover {
-    background-color: #633160; /* Change to match your active state */
+    background-color: #633160;
 }
   
 .heart.left {
@@ -117,7 +117,7 @@
 
 .club-overview-content-div {
     flex: 1;
-    min-width: 300px; /* Prevents items from shrinking too much */
+    min-width: 300px;
 }
 
 .mission-statement{
@@ -151,7 +151,7 @@
 
 .mission-statement-content-div {
     flex: 1;
-    min-width: 300px; /* Prevents items from shrinking too much */
+    min-width: 300px;
 }
 
 .mission-statement-h2 {
@@ -178,7 +178,7 @@
 
 .recent-events-content-div {
     flex: 1;
-    min-width: 300px; /* Prevents items from shrinking too much */
+    min-width: 300px;
 }
 
 .recent-events-h2 {
@@ -211,7 +211,7 @@
 .cards-display {
   display: flex;
   justify-content: space-between;
-  width: 80%; /* Adjust width to fit 3 cards */
+  width: 80%;
   height:450px;
 }
 
@@ -282,7 +282,7 @@
 .join-us-container {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Vertically center the content */
+  align-items: center;
   gap: 20px;
   padding: 20px;
   flex-wrap: wrap; 
@@ -307,13 +307,13 @@
 }
 
 .join-statement-div {
-  flex: 1; /* Take up the remaining space for text */
+  flex: 1;
 }
 
 .arrow-left, .arrow-right {
     position: absolute;
-    top: 50%; /* Center vertically */
-    transform: translateY(-50%); /* Ensure perfect centering */
+    top: 50%; 
+    transform: translateY(-50%);
     
     cursor: pointer;
     color: #DF9DCF;
@@ -331,12 +331,12 @@
 }
 
 .arrow-left {
-    left: 1rem; /* Adjust as needed */
+    left: 1rem;
     rotate: 90deg;
 }
 
 .arrow-right {
-    right: 1rem; /* Adjust as needed */
+    right: 1rem;
     rotate: -90deg;
 }
 
