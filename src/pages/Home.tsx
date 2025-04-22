@@ -26,16 +26,27 @@ const Home = () => {
 
   const PhotoGalleryHeader: React.FC = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
+    const intervalRef = React.useRef<number | null>(null);
   
-    useEffect(() => {
-      const interval = setInterval(() => {
+    const startAutoSlide = () => {
+      // Clear any existing interval
+      if (intervalRef.current) clearInterval(intervalRef.current);
+      // Start a new interval
+      intervalRef.current = setInterval(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
       }, 10000);
-      return () => clearInterval(interval);
+    };
+  
+    useEffect(() => {
+      startAutoSlide(); // Start on mount
+      return () => {
+        if (intervalRef.current) clearInterval(intervalRef.current); // Clean up on unmount
+      };
     }, []);
   
     const goToImage = (index: number) => {
       setCurrentIndex(index);
+      startAutoSlide(); // Reset the timer on click
     };
   
     return (
@@ -62,6 +73,7 @@ const Home = () => {
       </div>
     );
   };
+  
 
 const ClubOverview = () => {
   return (
