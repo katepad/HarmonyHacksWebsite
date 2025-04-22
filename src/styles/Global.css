@@ -14,6 +14,24 @@
   padding: 10px 0;
 }
 
+#offcanvasNavbar {
+  background-color: #633160 !important; 
+}
+
+#offcanvasNavbarLabel {
+  font-family: 'Bungee', sans-serif;
+  font-style: normal;
+  font-size: 1.7rem;
+  color:aliceblue;
+  display: flex;
+  padding:0.5rem;
+}
+
+.custom-offcanvas.offcanvas-end {
+  width: 250px;
+  transition: transform 0.3s ease-in-out;
+}
+
 .logo {
   width: 50px;  /* Adjust size */
   height: 50px; /* Adjust size */

@@ -88,5 +88,6 @@ border-color: #71296c;
 
 .tag:hover {
 transform: scale(1.1);
-
+background-color: #633160;
+color: #ffe1fa;
 }
