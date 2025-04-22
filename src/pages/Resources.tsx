@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../styles/Resources.css"; 
-import resourceData from "../Data/Resources.json"; // ✅ Assumes you're using resolveJsonModule
+import resourceData from "../Data/Resources.json"; 
 
 interface Resource {
   id: number;
