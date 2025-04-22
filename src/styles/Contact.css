@@ -88,18 +88,15 @@
 .contact-form-fields-div {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 5rem;
 }
 
 .form-left-div {
-    padding-right: 0.5rem;
     margin-left: 2rem;
     height:14rem;
 }
 
 .form-right-div {
-    padding-left: 0.5rem;
-    margin-right: 3rem;
     height:14rem;
 }
 
@@ -257,6 +254,7 @@
 
     .contact-form-fields-div {
         flex-direction: column;
+        gap: 0rem;
     }
 
     .form-left-div {

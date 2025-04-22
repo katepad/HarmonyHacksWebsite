@@ -1,0 +1,37 @@
+[
+    {
+      "id": 1,
+      "milestone_date": "December 3, 2024",
+      "milestone_title": "Our First Club GBM: Info Session",
+      "milestone_description": "During the late fall, after the club was founded, we held our first-ever event which was an information session. The event drew a significant turnout of students eager to learn more about our mission to empower women in computing through mentorship, community outreach, and creativity. The strong attendance and enthusiasm confirmed the need for a supportive space for women in tech at our university and laid the foundation for future programming and growth.",
+      "milestone_image": "/assets/pictures/firstGbm/firstGbm2.jpg"
+    },
+    {
+        "id": 2,
+        "milestone_date": "February 11, 2025",
+        "milestone_title": "Galentine's Crafts",
+        "milestone_description": "To promote community-building among members, Harmony Hacks hosted a Galentine’s Day Crafts session filled with creativity and camaraderie. Members made Valentine’s cards, completed cute coloring sheets, explored artistic expression, and connected over shared experiences in STEM. Events like these are part of our mission to cultivate a welcoming and supportive environment for women in computing, balancing academic growth with meaningful relationships.",
+        "milestone_image": "/assets/pictures/galentines/galentines3.jpg"
+    },
+    {
+        "id": 3,
+        "milestone_date": "March 8, 2025",
+        "milestone_title": "Super STEM Saturday",
+        "milestone_description": "Harmony Hacks participated in CSUSM’s Super STEM Saturday event to help engage the community with providing hands-on science and technology. Our booth featured the “Magic Milk” experiment, where kids explored chemical reactions through vibrant, swirling colors. With guidance from our members, children (and their families) experienced the joy of simple science and learned its connection to broader implications of bioinformatics. The event strengthened our club’s commitment to accessible STEM education and community engagement.",
+        "milestone_image": "/assets/pictures/superStemSaturday/superStemSaturday3.jpg"
+    },
+    {
+        "id": 4,
+        "milestone_date": "April 12-19, 2025",
+        "milestone_title": "First-Ever Harmony Hacks Hackathon",
+        "milestone_description": "In the spring of 2025, we hosted our very first hackathon which was a two-weekend adventure of blending code and music through musical cryptography. During this hackathon event, our club members along with two students majoring in music, mentored teams of high school girls, guiding them to hide secret messages in melodies and build programs to reveal them. This event inspired young women to realize that computing could be creative, empowering, and fun. It was a groundbreaking experience for the participants and our club alike, as we watched future coders gain confidence before our eyes.",
+        "milestone_image": "/assets/pictures/firstHackathon/firstWomensHackathonShowcase4.jpg"
+    },
+    {
+        "id": 5,
+        "milestone_date": "April 25, 2025",
+        "milestone_title": "HH x AWM x Makery Collab: Caps and Vision Maps",
+        "milestone_description": "This was our first collaborative event, co-hosted with the Association for Women in Mathematics (AWM). Held at the CSUSM Makery, the \"Caps and Vision Maps\" event provided students with an opportunity to celebrate milestones and set future intentions. Graduating seniors decorated their caps in preparation for commencement, while other attendees created vision boards to reflect their academic goals and aspirations. The event promoted creativity, empowerment, and cross-organization community among women in STEM.",
+        "milestone_image": "/assets/logos/harmonyHacksLogoNoText.png"
+    }
+]

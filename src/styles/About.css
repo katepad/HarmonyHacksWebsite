@@ -2,13 +2,14 @@
 /* ============================== HISTORY SECTION ============================== */
 
 .about-history-section {
-    margin-top: 2.4rem;
-    margin-right: 4rem;
-    margin-bottom: 4rem;
-    margin-left: 4rem;
+    padding-top: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 5rem;
     display: flex;
     flex-direction: row;
-    align-items: left;
+    align-items: center;
+    align-content: center;
     justify-content: space-evenly;
 
     height: auto;
@@ -20,7 +21,7 @@
 
     height: auto;
     width: auto; 
-    max-width: 500px; 
+    max-width: 600px; 
 }
 
 .about-history-content-div {
@@ -39,26 +40,27 @@
     align-items: left;
     justify-content: left;
     height: auto;
+    gap: 5rem;
+    padding:5rem;
+    align-content: center;
 }
 
 .about-founders-content-div {
     margin-left: 5rem;
     width:  45rem;
     height: auto;
-    margin-bottom: 4rem;
 }
 
 .about-founders-img {
-    margin-left: 5rem;
-    margin-top: 2rem;
-    margin-right: 5rem;
+
+    align-self: center;
 
     box-shadow: 0 1.563rem 1.563rem #CBEFD7;
     border-radius: 2rem;
 
     height: auto;
     width: auto; 
-    max-width: 500px; 
+    max-width: 700px; 
 }
 
 /* ============================== END OF ABOUT FOUNDERS SECTION ============================== */
@@ -114,8 +116,27 @@
     margin-bottom: 1rem;
     border-radius: 50%;
 
+    object-fit: cover;
+
     width: 10rem;
     height: 10rem;
+}
+
+.about-early-milestones-button {
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+
+    width: 15rem;
+
+    color: #F5F5F5;
+    background: #D02F9E;
+    border: none;
+    border-radius: 0.75rem;
+
+    font-family: "Urbanist", sans-serif;
+    font-weight: bold;
+    font-size: 1.25rem;
+    transition: background-color 0.25s;
 }
 
 /* ============================== END OF ABOUT CURRENT BOARD SECTION ==============================*/

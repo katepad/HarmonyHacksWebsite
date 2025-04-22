@@ -17,7 +17,7 @@ const Form = () => {
     <section className = "contact-us-section">
 
       <div>
-        <img className = "contact-form-img" src="/assets/firstStudentOrgFair5.jpg" alt="Contact Us Form Picture" />
+        <img className = "contact-form-img" src="/assets/pictures/firstStudentOrgFair/firstStudentOrgFair5.jpg" alt="Contact Us Form Picture" />
       </div>
 
       <div className = "contact-form-div">

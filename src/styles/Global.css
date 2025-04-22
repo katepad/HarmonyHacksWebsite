@@ -14,16 +14,35 @@
   padding: 10px 0;
 }
 
+#offcanvasNavbar {
+  background-color: #633160 !important; 
+}
+
+#offcanvasNavbarLabel {
+  font-family: 'Bungee', sans-serif;
+  font-style: normal;
+  font-size: 1.7rem;
+  color:aliceblue;
+  display: flex;
+  padding:0.5rem;
+}
+
+.custom-offcanvas.offcanvas-end {
+  width: 250px;
+  transition: transform 0.3s ease-in-out;
+}
+
 .logo {
   width: 50px;  /* Adjust size */
   height: 50px; /* Adjust size */
 
-  background-image: url('../assets/harmonyHacksLogoNoText.png'); /* Path to the logo */
+  background-image: url('../assets/logos/harmonyHacksLogoNoText.png'); /* Path to the logo */
   background-size: cover; 
   background-position: center;  /* Position the image in the center */
   background-size: 150%;
 
-  margin-right: 1.5rem;  /* Space between logo and brand text */
+  margin-left: 2.5rem;  /* Space between logo and brand text */
+  margin-right: 1.5rem;
   border-radius: 50%; /* crops image as circle */
 }
 
@@ -133,6 +152,7 @@ body {
 .page-p {
   font-family: "Work Sans", sans-serif;
   font-size: 1.15rem;
+  text-decoration: none;
 }
 
 /* use this to make text h1 green */
@@ -241,4 +261,9 @@ body {
 
 .add-button:hover {
   background: #A23E8C;
+}
+
+.bold {
+  font-weight: bold;
+  text-decoration: none;
 }

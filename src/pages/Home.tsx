@@ -16,12 +16,12 @@ const Home = () => {
   };
 
   const images = [
-    "../assets/firstStudentOrgFair4.jpg",
-    "../assets/firstGbm2.jpg",
-    "../assets/superStemSaturday3.jpg",
-    "../assets/galentines5.jpg",
-    "../assets/firstGbm7.jpg",
-    "../assets/firstGbm1.jpg",
+    "../assets/pictures/firstStudentOrgFair/firstStudentOrgFair4.jpg",
+    "../assets/pictures/firstGbm/firstGbm2.jpg",
+    "../assets/pictures/superStemSaturday/superStemSaturday3.jpg",
+    "../assets/pictures/galentines/galentines5.jpg",
+    "../assets/pictures/firstGbm/firstGbm7.jpg",
+    "../assets/pictures/firstGbm/firstGbm1.jpg",
   ];
 
   const PhotoGalleryHeader: React.FC = () => {
@@ -89,7 +89,7 @@ const ClubOverview = () => {
             </p>
         </div>
       <div>
-        <img className="club-overview-img" src="/assets/firstStudentOrgFair4.jpg" />
+        <img className="club-overview-img" src="/assets/pictures/firstStudentOrgFair/firstStudentOrgFair4.jpg" />
       </div>
       </div>
     </section>
@@ -100,7 +100,7 @@ const MissionStatement = () => {
   return (
     <section className= {"mission-statement"} >
       <div className= "mission-statement-container">
-      <img className="mission-statement-img" src="/assets/galentines5.jpg" />
+      <img className="mission-statement-img" src="/assets/pictures/galentines/galentines5.jpg" />
         <div className="mission-statement-content-div">
           <div>
             <h2 className = "page-h2 mission-statement-h2 "> Mission Statement </h2>
@@ -120,12 +120,12 @@ interface Card {
 }
 
 const cards: Card[] = [
-  { id: 1, image: "../assets/superStemSaturday3.jpg", title: "Super Stem Saturday!", description: "Description here." },
-  { id: 2, image: "../assets/galentines3.jpg", title: "Galentines GBM!", description: "Description here." },
-  { id: 3, image: "../assets/firstStudentOrgFair4.jpg", title: "1st Org Fair!", description: "Description here." },
-  { id: 4, image: "../assets/galentines3.jpg", title: "Galentines GBM!", description: "Description here." },
-  { id: 5, image: "../assets/firstStudentOrgFair4.jpg", title: "1st Org Fair!", description: "Description here." },
-  { id: 6, image: "../assets/firstGbm2.jpg", title: "First GBM!", description: "Description here." },
+  { id: 1, image: "../assets/pictures/superStemSaturday/superStemSaturday3.jpg", title: "Super Stem Saturday!", description: "Description here." },
+  { id: 2, image: "../assets/pictures/galentines/galentines3.jpg", title: "Galentines GBM!", description: "Description here." },
+  { id: 3, image: "../assets/pictures/firstStudentOrgFair/firstStudentOrgFair4.jpg", title: "1st Org Fair!", description: "Description here." },
+  { id: 4, image: "../assets/pictures/galentines/galentines3.jpg", title: "Galentines GBM!", description: "Description here." },
+  { id: 5, image: "../assets/pictures/firstStudentOrgFair/firstStudentOrgFair4.jpg", title: "1st Org Fair!", description: "Description here." },
+  { id: 6, image: "../assets/pictures/firstGbm/firstGbm2.jpg", title: "First GBM!", description: "Description here." },
 ];
 
 const RecentEvents: React.FC = () => {
@@ -169,7 +169,7 @@ const JoinUs = () => {
           
         <div className="join-us-content-div">
         <div>
-          <img className = "join-us-img" src="../assets/firstGbm10.jpg" />
+          <img className = "join-us-img" src="../assets/pictures/firstGbm/firstGbm10.jpg" />
         </div>
         <br></br>
           <div className="join-statement-div"></div>

@@ -20,7 +20,7 @@ const App: React.FC = () => {
       <Routes>
         {/* Public routes */}
         <Route
-          path="/*"
+          path="/"
           element={
             <>
               <NavbarBootstrap />
@@ -32,6 +32,7 @@ const App: React.FC = () => {
                     <Route path="/events" element={<Events />} />
                     <Route path="/resources" element={<Resources />} />
                     <Route path="/contact" element={<Contact />} />
+                    <Route path="/earlyMilestones" element={<EarlyMilestones />} />
                   </Routes>
                 </main>
                 <Footer />
