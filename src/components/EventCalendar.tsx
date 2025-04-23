@@ -3,8 +3,14 @@ import { Calendar, momentLocalizer, Event as CalendarEvent } from "react-big-cal
 import moment from "moment";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import "../styles/Calendar.css";
+import Events from "../Data/events.json";
+import FilterTabs from "./FilterTabs";
 
 const localizer = momentLocalizer(moment);
+
+const formats = {
+    weekdayFormat: 'dddd', // Full day name format
+};
 
 interface CustomEvent extends CalendarEvent {
     id: string;
@@ -13,16 +19,19 @@ interface CustomEvent extends CalendarEvent {
     end: Date;
     location: string;
     type: string;
+    description: string;
 }
-
-const formats = {
-    weekdayFormat: 'dddd', // Full day name format
-};
 
 const EventCalendar: React.FC = () => {
     const [events, setEvents] = useState<CustomEvent[]>([]);
     const [selectedEvent, setSelectedEvent] = useState<CustomEvent | null>(null);
     const [currentDate, setCurrentDate] = useState(new Date());
+    const [filter, setFilter] = useState<string>("All");
+
+    const filteredEvents = events.filter(event =>
+        filter === "All" || event.type.toLowerCase() === filter.toLowerCase()
+    );
+
 
     const handlePrevMonth = () => {
         const prev = new Date(currentDate);
@@ -37,52 +46,35 @@ const EventCalendar: React.FC = () => {
     };
 
     useEffect(() => {
-        // Temporary mock data
-        const mockEvents: CustomEvent[] = [
-            {
-                id: "1",
-                title: "Leadership Workshop",
-                start: new Date(2025, 2, 10, 14, 0),
-                end: new Date(2025, 2, 10, 16, 0),
-                location: "Room 101, Tech Building",
-                type: "Workshops",
-            },
-            {
-                id: "2",
-                title: "Urbane Cafe Fundy",
-                start: new Date(2025, 2, 15, 18, 0),
-                end: new Date(2025, 2, 15, 21, 0),
-                location: "Community Hall",
-                type: "Fundraisers",
-            },
-            {
-                id: "3",
-                title: "3rd GBM",
-                start: new Date(2025, 2, 19, 18, 0),
-                end: new Date(2025, 2, 19, 21, 0),
-                location: "SBSB 1102",
-                type: "GBM Events"
-            },
-        ];
-        setEvents(mockEvents);
+        const parsedEvents = Events.map((event) => ({
+            ...event,
+            start: new Date(event.start),
+            end: new Date(event.end),
+        }));
+        setEvents(parsedEvents);
     }, []);
-
+    
 
     return (
         <div className= "calendar-container">
-            <div className = "calendar-header">
-                <h2 className = "page-h1 calendar-month">
-                    {moment(currentDate).format("MMMM YYYY")}
-                </h2>
+            <div className = "calendar-header clean-align">
+                <div className = "month-and-tabs">
+                    <h2 className = "page-h1 calendar-month">
+                        {moment(currentDate).format("MMMM YYYY")}
+                    </h2>
+                    <FilterTabs filter={filter} setFilter={setFilter} />
+                </div>
+                
                 <div className = "nav-buttons">
                     <button className = "nav-arrow" onClick = {handlePrevMonth}>&lsaquo;</button>
                     <button className = "nav-arrow" onClick = {handleNextMonth}>&rsaquo;</button>
                 </div>
             </div>
+
             <div className = "calendar-content">
                 <Calendar
                     localizer = {localizer}
-                    events = {events}
+                    events = {filteredEvents}
                     formats = {formats}
                     date = {currentDate}
                     toolbar = {false} // We're using our own toolbar
@@ -116,14 +108,13 @@ const EventCalendar: React.FC = () => {
                         <p><strong>Time:</strong> {moment(selectedEvent.start).format("h:mm A")} - {moment(selectedEvent.end).format("h:mm A")}</p>
                         <p><strong>Location:</strong> {selectedEvent.location}</p>
                         <p><strong>Type:</strong> {selectedEvent.type}</p>
+                        <p><strong>Description:</strong> {selectedEvent.description}</p>
 
                         <form className = "rsvp-form" onSubmit = {(e) => { e.preventDefault(); alert("RSVP submitted!"); setSelectedEvent(null); }}>
                             <input type = "text" placeholder = "Name" required />
                             <input type = "email" placeholder = "Email" required />
                             <button type = "submit">Submit</button>
                         </form>
-
-                    
                     </div>
                 )}
             </div>
