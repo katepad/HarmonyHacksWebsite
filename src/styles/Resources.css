@@ -106,3 +106,121 @@ transform: scale(1.1);
 background-color: #633160;
 color: #ffe1fa;
 }
+
+/* dropdown modal styling */
+/* Modal Backdrop */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  /* THE FIX: Set a very light transparent background */
+  background-color: rgba(255, 217, 242, 0.6) !important;
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+
+/* Modal Card Container */
+.modal-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.6); /* translucent dark glass */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 16px;
+  color: white;
+  max-width: 1000px;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  animation: fadeIn 0.3s ease-in-out;
+  padding: 2rem;
+}
+
+/* Horizontal Content Layout */
+.modal-content {
+  display: flex;
+  flex-direction: row; /* Ensures image is on the right */
+  width: 100%;
+}
+
+
+/* Text Section (Left) */
+.modal-content-section {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+}
+
+.modal-title {
+  color: #A52B93;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.modal-description {
+  color: #A52B93;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.modal-image-section {
+  width: 100%; /* Allow the image section to take full width */
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  padding: 1rem;
+  background: none;
+}
+
+.modal-img {
+  max-width: 100%; /* Ensure the image scales properly */
+  max-height: 300px; /* Limit the height of the image */
+  object-fit: cover; /* Maintain the aspect ratio */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.modal-back-btn {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.modal-back-btn:hover {
+  color: #b5749f;
+}
+
+@media (max-width: 600px) {
+  .filter-search {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 0.5rem 1rem;
+  }
+
+  .tag {
+    flex: 0 0 auto;
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+}
+
