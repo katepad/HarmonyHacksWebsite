@@ -9,7 +9,7 @@
 .card {
   background-color: #F6E3EF;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px #71296c80;
   width: 300px;
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
@@ -23,41 +23,56 @@
 
 .card-img {
   width: 20rem;
+  min-height: 10rem;
   max-height: 10rem;
+  object-fit: fill;
   object-fit: cover;
-
 }
 
-.card-title {
-  color: #71296c;
-  font-weight: bold;
-  font-size: 1.5rem;
-  margin: 16px;
+.card .card-title {
+  color: #71296c; 
+  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700; /* Semi-Bold */
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
 }
 
 .card-description {
   color: #A52B93;
+  font-family: "Work Sans", sans-serif;
   font-size: 1rem;
-  margin: 0 16px 16px;
+  text-decoration: none;
 }
 
 .card-btn {
   display: block;
-  background-color: #b5749f;
-  color: #FFFFFF;
-  padding: 12px 24px;
+
+  background-color: #D02F9E;
+  color: #F5F5F5;
+
+  padding: 0.5rem 1.5rem;
+
   text-decoration: none;
-  border-radius: 8px;
-  border: 1px solid #71296c;
+  border-radius: 0.75rem;
+  border: none;
+
   position: absolute;
   bottom: 16px;
   left: 16px;
   right: 16px;
+
   text-align: center;
+
+  font-family: "Work Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.25s;
 }
 
 .card-btn:hover {
-  background-color: #d562af;
+  background-color: #633160;
 }
 
 .filter-search {

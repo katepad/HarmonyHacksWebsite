@@ -100,7 +100,7 @@ const MissionStatement = () => {
   return (
     <section className= {"mission-statement"} >
       <div className= "mission-statement-container">
-      <img className="mission-statement-img" src="/assets/pictures/galentines/galentines5.jpg" />
+      <img className="mission-statement-img" src="/assets/pictures/firstHackathon/firstWomensHackathonKickoff4.jpg" />
         <div className="mission-statement-content-div">
           <div>
             <h2 className = "page-h2 mission-statement-h2 "> Mission Statement </h2>
@@ -180,8 +180,10 @@ const JoinUs = () => {
           <div className="join-statement-div"></div>
           <div>
             <h2 className = "join-us-h2 page-h2 color-green"> Join Us </h2>
-            <p className = "join-us-p page-p color-white"> In the heart of London, in a cozy little town called Sanrioville, there lived a bright and curious kitten named Hello Kitty. From a young age, she was fascinated by puzzles, patterns, and how things worked. While her friends enjoyed baking and playing outside, Kitty spent hours tinkering with her toy robot, trying to make it walk on its own. </p>
-            <p className = "join-us-p page-p color-white">  One day, her school announced a coding competition where students had to create a program that solved a real-world problem. Kitty was thrilled! She had never written a single line of code before, but that didn’t stop her. Determined, she rushed home and searched for beginner coding tutorials on her computer. </p>
+            <p className = "join-us-p page-p color-white"> We have biweekly meetings on Tuesdays during U-Hour in VEP 5107. In these meetings, we go over important information, upcoming events, and opportunities to get involved! Become an official member here!
+            </p>
+            <p className = "join-us-p page-p color-white"> Join our Discord and follow our Instagram using the footer links below for any meeting updates and announcements of upcoming events!
+            </p>
           </div>
         </div>
       </div>

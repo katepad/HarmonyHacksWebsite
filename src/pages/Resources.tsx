@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/Resources.css"; 
+import "../styles/Global.css"; 
 import resourceData from "../Data/Resources.json"; 
 
 interface Resource {
