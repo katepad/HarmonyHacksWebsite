@@ -16,12 +16,12 @@ const Home = () => {
   };
 
   const images = [
+    "../assets/pictures/firstHackathon/firstWomensHackathonShowcase4.jpg",
     "../assets/pictures/firstStudentOrgFair/firstStudentOrgFair4.jpg",
     "../assets/pictures/firstGbm/firstGbm2.jpg",
     "../assets/pictures/superStemSaturday/superStemSaturday3.jpg",
     "../assets/pictures/galentines/galentines5.jpg",
     "../assets/pictures/firstGbm/firstGbm7.jpg",
-    "../assets/pictures/firstGbm/firstGbm1.jpg",
   ];
 
   const PhotoGalleryHeader: React.FC = () => {
