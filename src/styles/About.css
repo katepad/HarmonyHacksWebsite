@@ -139,6 +139,10 @@
     transition: background-color 0.25s;
 }
 
+.about-early-milestones-button:hover {
+    background: #A23E8C;
+}
+
 /* ============================== END OF ABOUT CURRENT BOARD SECTION ==============================*/
 
 

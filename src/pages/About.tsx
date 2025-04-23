@@ -12,15 +12,15 @@ type BoardMember = {
 };
 
 const About = () => {
-    return (
-        <>
-        <h1 className="page-h1 color-purple" style={{ marginLeft: "5rem" }}> About Us </h1>
-        <History />
-        <Founders />
-        <Board />
-        </>
-    );
-  };
+  return (
+      <>
+      <h1 className="page-h1 color-purple" style={{ marginLeft: "5rem" }}> About Us </h1>
+      <History />
+      <Founders />
+      <Board />
+      </>
+  );
+};
 
 const History = () => {
   return (
@@ -36,7 +36,7 @@ const History = () => {
         </p>
         <br/>
         <Link to="/earlyMilestones">
-            <button className = "about-early-milestones-button"> Early Milestones </button>
+          <button className = "about-early-milestones-button"> Early Milestones </button>
         </Link>
       </div>
     </section>

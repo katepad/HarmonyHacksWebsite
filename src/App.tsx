@@ -9,8 +9,9 @@ import Resources from './pages/Resources';
 import Events from './pages/Events';
 import ScrollToTop from './components/ScrollToTop';
 import EarlyMilestones from './pages/EarlyMilestones';
-import { MusicProvider } from './context/MusicContext';
 import Music from './components/Music';
+import AboutMusic from './pages/AboutMusic';
+import { MusicProvider } from './context/MusicContext';
 
 const App: React.FC = () => {
   return (
@@ -34,6 +35,7 @@ const App: React.FC = () => {
                     <Route path="/resources" element={<Resources />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/earlyMilestones" element={<EarlyMilestones />} />
+                    <Route path="/aboutMusic" element={<AboutMusic />} />
                   </Routes>
                 </main>
                 <Footer />
