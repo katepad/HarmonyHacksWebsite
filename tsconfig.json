@@ -3,6 +3,7 @@
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "types": ["node"]
+    "types": ["node"]
   },
   "files": [],
   "references": [

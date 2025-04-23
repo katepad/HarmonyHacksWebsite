@@ -1,6 +1,7 @@
 import '../styles/Global.css';
 import '../styles/Home.css';
 import React, { useState, useEffect } from "react";
+import eventData from "../data/RecentEvents.json";
 
 
 const Home = () => {
@@ -117,21 +118,20 @@ const MissionStatement = () => {
   );
 };
 
-interface Card {
+
+type Card = {
   id: number;
   image: string;
   title: string;
   description: string;
-}
+};
 
-const cards: Card[] = [
-  { id: 1, image: "../assets/pictures/superStemSaturday/superStemSaturday3.jpg", title: "Super Stem Saturday!", description: "Description here." },
-  { id: 2, image: "../assets/pictures/galentines/galentines3.jpg", title: "Galentines GBM!", description: "Description here." },
-  { id: 3, image: "../assets/pictures/firstStudentOrgFair/firstStudentOrgFair4.jpg", title: "1st Org Fair!", description: "Description here." },
-  { id: 4, image: "../assets/pictures/galentines/galentines3.jpg", title: "Galentines GBM!", description: "Description here." },
-  { id: 5, image: "../assets/pictures/firstStudentOrgFair/firstStudentOrgFair4.jpg", title: "1st Org Fair!", description: "Description here." },
-  { id: 6, image: "../assets/pictures/firstGbm/firstGbm2.jpg", title: "First GBM!", description: "Description here." },
-];
+const cards: Card[] = eventData.map((event, index) => ({
+  id: index + 1,
+  image: event.eventpic,
+  title: event.eventname,
+  description: event.eventdesc,
+}));
 
 const RecentEvents: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -146,23 +146,31 @@ const RecentEvents: React.FC = () => {
 
   return (
     <div className="recent-events-container">
-        <div className="recent-events-content-div">
-          <br></br>
-          <h2 className="page-h2 recent-events-h2">Recent Events</h2>
-          <div className="carousel-container">
+      <div className="recent-events-content-div">
+        <br />
+        <h2 className="page-h2 recent-events-h2">Recent Events</h2>
+        <div className="carousel-container">
+          {cards.length > 3 && (
             <button className="arrow-left" onClick={prevCard}> ♡ </button>
-            <div className="cards-display">
-            {cards.slice(currentIndex, currentIndex + 3).map((card) => (
-              <div key={card.id} className="card">
-                <img src={card.image} alt={card.title} />
-                <h3 className="card-title">{card.title}</h3>
-                <p className="card-description">{card.description}</p>
-              </div>
-            ))}
+          )}
+          <div className="cards-display">
+            {[0, 1, 2].map((offset) => {
+              const index = (currentIndex + offset) % cards.length;
+              const card = cards[index];
+              return (
+                <div key={card.id} className="card">
+                  <img src={card.image} alt={card.title} />
+                  <h3 className="card-title">{card.title}</h3>
+                  <p className="card-description">{card.description}</p>
+                </div>
+              );
+            })}
           </div>
+          {cards.length > 3 && (
             <button className="arrow-right" onClick={nextCard}> ♡ </button>
-          </div>
+          )}
         </div>
+      </div>
     </div>
   );
 };
