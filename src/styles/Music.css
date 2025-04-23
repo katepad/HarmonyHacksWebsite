@@ -1,0 +1,219 @@
+.music-open-button {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+
+  background-color: #F5F5F5;
+  color: #D02F9E;
+
+  text-align: center;
+  align-content: center;
+
+  padding-bottom: 0.5rem;
+  padding-right: 0.5rem;
+
+  border: none;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+
+  box-shadow: 0 4px 10px #482c47;
+  z-index: 1000;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.music-player {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+
+  background: #F5F5F5;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px #482c47;
+  font-family: "Work Sans", sans-serif;
+
+  padding: 1.5rem;
+  z-index: 999;
+  width: 18rem;
+}
+
+.music-player-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.music-open-button:hover {
+  background-color: #633160;
+  color:#CBEFD7
+}
+
+.music-title {
+  font-family: 'Bungee', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color:#633160
+}
+
+.music-artist {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color:#D02F9E
+}
+
+.music-artist {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color:#D02F9E
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+
+.volume-control {
+  margin-top: 0.5rem;
+}
+
+
+.music-arrow-button-left, .music-arrow-button-right {  
+  cursor: pointer;
+  color: #DF9DCF;
+  background: none;
+  border: none;
+  
+  font-family: "Urbanist", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  
+  transition: all 0.3s ease-in-out;
+}
+
+.music-arrow-button-left {
+  rotate: 90deg;
+}
+
+.music-arrow-button-right {
+  rotate: -90deg;
+}
+
+.music-arrow-button-left:hover, .music-arrow-button-right:hover {
+  color: #633160;
+}
+
+.music-player-header-button {
+  cursor: pointer;
+  color: #F5F5F5;
+  background-color: #D02F9E;
+  border-radius: 50%;
+  border: none;
+  
+  font-family: "Urbanist", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+
+  padding-bottom: 0.2rem;
+  
+  transition: all 0.3s ease-in-out;
+}
+
+.music-player-header-button:hover {
+  background-color: #DF9DCF;
+  color:#633160
+}
+
+.music-player-button {
+  cursor: pointer;
+  color: #DF9DCF;
+  background: none;
+  border: none;
+  
+  font-family: "Urbanist", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  
+  transition: all 0.3s ease-in-out;
+}
+
+.music-player-button:hover {
+  color: #633160;
+}
+
+/* Base slider style */
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  background: #F5F5F5;
+  border-radius: 3px;
+  outline: none;
+}
+
+/* Track color */
+input[type="range"]::-webkit-slider-runnable-track {
+  background: #CBEFD7; /* Hot pink track */
+  height: 6px;
+  border-radius: 3px;
+}
+
+input[type="range"]::-moz-range-track {
+  background: #D02F9E;
+  height: 6px;
+  border-radius: 3px;
+}
+
+input[type="range"]::-ms-track {
+  background: #D02F9E;
+  height: 6px;
+  border-radius: 3px;
+  border-color: transparent;
+  color: transparent;
+}
+
+/* Thumb color */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: #D02F9E; /* Deeper pink thumb */
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -5px; /* centers the thumb */
+}
+
+input[type="range"]::-moz-range-thumb {
+  background: #CBEFD7;
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type="range"]::-ms-thumb {
+  background: #CBEFD7;
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  cursor: pointer;
+}

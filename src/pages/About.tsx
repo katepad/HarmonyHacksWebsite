@@ -1,6 +1,7 @@
 import contactData from "../data/Board.json"; 
 import '../styles/Global.css'; 
 import '../styles/About.css';
+import { Link } from 'react-router-dom';
 
 type BoardMember = {
   "id": number;
@@ -11,28 +12,32 @@ type BoardMember = {
 };
 
 const About = () => {
-    return (
-        <>
-        <h1 className="page-h1 color-purple" style={{ marginLeft: "5rem" }}> About Us </h1>
-        <History />
-        <Founders />
-        <Board />
-        </>
-    );
-  };
+  return (
+      <>
+      <h1 className="page-h1 color-purple" style={{ marginLeft: "5rem" }}> About Us </h1>
+      <History />
+      <Founders />
+      <Board />
+      </>
+  );
+};
 
 const History = () => {
   return (
     <section className = "about-history-section">
       <div>
-        <img className = "about-history-img " src="/assets/firstGbm2.jpg" alt="First GBM with Harmony Hacks" />
+        <img className = "about-history-img " src="/assets/pictures/firstGbm/firstGbm2.jpg" alt="First GBM with Harmony Hacks" />
       </div>
       <div className = "about-history-content-div">
         <h2 className = "page-h2 color-purple"> History </h2>
         <p className = "page-p color-darkpurple"> Harmony Hacks was inspired by the sense of community experienced during a women’s hackathon held at CSUSM. The event demonstrated the importance of creating inclusive environments in the tech industry and sparked a collective effort to expand these opportunities for others. With support from faculty advisors Youwen Ouyang and Jing Hou, the founding team began planning a hackathon designed for high school students—providing college students with a platform to gain mentorship experience and build professional connections. This initiative led to the official launch of Harmony Hacks in Fall 2024.
         </p>
-        <p className = "page-p color-darkpurple"> Harmony Hacks also recognizes and appreciates the work of other women-focused organizations on campus, including Women in Cybersecurity, the Society of Women Engineers, and the Association of Women in Mathematics. We’re excited about the potential for future collaborations that promote inclusion, empowerment, and a stronger community for women in STEM.
+        <p className = "page-p color-darkpurple"> Click below to see our early milestones from our founding year.
         </p>
+        <br/>
+        <Link to="/earlyMilestones">
+          <button className = "about-early-milestones-button"> Early Milestones </button>
+        </Link>
       </div>
     </section>
   );
@@ -52,7 +57,7 @@ const Founders = () => {
         </p>
       </div>
       <div>
-        <img className = "about-founders-img" src="/assets/firstGbm7.jpg" alt="First GBM with Harmony Hacks Founders" />
+        <img className = "about-founders-img" src="/assets/pictures/firstGbm/firstGbm7.jpg" alt="First GBM with Harmony Hacks Founders" />
       </div>
     </section>
   );

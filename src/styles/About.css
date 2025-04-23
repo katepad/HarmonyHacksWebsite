@@ -122,6 +122,27 @@
     height: 10rem;
 }
 
+.about-early-milestones-button {
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+
+    width: 15rem;
+
+    color: #F5F5F5;
+    background: #D02F9E;
+    border: none;
+    border-radius: 0.75rem;
+
+    font-family: "Urbanist", sans-serif;
+    font-weight: bold;
+    font-size: 1.25rem;
+    transition: background-color 0.25s;
+}
+
+.about-early-milestones-button:hover {
+    background: #A23E8C;
+}
+
 /* ============================== END OF ABOUT CURRENT BOARD SECTION ==============================*/
 
 
