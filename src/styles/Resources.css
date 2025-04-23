@@ -115,9 +115,13 @@ color: #ffe1fa;
   left: 0;
   width: 100%;
   height: 100%;
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  background-color: rgba(255, 255, 255, 0.05); /* light glassy tint */
+
+  /* THE FIX: Set a very light transparent background */
+  background-color: rgba(255, 217, 242, 0.6) !important;
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -129,7 +133,7 @@ color: #ffe1fa;
 /* Modal Card Container */
 .modal-card {
   position: relative;
-  background: rgba(30, 30, 30, 0.6); /* translucent dark glass */
+  background: rgba(255, 255, 255, 0.6); /* translucent dark glass */
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-radius: 16px;
@@ -157,17 +161,17 @@ color: #ffe1fa;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .modal-title {
-  color: #F6E3EF;
+  color: #A52B93;
   font-size: 2rem;
   margin-bottom: 1.5rem;
 }
 
 .modal-description {
-  color: #cccccc;
+  color: #A52B93;
   font-size: 1.1rem;
   line-height: 1.6;
   margin-bottom: 2rem;
@@ -219,3 +223,4 @@ color: #ffe1fa;
     padding: 6px 10px;
   }
 }
+

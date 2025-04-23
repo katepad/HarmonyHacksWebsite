@@ -83,16 +83,16 @@
     "id": 11,
     "resource_image": "https://www.csusm.edu/harmonyhacks/images/hero-1.jpg",
     "resource_title": "CSUSM Hackathon Information",
-    "resource_description": "Harmony Hacks",
-    "resource_link": "https://www.csusm.edu/harmonyhacks/index.html",
+    "resource_summary": "Harmony Hacks",
+    "resource_description": "https://www.csusm.edu/harmonyhacks/index.html",
     "resource_tag": "Harmony Hacks"
   },
   {
     "id": 12,
     "resource_image": "https://eccentric-orbit.com/content/images/2022/04/Screen-Shot-2022-04-22-at-4.54.45-PM-min.png",
     "resource_title": "Tunepad",
-    "resource_description": "Harmony Hackathon Tool",
-    "resource_link": "https://tunepad.com/",
+    "resource_summary": "Harmony Hackathon Tool",
+    "resource_description": "https://tunepad.com/",
     "resource_tag": "Harmony Hacks"
   }
 ]
