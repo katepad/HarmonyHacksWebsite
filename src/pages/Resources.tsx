@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "../styles/Resources.css"; 
-import "../styles/Global.css"; 
 import resourceData from "../Data/Resources.json"; 
 import { FaArrowLeft } from "react-icons/fa";
 
@@ -13,20 +12,40 @@ interface Resource {
   resource_tag: string;
 }
 
-const Filters: React.FC<{ setFilter: (filter: string) => void }> = ({ setFilter }) => {
+const Filters: React.FC<{ filter: string; setFilter: (filter: string) => void }> = ({ filter, setFilter }) => {
+  const filters = ["All", "Harmony Hacks", "Student Resources", "Financial Aid", "Academic", "Food", "Career"];
+
   return (
-    <div className="filter-search">
-      {["All", "Harmony Hacks", "Student Resources", "Financial Aid", "Academic", "Food", "Career"].map((tag) => (
-        <button
-          key={tag}
-          className="tag"
-          onClick={() => setFilter(tag)}
-          aria-label={`Filter by ${tag}`}
-        >
-          {tag}
-        </button>
+    <div className="filters-container"
+    style={
+      {
+        "--tab-index": filters.indexOf(filter),
+      } as React.CSSProperties
+    }
+    >
+    <div className="filters-tabs">
+      {filters.map((type, index) => (
+        <React.Fragment key={type}>
+          <input
+            type="radio"
+            id={`radio-${index}`}
+            name="tabs-filter"
+            checked={filter === type}
+            onChange={() => setFilter(type)}
+            style={{ display: "none" }}
+          />
+          <label
+            className={`filters-tab ${filter === type ? "selected" : ""}`}
+            htmlFor={`radio-${index}`}
+            data-type={type.replace(/\s+/g, "-").toLowerCase()}
+          >
+            {type}
+          </label>
+        </React.Fragment>
       ))}
     </div>
+    <div className="tab-indicator" />
+  </div>
   );
 };
 
@@ -41,10 +60,10 @@ const Resources: React.FC = () => {
 
   return (
     <div>
-      <h1 className="page-h1 color-purple" style={{ marginLeft: "5rem" }}>
-        Resources
-      </h1>
-      <Filters setFilter={setFilter} />
+      <div className="resources-header">
+      <h1 className="page-h1 color-purple">Resources</h1>
+      <Filters filter={filter} setFilter={setFilter} />
+      </div>
       <div className="card-container">
         {filteredResources.length === 0 ? (
           <p>No resources found.</p>
@@ -69,37 +88,35 @@ const Resources: React.FC = () => {
         )}
       </div>
 
-{/* Modal Overlay */}
-{selectedResource && (
-  <div className="modal-backdrop" onClick={() => setSelectedResource(null)}>
-    <div className="modal-card" onClick={(e) => e.stopPropagation()}>
-      
-      {/* Back Arrow Button on Top Left */}
-      <button
-        className="modal-back-btn"
-        onClick={() => setSelectedResource(null)}
-        style={{ marginTop: "1rem" }}
-      >
-        <FaArrowLeft style={{ marginRight: "0.5rem" }} />
-        Back
-      </button>
+      {/* Modal Overlay */}
+      {selectedResource && (
+        <div className="modal-backdrop" onClick={() => setSelectedResource(null)}>
+          <div className="modal-card" onClick={(e) => e.stopPropagation()}>
+            <button
+              className="modal-back-btn"
+              onClick={() => setSelectedResource(null)}
+              style={{ marginTop: "1rem" }}
+            >
+              <FaArrowLeft style={{ marginRight: "0.5rem" }} />
+              Back
+            </button>
 
-      <div className="modal-content">
-        <div className="modal-content-section">
-          <h2 className="modal-title">{selectedResource.resource_title}</h2>
-          <p className="modal-description">{selectedResource.resource_description}</p>
+            <div className="modal-content">
+              <div className="modal-content-section">
+                <h2 className="modal-title">{selectedResource.resource_title}</h2>
+                <p className="modal-description">{selectedResource.resource_description}</p>
+              </div>
+              <div className="modal-image-section">
+                <img
+                  src={selectedResource.resource_image}
+                  className="modal-img"
+                  alt={selectedResource.resource_title}
+                />
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="modal-image-section">
-          <img
-            src={selectedResource.resource_image}
-            className="modal-img"
-            alt={selectedResource.resource_title}
-          />
-        </div>
-      </div>
-    </div>
-  </div>
-)}
+      )}
     </div>
   );
 };
