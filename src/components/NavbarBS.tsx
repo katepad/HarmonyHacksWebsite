@@ -66,6 +66,14 @@ export const NavbarBootstrap = () => {
                             </Nav.Link>
                             <Nav.Link
                                 as={Link}
+                                to="/hackathon"
+                                active={location.pathname === '/hackathon'}
+                                className="navbar-link navbar-button"
+                            >
+                                Hackathons
+                            </Nav.Link>
+                            <Nav.Link
+                                as={Link}
                                 to="/contact"
                                 active={location.pathname === '/contact'}
                                 className="navbar-link navbar-button"
