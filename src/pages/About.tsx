@@ -66,7 +66,7 @@ const Founders = () => {
 const Board = () => {
   return (
     <section className="about-board-section">
-      <h2 className="page-h2 color-purple">Meet the Current Board</h2>
+      <h2 className="page-h2 about-board-h2 color-purple"> ₊˚✧ ━━━━⊱ Meet the Current Board ⊰━━━━ ✧₊˚ </h2>
 
       <div className="about-board-cards-container">
         {contactData.map((member: BoardMember) => (

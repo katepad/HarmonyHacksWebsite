@@ -4,8 +4,8 @@ import contactData from "../Data/Testimonials.json";
 
 type Testimonial = {
   testimonial_id: number;
-  testimonial_firstName: string;
-  testimonial_lastName: string;
+  testimonial_name: string;
+  testimonial_position: string;
   testimonial_description: string;
   testimonial_image: string;
 };
@@ -27,25 +27,28 @@ const Testimonial = () => {
 
   return (
     <section className="contact-testimonial-section section-purple">
+
+    <h2 className="contact-h2 color-green"> ₊˚✧ ━━━━⊱ Member Testimonials ⊰━━━━ ✧₊˚ </h2>
+
       <div className="button-div">
         <button className="arrow-button-left" onClick={handlePrev}> ♡ </button>
       </div>
 
       <div className="contact-testimonial-content-div">
         <div className="contact-testimonial-text-div">
-          <h2 className="contact-h2 color-green"> Member Testimonials </h2>
           <h3 className="page-h3 color-white">
-            {member.testimonial_firstName} {member.testimonial_lastName}
+            {member.testimonial_name} — {member.testimonial_position}
           </h3>
-          <p className="contact-testimonial-p color-white">
-            {member.testimonial_description}
-          </p>
+          <div
+            className="contact-testimonial-p color-white"
+            dangerouslySetInnerHTML={{__html: member.testimonial_description }}
+          />
         </div>
-        <div className="contact-testimonial-div">
+        <div className="contact-testimonial-img-div">
           <img
             className="contact-testimonial-img"
             src={member.testimonial_image || "/assets/temp.png"}
-            alt={`${member.testimonial_firstName} ${member.testimonial_lastName}`}
+            alt={`${member.testimonial_name}`}
           />
         </div>
       </div>

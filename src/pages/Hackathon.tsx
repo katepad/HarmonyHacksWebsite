@@ -84,7 +84,7 @@ const Gallery = () => {
 
     return (
         <section className="hackathon-gallery-section section-purple">
-            <h2 className="page-h2 color-green"> Gallery </h2>
+            <h2 className="hackathon-gallery-h2 page-h2 color-green"> ₊˚✧ ━━━━⊱ Harmony Hackathon Gallery ⊰━━━━ ✧₊˚ </h2>
 
             <div className="hackathon-guide-content-div">
                 <div className="hackathon-gallery-container">

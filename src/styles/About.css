@@ -78,6 +78,11 @@
     font-weight: 700;
 }
 
+.about-board-h2 {
+    text-align: center;
+    margin-right: 5.5rem;
+}
+
 .about-board-cards-container {
     display: flex;
     flex-wrap: wrap;

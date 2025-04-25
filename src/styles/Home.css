@@ -167,11 +167,10 @@
 .recent-events-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    justify-content: center;
     padding-bottom: 5rem;
-    padding-top: 5rem;
+    padding-top: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
 }
@@ -184,7 +183,7 @@
 .recent-events-h2 {
     color: #A23E8C;
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
 }
 
 .recent-events-p {
@@ -203,14 +202,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
   position: relative;
   width: 100%;
 }
 
 .cards-display {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* This centers the cards */
+  gap: 6rem;
   width: 80%;
   height:450px;
 }

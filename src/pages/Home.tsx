@@ -148,7 +148,7 @@ const RecentEvents: React.FC = () => {
     <div className="recent-events-container">
       <div className="recent-events-content-div">
         <br />
-        <h2 className="page-h2 recent-events-h2">Recent Events</h2>
+        <h2 className="page-h2 recent-events-h2"> ₊˚✧ ━━━━⊱ Recent Events ⊰━━━━ ✧₊˚ </h2>
         <div className="carousel-container">
           {cards.length > 3 && (
             <button className="arrow-left" onClick={prevCard}> ♡ </button>

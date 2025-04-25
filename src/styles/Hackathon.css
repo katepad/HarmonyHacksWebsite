@@ -35,6 +35,11 @@
 
 /* ================================================= HACKATHON GALLERY ================================================= */
 
+.hackathon-gallery-h2 {
+    text-align: center;
+    margin-left: 0rem;
+}
+
 .hackathon-gallery-section {
     padding-left: 2rem;
     padding-right: 2rem;

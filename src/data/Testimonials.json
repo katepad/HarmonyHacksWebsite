@@ -1,17 +1,17 @@
 [
-    {
-      "testimonial_id": 1,
-      "testimonial_firstName": "Kate Paduganao",
-      "testimonial_lastName": "- Former Co-Founder and Media Team Member",
-      "testimonial_description": "This club helped me find and connect with like-minded women who shared my passion of empowering young women to be inspired, prepared, and confident to take on a computer science related field as a future career. I appreciated seeing how our events helped create a safe space for women to feel comfortable in such a male-dominated field! I'm so excited for the future of our club and the lasting impact we aim to create.",
-      "testimonial_image": "/assets/currentBoard/kate.png"
-    },
-    {
-      "testimonial_id": 2,
-      "testimonial_firstName": "Sarah",
-      "testimonial_lastName": "Smith",
-      "testimonial_description": "I was able to be a mentor for the women's hackathon, and that experience was amazing!",
-      "testimonial_image": "https://content.presspage.com/uploads/1093/c330a7c4-477c-474c-b08b-7e7941c655bf/1920_leadphoto.jpg?10000"
-    }
+  {
+    "testimonial_id": 2,
+    "testimonial_name": "Elisa Byfield",
+    "testimonial_position": "Former Co-Founder and Media Team Member",
+    "testimonial_description": "Being part of this club and being surrounded by such supportive and amazing women has truly been a gift from start to finish. As a co-founder and member of the media team, I got to help build something meaningful from the ground up, creating spaces where women in computing could feel seen, heard, and supported. Organizing and hosting events introduced me to so many amazing women who shared my passion for computing, along with the same challenges of navigating a space where there are still too few of us. <br/><br/> Before joining the media team, I didn’t have much experience in design or marketing, but it ended up helping me tap into the more creative side of tech. Collaborating with such a creative and talented team opened up a whole new side of tech for me, where creativity can take place as well. <br/><br/> It is bittersweet to be graduating just as the club is really taking off, but I am incredibly proud to have been part of something so meaningful. I have no doubt that the future of Harmony Hacks, and the women it empowers, will be bright.",
+    "testimonial_image": "/assets/currentBoard/elisa.png"
+  },
+  {
+    "testimonial_id": 1,
+    "testimonial_name": "Kate Paduganao",
+    "testimonial_position": "Former Co-Founder and Media Team Member",
+    "testimonial_description": "This club helped me find and connect with like-minded women who shared my passion of empowering young women to be inspired, prepared, and confident to take on a computer science related field as a future career. I appreciated seeing how our events helped create a safe space for women to feel comfortable in such a male-dominated field! I'm so excited for the future of our club and the lasting impact we aim to create.",
+    "testimonial_image": "/assets/currentBoard/kate.png"
+  }
   ]
   
