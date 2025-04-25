@@ -1,5 +1,10 @@
 [
     {
+        "eventname": "First GBM",
+        "eventdesc": "blah blah blah blah",
+        "eventpic": "../assets/pictures/firstGbm/firstGbm1.jpg"
+    },
+    {
         "eventname": "Super STEM Saturday",
         "eventdesc": "blah blah blah blah",
         "eventpic": "../assets/pictures/superStemSaturday/superStemSaturday3.jpg"

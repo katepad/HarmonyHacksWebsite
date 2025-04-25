@@ -29,14 +29,14 @@ const History = () => {
         <img className = "about-history-img " src="/assets/pictures/firstGbm/firstGbm2.jpg" alt="First GBM with Harmony Hacks" />
       </div>
       <div className = "about-history-content-div">
-        <h2 className = "page-h2 color-purple"> History </h2>
+        <h2 className = "page-h2 color-purple">♡ History </h2>
         <p className = "page-p color-darkpurple"> Harmony Hacks was inspired by the sense of community experienced during a women’s hackathon held at CSUSM. The event demonstrated the importance of creating inclusive environments in the tech industry and sparked a collective effort to expand these opportunities for others. With support from faculty advisors Youwen Ouyang and Jing Hou, the founding team began planning a hackathon designed for high school students—providing college students with a platform to gain mentorship experience and build professional connections. This initiative led to the official launch of Harmony Hacks in Fall 2024.
         </p>
         <p className = "page-p color-darkpurple"> Click below to see our early milestones from our founding year.
         </p>
         <br/>
         <Link to="/earlyMilestones">
-          <button className = "about-early-milestones-button"> Early Milestones </button>
+          <button className = "about-early-milestones-button">♡ Early Milestones ♡</button>
         </Link>
       </div>
     </section>
@@ -48,7 +48,7 @@ const Founders = () => {
     <section className= {"about-founders-section section-purple"} >
       <div className = "about-founders-content-div">
         <br/>
-        <h2 className = "page-h2 color-green"> Meet the Founders </h2>
+        <h2 className = "page-h2 color-green">♡ Meet the Founders </h2>
         <p className = "page-p color-white"> Harmony Hacks was founded by a group of seven driven women brought together by Dr. Ouyang and Dr. Hou, who shared a vision to increase the representation of women in computing. United by a shared passion for creating meaningful change, the founding members laid the foundation for a community centered on <span className = "bold">leadership, connection, and inclusivity.</span>.
         </p>
         <p className = "page-p color-white"> The founding team collaborated to define the club’s identity — developing its mission, designing impactful events, and laying the groundwork for a supportive and empowering environment for women in tech. Through collaboration, creativity, and perseverance, they transformed an idea into a thriving community.

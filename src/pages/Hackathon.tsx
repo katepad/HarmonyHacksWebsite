@@ -31,7 +31,7 @@ const Guide = () => {
     return (
       <section className= "hackathon-guide-section" >
         <div>
-            <h2 className = "page-h2 color-purple"> Our Process </h2>
+            <h2 className = "page-h2 color-purple">♡ Our Process </h2>
             <h3 className = "page-h3 color-darkpurple"> Creating a Hackathon event was no easy task... add more here </h3>
             
             <VerticalTimeline lineColor = "#633160" layout ={'1-column-left'}>

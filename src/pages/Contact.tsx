@@ -22,7 +22,7 @@ const Form = () => {
 
       <div className = "contact-form-div">
         
-        <h3 className = "contact-h3 color-darkpurple"> We’d love to hear from you! We welcome every conversation with open ears, open hearts, and open minds. </h3>
+        <h3 className = "contact-h3 color-darkpurple">♡ We’d love to hear from you! We welcome every conversation with open ears, open hearts, and open minds. </h3>
         
         <form action="https://api.web3forms.com/submit" method="POST" className = "contact-form">
           
