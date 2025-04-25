@@ -28,11 +28,6 @@
     font-size: 1.15rem;
 }
 
-.about-board-section .page-h2 {
-    margin-left: 5.5rem;
-    margin-top: 3rem;
-}
-
 /* ============================== END OF TEXT OVERWRITES ============================== */
 
 
@@ -151,7 +146,7 @@
 
 .contact-testimonial-section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -171,10 +166,12 @@
     padding-top: 2rem;
     padding-bottom: 3rem;
 
+    gap: 4rem;
+
     height: auto;
 }
 
-.contact-testimonial-div {
+.contact-testimonial-img-div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -183,9 +180,7 @@
 .contact-testimonial-text-div {
     height: auto;
     width:  auto;
-    max-width: 30rem;
-
-    margin-right: 6rem;
+    max-width: 50rem;
 }
 
 .contact-testimonial-img {
@@ -222,12 +217,12 @@
 }
 
 .arrow-button-left {
-    left: 1rem; /* Adjust as needed */
+    left: 1rem;
     rotate: 90deg;
 }
 
 .arrow-button-right {
-    right: 1rem; /* Adjust as needed */
+    right: 1rem;
     rotate: -90deg;
 }
 
@@ -240,7 +235,55 @@
 
 
 /* ============================== RESPONSIVE SCREEN #1 ============================== */
-@media only screen and (max-width: 1310px) {
+
+@media only screen and (max-width: 1600px) {
+    
+    .contact-testimonial-text-div {
+        max-width: 40rem;
+    }
+    
+    .contact-testimonial-img {
+        height: 350px; 
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+
+    
+    .contact-testimonial-content-div {    
+        gap: 3rem;
+    }
+    
+    .contact-testimonial-text-div {
+        max-width: 35rem;
+    }
+    
+    .contact-testimonial-img {
+        height: 350px; 
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 1350px) {
+
+    
+    .contact-testimonial-content-div {    
+        gap: 3rem;
+        flex-direction: column-reverse;
+    }
+
+    .contact-testimonial-text-div {
+        max-width: 50rem;
+    }
+    
+    .contact-testimonial-img {
+        height: 400px; 
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
 
     /* ==================== CONTACT FORM SECTION ==================== */
 
@@ -270,23 +313,9 @@
 
 
     /* ==================== TESTIMONIALS SECTION ==================== */
-
-    .contact-testimonial-content-div {
-        margin: 5rem;
-    }
-
-    .contact-testimonial-p {
-        font-size: 1rem;
-    }
     
     .contact-testimonial-text-div {
-        margin-right: 1.5rem;
-    }
-    
-    .contact-testimonial-img {
-        height: 300px; 
-        width: 300px;
-        margin-top: 4rem;
+        width: 40rem;
     }
     
     .arrow-button-right {
@@ -303,18 +332,10 @@
 
     /* ==================== END OF TESTIMONIALS SECTION ==================== */
 }
-/* ============================== END OF RESPONSIVE SCREEN #1 ============================== */
-
-
-/* ============================== RESPONSIVE SCREEN #2 ============================== */
 
 @media only screen and (max-width: 1000px) {
 
     /* ==================== CONTACT FORM SECTION ==================== */
-
-    .about-board-section .page-h2 {
-        margin-left: 3rem;
-    }
 
     .contact-h3 {
         font-size: 1.15rem;
@@ -341,27 +362,87 @@
 
 
     /* ==================== TESTIMONIAL SECTION ==================== */
+    
+    .contact-testimonial-text-div {
+        margin-left: 1rem;
+        width: 38rem;
+    }
 
-    .contact-testimonial-content-div {
-        flex-direction: column;
+    .contact-testimonial-p {
+        font-size: 1rem;
     }
 
     .arrow-button-right {
         height: 3rem;
         width: 3rem;
         font-size: 3rem;
-        margin-right: 2rem;
+        margin-right: 0.5rem;
     }
     
     .arrow-button-left {
         height: 3rem;
         width: 3rem;
         font-size: 3rem;
-        margin-left: 2rem;
-        margin-right:1rem;
+        margin-left: 0.5rem;
     }
 
     /* ==================== END OF TESTIMONIAL SECTION ==================== */
     
 }
-/* ============================== END OF RESPONSIVE SCREEN #1 ============================== */
+
+@media only screen and (max-width: 900px) {
+
+    .contact-testimonial-text-div {
+        margin-left: 2.5rem;
+        width: 32rem;
+    }
+
+    .contact-h2 {
+        font-size: 2rem;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    .contact-testimonial-text-div {
+        margin-left: 2rem;
+        width: 30rem;
+    }
+
+    .contact-testimonial-img {
+        height: 300px;
+        width: 300px;
+        margin-top: 0rem;
+    }
+
+}
+
+@media only screen and (max-width: 750px) {
+
+    .contact-testimonial-text-div {
+        margin-left: 0rem;
+        width: 25rem;
+    }
+
+    .arrow-button-right {
+        margin-right: 0rem;
+    }
+    
+    .arrow-button-left {
+        margin-left: 0rem;
+    }
+
+    .contact-h2 {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .contact-testimonial-text-div {
+        width: 20rem;
+    }
+
+}

@@ -12,6 +12,7 @@ import EarlyMilestones from './pages/EarlyMilestones';
 import Music from './components/Music';
 import AboutMusic from './pages/AboutMusic';
 import { MusicProvider } from './context/MusicContext';
+import Hackathon from './pages/Hackathon';
 
 const App: React.FC = () => {
   return (
@@ -36,6 +37,7 @@ const App: React.FC = () => {
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/earlyMilestones" element={<EarlyMilestones />} />
                     <Route path="/aboutMusic" element={<AboutMusic />} />
+                    <Route path="/hackathon" element={<Hackathon />} />
                   </Routes>
                 </main>
                 <Footer />

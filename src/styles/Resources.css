@@ -1,3 +1,27 @@
+/* Resources.css */
+.resources-header {
+  display: flex;
+  align-items: center; /* Vertically align items */
+  justify-content: flex-start; /* Align items to the left */
+  gap: 0.5rem; /* Reduce spacing between the title and the filter bar */
+}
+.page-h1 {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #71296c;
+  margin-left: auto; /* Push the title to the right */
+}
+
+
+.filters-tabs {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
 .card-container {
   display: flex;
   flex-wrap: wrap;
@@ -48,41 +72,94 @@
 
 .card-btn {
   display: block;
-
   background-color: #D02F9E;
   color: #F5F5F5;
-
   padding: 0.5rem 1.5rem;
-
   text-decoration: none;
   border-radius: 0.75rem;
   border: none;
-
   position: absolute;
   bottom: 16px;
   left: 16px;
   right: 16px;
-
   text-align: center;
-
   font-family: "Work Sans", sans-serif;
   font-weight: bold;
   font-size: 1rem;
-  transition: background-color 0.25s;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Smooth transition for sliding and color */
 }
 
 .card-btn:hover {
-  background-color: #633160;
+  background-color: #633160; /* Change background color on hover */
+  transform: translateX(10px); /* Slide the button slightly to the right */
 }
 
-.filter-search {
-  display: flex;
-  gap: 10px;
-  margin-top: 30px;
-  margin-bottom: 10px;
-  justify-content: center;
-  padding: 10px;
+.card-btn.selected {
+  background-color: #71296c; /* Selected background color */
+  color: white; /* Selected text color */
+  transform: translateY(-5px); /* Slide the button slightly upward when selected */
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
+
+.filters-container {
+  display: flex;
+  justify-content: start;
+  background-color: #f6e3ef; /* soft pink */
+  padding: 0.5rem 1.5rem; /* less padding */
+  border-radius: 1rem;
+  margin: 1.5rem auto;
+  max-width: fit-content;
+  box-shadow: 0 4px 8px rgba(165, 43, 147, 0.1);
+}
+
+.filters-tab {
+  cursor: pointer;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #D02F9E;
+  background-color: transparent;
+  transition: all 0.2s ease-in-out; /* Smooth transition for hover and selection */
+}
+
+.filters-tab:hover {
+  background-color: #f2f2f2; /* Light background on hover */
+  color: #71296c; /* Change text color on hover */
+}
+
+.filters-tab.selected {
+  font-weight: 700;
+  background-color: #71296c; /* Selected background color */
+  color: white; /* Selected text color */
+
+  transition: all 0.2s ease-in-out; /* Smooth transition for selected state */
+}
+
+.tab-indicator {
+  transition: "all 0.25s ease-out",
+}
+
+/* Category-specific coloring */
+.filters-tab.selected[data-type="harmony-hacks"] {
+  color: #ffb8f4;
+}
+.filters-tab.selected[data-type="student-resources"] {
+  color: #ffdef8;
+}
+.filters-tab.selected[data-type="financial-aid"] {
+  color: #e587ff;
+}
+.filters-tab.selected[data-type="academic"] {
+  color: #ceffe3;
+}
+.filters-tab.selected[data-type="food"] {
+  color: #ffffff;
+}
+.filters-tab.selected[data-type="career"] {
+  color: #edffef;
+}
+
 
 .tag {
 color: #F6E3EF;
@@ -105,4 +182,128 @@ border-color: #71296c;
 transform: scale(1.1);
 background-color: #633160;
 color: #ffe1fa;
+}
+
+/* dropdown modal styling */
+/* Modal Backdrop */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  /* THE FIX: Set a very light transparent background */
+  background-color: rgba(255, 217, 242, 0.6) !important;
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+
+/* Modal Card Container */
+.modal-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.6); /* translucent dark glass */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 16px;
+  color: white;
+  max-width: 1000px;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  animation: fadeIn 0.3s ease-in-out;
+  padding: 2rem;
+}
+
+/* Horizontal Content Layout */
+.modal-content {
+  display: flex;
+  flex-direction: row; /* Ensures image is on the right */
+  width: 100%;
+}
+
+
+/* Text Section (Left) */
+.modal-content-section {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+}
+
+.modal-title {
+  color: #A52B93;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.modal-description {
+  color: #A52B93;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.modal-image-section {
+  width: 100%; /* Allow the image section to take full width */
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  padding: 1rem;
+  background: none;
+}
+
+.modal-img {
+  max-width: 100%; /* Ensure the image scales properly */
+  max-height: 300px; /* Limit the height of the image */
+  object-fit: cover; /* Maintain the aspect ratio */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.modal-back-btn {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transition for sliding and color */
+}
+
+.modal-back-btn:hover {
+  color: #b5749f; /* Change text color on hover */
+  transform: translateX(-10px); /* Slide the button slightly to the left */
+}
+
+.glider {
+  transform: translateX(var(--translate-x, 0));
+  background-color: var(--background-color, #e6eef9);
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out; /* Smooth sliding and color transition */
+}
+
+@media (max-width: 600px) {
+  .filter-search {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 0.5rem 1rem;
+  }
+
+  .tag {
+    flex: 0 0 auto;
+    font-size: 14px;
+    padding: 6px 10px;
+  }
 }

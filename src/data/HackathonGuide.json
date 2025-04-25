@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "hackathonStep_title": "Creating a Club",
+        "hackathonStep_description": "Establishing Harmony Hacks club to create an organization that can find mentors & students to participate in the event + faculty to facilitate. Go through school process to create a formal club etc.",
+        "hackathonStep_image": "/assets/logos/harmonyHacksLogoNoText.png"
+    },
+    {
+        "id": 2,
+        "hackathonStep_title": "Build the Club",
+        "hackathonStep_description": "Build up the club first, focus on figuring out how it will be managed + finding members who might be interested in mentoring later on (host club meetings and events)",
+        "hackathonStep_image": "/assets/logos/harmonyHacksLogoNoText.png"
+    },
+    {
+        "id": 3,
+        "hackathonStep_title": "Finding & Funding Mentors.",
+        "hackathonStep_description": "Have faculty send out application for any club member to apply as a mentor (although im not what this should includedbecause i dont know what the funding looks like for other schools? but i think its important to be transparent that this hackathon is heavilty funded by NSF and our mentors get paid)",
+        "hackathonStep_image": "/assets/logos/harmonyHacksLogoNoText.png"
+    },
+    {
+        "id": 4,
+        "hackathonStep_title": "Outreaching Locally",
+        "hackathonStep_description": "Start outreach to schools at least 2 months in advance to see highschooler interest & prepare (making flyers and contacting former teachers and local school admins)",
+        "hackathonStep_image": "/assets/logos/harmonyHacksLogoNoText.png"
+    },
+    {
+        "id": 5,
+        "hackathonStep_title": "Training",
+        "hackathonStep_description": "Go through training to familiarize yourself with hackathon tools & language (tunepad and python) prior to the hackathon / create a music theory & encryption demo for the students",
+        "hackathonStep_image": "/assets/logos/harmonyHacksLogoNoText.png"
+    },
+    {
+        "id": 6,
+        "hackathonStep_title": "Hackathon Stuff",
+        "hackathonStep_description": "Hackathon stuff ? basically just assisting the students conceptually and technically in the project, making sure everyones working as a team and regularly check in on them / get them ready to present their final piece",
+        "hackathonStep_image": "/assets/logos/harmonyHacksLogoNoText.png"
+    }
+]

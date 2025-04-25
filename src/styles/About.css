@@ -2,15 +2,18 @@
 /* ============================== HISTORY SECTION ============================== */
 
 .about-history-section {
-    padding-top: 1rem;
+    padding-top: 2rem;
     padding-left: 5rem;
     padding-right: 5rem;
     padding-bottom: 5rem;
     display: flex;
     flex-direction: row;
+
+    justify-content: left;
     align-items: center;
     align-content: center;
-    justify-content: space-evenly;
+
+    gap: 2rem;
 
     height: auto;
 }
@@ -37,8 +40,11 @@
 .about-founders-section {
     display: flex;
     flex-direction: row;
-    align-items: left;
+
+    align-content: center;
+    align-items: center;
     justify-content: left;
+
     height: auto;
     gap: 5rem;
     padding:5rem;
@@ -46,8 +52,7 @@
 }
 
 .about-founders-content-div {
-    margin-left: 5rem;
-    width:  45rem;
+    width:  auto;
     height: auto;
 }
 
@@ -76,6 +81,12 @@
     font-family: "Ubuntu", sans-serif;
     font-size: 1.3rem;
     font-weight: 700;
+}
+
+.about-board-h2 {
+    text-align: center;
+    margin-right: 5.5rem;
+    margin-top: 2rem;
 }
 
 .about-board-cards-container {
@@ -148,25 +159,35 @@
 
 /* ============================== RESPONSIVE SCREEN #1 ============================== */
 
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 1300px) {
 
     /* ========== HISTORY SECTION ========== */
     
     .about-history-section {
-        flex-direction: row;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap:4rem;
+    }
+
+    .about-history-content-div {
+        width: auto;
     }
 
     .about-history-img {
-        margin-top: 5rem;
+        margin-top: 2rem;
     }
 
     /* ========== END OF HISTORY SECTION ========== */
 
 
     /* ========== FOUNDERS SECTION ========== */
-    
-    .about-founders-img {
-        margin-top: 13rem;
+
+    .about-founders-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0rem;
     }
 
     /* ========== END OF HISTORY SECTION ========== */
@@ -182,43 +203,34 @@
 
     /* ========== HISTORY SECTION ========== */
 
-    .about-history-section {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .about-history-img {
-        margin-top: 0rem;
-        margin-bottom: 3rem;
-    }
-
     .about-history-content-div {
         width: auto;
         margin: 0.2rem;
+    }
+
+    .about-history-img {
+        margin-top: 2rem;
+        width: 30rem;
     }
 
     /* ========== END OF HISTORY SECTION ========== */
 
 
     /* ========== FOUNDERS SECTION ========== */
-
-    .about-founders-section {
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-    }
     
     .about-founders-img {
-        margin-top: 5rem;
-        margin-bottom: 4rem;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+        width: 30rem;
     }
 
     .about-founders-content-div {
         margin-bottom: 5rem;
         width: auto;
-        margin-left: 3rem;
-        margin-right: 3rem;
+    }
+
+    .about-board-h2 {
+        margin-right: 2rem;
     }
 
     /* ========== END OF HISTORY SECTION ========== */
@@ -226,3 +238,24 @@
 }
 
 /* ============================== END OF RESPONSIVE SCREEN #2 ============================== */
+
+@media only screen and (max-width: 1000px) {
+
+    .about-board-h2 {
+        text-align: center;
+        font-size: 2rem;
+        margin-right: 0rem;
+    }
+
+}
+
+
+@media only screen and (max-width: 700px) {
+
+    .about-board-h2 {
+        text-align: center;
+        font-size: 1.5rem;
+        margin-right: 0rem;
+    }
+
+}
