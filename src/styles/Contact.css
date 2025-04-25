@@ -28,11 +28,6 @@
     font-size: 1.15rem;
 }
 
-.about-board-section .page-h2 {
-    margin-left: 5.5rem;
-    margin-top: 3rem;
-}
-
 /* ============================== END OF TEXT OVERWRITES ============================== */
 
 
@@ -342,10 +337,6 @@
 
     /* ==================== CONTACT FORM SECTION ==================== */
 
-    .about-board-section .page-h2 {
-        margin-left: 3rem;
-    }
-
     .contact-h3 {
         font-size: 1.15rem;
     }
@@ -406,6 +397,10 @@
         width: 32rem;
     }
 
+    .contact-h2 {
+        font-size: 2rem;
+    }
+
 }
 
 @media only screen and (max-width: 800px) {
@@ -413,6 +408,12 @@
     .contact-testimonial-text-div {
         margin-left: 2rem;
         width: 30rem;
+    }
+
+    .contact-testimonial-img {
+        height: 300px;
+        width: 300px;
+        margin-top: 0rem;
     }
 
 }
@@ -432,17 +433,16 @@
         margin-left: 0rem;
     }
 
+    .contact-h2 {
+        font-size: 1.5rem;
+    }
+
 }
 
 @media only screen and (max-width: 600px) {
 
     .contact-testimonial-text-div {
         width: 20rem;
-    }
-
-    .contact-testimonial-img {
-        width: 20rem;
-        height: 20rem;
     }
 
 }

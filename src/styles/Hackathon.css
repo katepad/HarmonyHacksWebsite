@@ -164,6 +164,10 @@
         width: 13rem;
     }
 
+    .hackathon-gallery-h2 {
+        font-size: 2rem;
+    }
+
 }
 
 /* ================================================= RESPONSIVE SCREEN #4 ================================================= */
@@ -186,6 +190,10 @@
         width: 14rem;
     }
 
+    .hackathon-gallery-h2 {
+        font-size: 1.5rem;
+    }
+
 }
 
 /* ================================================= RESPONSIVE SCREEN #5 ================================================= */
@@ -204,6 +212,10 @@
     
     .hackathon-gallery-img {
         width: 11rem;
+    }
+
+    .hackathon-gallery-h2 {
+        font-size: 1.3rem;
     }
 
 }
