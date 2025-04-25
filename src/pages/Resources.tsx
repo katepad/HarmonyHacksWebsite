@@ -63,7 +63,7 @@ const Resources: React.FC = () => {
   return (
     <div>
       <div className="resources-header">
-        <h1 className="page-h1 color-purple">Resources</h1>
+        <h1 className="resources-page-h1 color-purple">Resources</h1>
         <Filters filter={filter} setFilter={setFilter} />
       </div>
 

@@ -160,6 +160,7 @@
 /* Base slider style */
 input[type="range"] {
   -webkit-appearance: none;
+  appearance: none;
   width: 100%;
   height: 6px;
   background: #F5F5F5;

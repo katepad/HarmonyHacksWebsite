@@ -1,18 +1,18 @@
 /* Resources.css */
-.resources-header {
+.resource-header {
   display: flex;
   align-items: center; /* Vertically align items */
   justify-content: flex-start; /* Align items to the left */
   gap: 0.5rem; /* Reduce spacing between the title and the filter bar */
 }
-.page-h1 {
-  margin: 0;
-  font-size: 3rem;
-  font-weight: bold;
-  color: #71296c;
-  margin-left: auto; /* Push the title to the right */
-}
 
+.resources-page-h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-top: 3rem;
+  margin-left: 5rem;
+}
 
 .filters-tabs {
   display: flex;
