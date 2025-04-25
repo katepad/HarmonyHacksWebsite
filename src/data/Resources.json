@@ -5,7 +5,8 @@
     "resource_title": "Board Positions",
     "resource_summary": "Harmony Hacks",
     "resource_description": "Harmony Hacks is a student-driven platform designed to provide accessible resources, academic guidance, and career opportunities to high school and university students. By curating relevant content across various categories such as financial aid, technology, food programs, and more, the platform empowers learners to explore, grow, and connect within a supportive community. Whether you're preparing for college, navigating coursework, or seeking inspiration from mentors, Harmony Hacks aims to be your go-to hub for success. Harmony Hacks is a student-driven platform designed to provide accessible resources, academic guidance, and career opportunities to high school and university students. By curating relevant content across various categories such as financial aid, technology, food programs, and more, the platform empowers learners to explore, grow, and connect within a supportive community. Whether you're preparing for college, navigating coursework, or seeking inspiration from mentors, Harmony Hacks aims to be your go-to hub for success.",
-    "resource_tag": "Harmony Hacks"
+    "resource_tag": "Harmony Hacks",
+    "resource_link": "https://www.csusm.edu/harmonyhacks/index.html"
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "resource_title": "University Police",
     "resource_summary": "Student Resources",
     "resource_description": "Safety Escorts - Safety Escorts are provided by UPD. Call 760-750-4567 to arrange for an escort. A Community Service Officer (CSO) will escort you to and from any campus building, parking lot, or residence hall. Live Scan services - by appointment. Lost & Found",
-    "resource_tag": "Student Resources"
+    "resource_tag": "Student Resources",
+    "resource_link": "https://www.csusm.edu/harmonyhacks/index.html"
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "resource_title": "Financial Aid",
     "resource_summary": "Financial Support",
     "resource_description": "Harmony Hacks is a student-driven platform designed to provide accessible resources, academic guidance, and career opportunities to high school and university students. By curating relevant content across various categories such as financial aid, technology, food programs, and more, the platform empowers learners to explore, grow, and connect within a supportive community. Whether you're preparing for college, navigating coursework, or seeking inspiration from mentors, Harmony Hacks aims to be your go-to hub for success.",
-    "resource_tag": "Financial Aid"
+    "resource_tag": "Financial Aid",
+    "resource_link": "https://www.csusm.edu/harmonyhacks/index.html"
   },
   {
     "id": 4,
@@ -29,15 +32,18 @@
     "resource_title": "Academic Success Center (ASC)",
     "resource_summary": "Academic",
     "resource_description": "Harmony Hacks is a student-driven platform designed to provide accessible resources, academic guidance, and career opportunities to high school and university students. By curating relevant content across various categories such as financial aid, technology, food programs, and more, the platform empowers learners to explore, grow, and connect within a supportive community. Whether you're preparing for college, navigating coursework, or seeking inspiration from mentors, Harmony Hacks aims to be your go-to hub for success.",
-    "resource_tag": "Academic"
+    "resource_tag": "Academic",
+    "resource_link": "https://www.csusm.edu/harmonyhacks/index.html"
   },
+  
   {
     "id": 5,
     "resource_image": "https://www.csusm.edu/el/programs/aspiringscholars/images/group-photo-2024-lr.jpg",
     "resource_title": "Disability Support Services (DSS)",
     "resource_summary": "Student Resources",
     "resource_description": "Harmony Hacks is a student-driven platform designed to provide accessible resources, academic guidance, and career opportunities to high school and university students. By curating relevant content across various categories such as financial aid, technology, food programs, and more, the platform empowers learners to explore, grow, and connect within a supportive community. Whether you're preparing for college, navigating coursework, or seeking inspiration from mentors, Harmony Hacks aims to be your go-to hub for success.",
-    "resource_tag": "Student Resources"
+    "resource_tag": "Student Resources",
+    "resource_link": "https://www.csusm.edu/harmonyhacks/index.html"
   },
   {
     "id": 6,
@@ -45,7 +51,8 @@
     "resource_title": "ASI Cougar Pantry",
     "resource_summary": "Food",
     "resource_description": "Harmony Hacks is a student-driven platform designed to provide accessible resources, academic guidance, and career opportunities to high school and university students. By curating relevant content across various categories such as financial aid, technology, food programs, and more, the platform empowers learners to explore, grow, and connect within a supportive community. Whether you're preparing for college, navigating coursework, or seeking inspiration from mentors, Harmony Hacks aims to be your go-to hub for success.",
-    "resource_tag": "Food"
+    "resource_tag": "Food",
+    "resource_link": "https://www.csusm.edu/harmonyhacks/index.html"
   },
   {
     "id": 7,
@@ -53,7 +60,8 @@
     "resource_title": "Career Center",
     "resource_summary": "Career",
     "resource_description": "Harmony Hacks is a student-driven platform designed to provide accessible resources, academic guidance, and career opportunities to high school and university students. By curating relevant content across various categories such as financial aid, technology, food programs, and more, the platform empowers learners to explore, grow, and connect within a supportive community. Whether you're preparing for college, navigating coursework, or seeking inspiration from mentors, Harmony Hacks aims to be your go-to hub for success.",
-    "resource_tag": "Career"
+    "resource_tag": "Career",
+    "resource_link": "https://www.csusm.edu/harmonyhacks/index.html"
   },
   {
     "id": 8,
@@ -61,7 +69,8 @@
     "resource_title": "Linkedln",
     "resource_summary": "Career",
     "resource_description": "Harmony Hacks is a student-driven platform designed to provide accessible resources, academic guidance, and career opportunities to high school and university students. By curating relevant content across various categories such as financial aid, technology, food programs, and more, the platform empowers learners to explore, grow, and connect within a supportive community. Whether you're preparing for college, navigating coursework, or seeking inspiration from mentors, Harmony Hacks aims to be your go-to hub for success.",
-    "resource_tag": "Career"
+    "resource_tag": "Career",
+    "resource_link": "https://www.csusm.edu/harmonyhacks/index.html"
   },
   {
     "id": 9,
@@ -69,7 +78,8 @@
     "resource_title": "Student Health and Counseling Services",
     "resource_summary": "Student Resources",
     "resource_description": "Harmony Hacks is a student-driven platform designed to provide accessible resources, academic guidance, and career opportunities to high school and university students. By curating relevant content across various categories such as financial aid, technology, food programs, and more, the platform empowers learners to explore, grow, and connect within a supportive community. Whether you're preparing for college, navigating coursework, or seeking inspiration from mentors, Harmony Hacks aims to be your go-to hub for success.",
-    "resource_tag": "Student Resources"
+    "resource_tag": "Student Resources",
+    "resource_link": "https://www.csusm.edu/harmonyhacks/index.html"
   },
   {
     "id": 10,
@@ -77,22 +87,25 @@
     "resource_title": "CSUSM Library",
     "resource_summary": "Library Information",
     "resource_description": "Harmony Hacks is a student-driven platform designed to provide accessible resources, academic guidance, and career opportunities to high school and university students. By curating relevant content across various categories such as financial aid, technology, food programs, and more, the platform empowers learners to explore, grow, and connect within a supportive community. Whether you're preparing for college, navigating coursework, or seeking inspiration from mentors, Harmony Hacks aims to be your go-to hub for success.",
-    "resource_tag": "Academic"
+    "resource_tag": "Academic",
+    "resource_link": "https://www.csusm.edu/harmonyhacks/index.html"
   },
   {
     "id": 11,
     "resource_image": "https://www.csusm.edu/harmonyhacks/images/hero-1.jpg",
     "resource_title": "CSUSM Hackathon Information",
     "resource_summary": "Harmony Hacks",
-    "resource_description": "https://www.csusm.edu/harmonyhacks/index.html",
-    "resource_tag": "Harmony Hacks"
+    "resource_description": "Harmony Hacks is a student-driven platform designed to provide accessible resources, academic guidance, and career opportunities to high school and university students. By curating relevant content across various categories such as financial aid, technology, food programs, and more, the platform empowers learners to explore, grow, and connect within a supportive community. Whether you're preparing for college, navigating coursework, or seeking inspiration from mentors, Harmony Hacks aims to be your go-to hub for success.",
+    "resource_tag": "Harmony Hacks",
+    "resource_link": "https://www.csusm.edu/harmonyhacks/index.html"
   },
   {
     "id": 12,
     "resource_image": "https://eccentric-orbit.com/content/images/2022/04/Screen-Shot-2022-04-22-at-4.54.45-PM-min.png",
     "resource_title": "Tunepad",
     "resource_summary": "Harmony Hackathon Tool",
-    "resource_description": "https://tunepad.com/",
-    "resource_tag": "Harmony Hacks"
+    "resource_description": "Harmony Hacks is a student-driven platform designed to provide accessible resources, academic guidance, and career opportunities to high school and university students. By curating relevant content across various categories such as financial aid, technology, food programs, and more, the platform empowers learners to explore, grow, and connect within a supportive community. Whether you're preparing for college, navigating coursework, or seeking inspiration from mentors, Harmony Hacks aims to be your go-to hub for success.",
+    "resource_tag": "Harmony Hacks",
+    "resource_link": "https://tunepad.com/"
   }
 ]
