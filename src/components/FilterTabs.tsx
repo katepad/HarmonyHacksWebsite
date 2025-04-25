@@ -22,7 +22,6 @@ const colorMap: Record<string, string> = {
     "Hackathons": "#2563eb",
     "Misc": "#4b5563",
   };
-  
 
 interface FilterTabsProps {
   filter: string;

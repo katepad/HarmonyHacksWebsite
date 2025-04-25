@@ -6,14 +6,14 @@
   padding: 1rem;
 }
 
-.calendar-header.clean-align {
+.calendar-header {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap; /* allows wrapping on small screens */
   justify-content: space-between;
-  padding: 0 15px;
-  margin-bottom: 10px;
-  flex-wrap: nowrap;
-  gap: 20px;
+  align-items: center;
+  row-gap: 1rem;
+  column-gap: 1.5rem;
+  padding: 0 1rem;
 }
 
 .month-and-tabs {
@@ -30,16 +30,6 @@
   margin: 0;
   padding: 0;
 }
-
-.filter-tabs-container {
-  display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
-  transform: translateY(-7px);
-  justify-content: center;
-  margin-top: 1rem;
-}
-
 
 .nav-buttons {
   white-space: nowrap;
@@ -127,15 +117,18 @@
   font-weight: 600;
 }
 
-.rbc-event:hover {
-  filter: brightness(96%);
-  transition: all 0.3s ease;
-}
-
 /* ======================================== END OF CALENDAR CONTENTS ELEMENTS ======================================== */
 
 /* ======================================== EVENT CHIP ELEMENTS ======================================== */
 
+.rbc-event:hover {
+  filter: brightness(96%);
+  transition: all 0.3s ease-in;
+}
+
+.rbc-event {
+  transition: all 0.3s ease-out;
+}
 
 .event-chip {
   border-radius: 20px;
@@ -276,17 +269,32 @@
   cursor: pointer;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   font-family: 'Urbanist';
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
 }
 
 .rsvp-form button:hover {
-  background-color: #E155AD;
+  background-color: #A23E8C;
 }
 
 /* ======================================== END OF EVENT MODULE ELEMENTS ======================================== */
 
+/* ======================================== FILTER BAR ELEMENTS ======================================== */
+
+
 .filter-tabs-container {
   display: flex;
-  
+  width: 100%;
+  align-items: center;
+  flex-wrap: nowrap;
+  transform: translateY(-7px);
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+/* Hide scrollbar on WebKit */
+.filter-tabs-wrapper::-webkit-scrollbar {
+  display: none;
 }
 
 .tabs {

@@ -57,7 +57,8 @@ const EventCalendar: React.FC = () => {
 
     return (
         <div className= "calendar-container">
-            <div className = "calendar-header clean-align">
+            
+            <div className = "calendar-header">
                 <div className = "month-and-tabs">
                     <h2 className = "page-h1 calendar-month">
                         {moment(currentDate).format("MMMM YYYY")}
