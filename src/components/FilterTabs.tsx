@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect } from "react";
 import "../styles/Calendar.css";
 
 const filters = ["All", "GBM Events", "Workshops", "Fundraisers", "Socials", "Hackathons", "Misc"];
@@ -29,45 +29,67 @@ interface FilterTabsProps {
 }
 
 const FilterTabs: React.FC<FilterTabsProps> = ({ filter, setFilter }) => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1160);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 1160);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div className="filter-tabs-container">
-      <div className="tabs">
-        {filters.map((type, index) => (
-          <React.Fragment key={type}>
-            <input
-              type="radio"
-              id={`radio-${index}`}
-              name="tabs"
-              checked={filter === type}
-              onChange={() => setFilter(type)}
-            />
-            <label
+      {isMobile ? (
+        <select
+          className="filter-dropdown"
+          value={filter}
+          onChange={(e) => setFilter(e.target.value)}
+        >
+          {filters.map((type) => (
+            <option key={type} value={type}>
+              {type}
+            </option>
+          ))}
+        </select>
+      ) : (
+        <div className="tabs">
+          {filters.map((type, index) => (
+            <React.Fragment key={type}>
+              <input
+                type="radio"
+                id={`radio-${index}`}
+                name="tabs"
+                checked={filter === type}
+                onChange={() => setFilter(type)}
+              />
+              <label
                 className="tab"
                 htmlFor={`radio-${index}`}
                 style={{
-                    color: filter === type && textColorMap[type]
-                    ? textColorMap[type]
-                    : "black",
-                    fontWeight: "600"
-                    }}
-                >
+                  color:
+                    filter === type && textColorMap[type]
+                      ? textColorMap[type]
+                      : "black",
+                  fontWeight: "600",
+                }}
+              >
                 {type}
-            </label>
-
-
-          </React.Fragment>
-        ))}
-        <span
-          className="glider"
-          style={{ 
-            transform: `translateX(${filters.indexOf(filter) * 100}%)`,
-            backgroundColor: colorMap[filter] || "e6eef9",
-            transition: "all 0.25s ease-out",
-        }}
-        />
-      </div>
+              </label>
+            </React.Fragment>
+          ))}
+          <span
+            className="glider"
+            style={{
+              transform: `translateX(${filters.indexOf(filter) * 100}%)`,
+              backgroundColor: colorMap[filter] || "e6eef9",
+              transition: "all 0.25s ease-out",
+            }}
+          />
+        </div>
+      )}
     </div>
   );
 };
+
 
 export default FilterTabs;

@@ -1,28 +1,43 @@
+.page-fade {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInSlide 0.4s ease-out forwards;
+}
+
+@keyframes fadeInSlide {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* ======================================== CALENDAR + HEADER ELEMENTS ======================================== */
 .calendar-container {
-  padding: 20px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* soft drop shadow */
   border-radius: 16px; 
   padding: 1rem;
+  min-width: 510px; /* or whatever min width feels right for your layout */
+  justify-content: center;
 }
 
 .calendar-header {
   display: flex;
-  flex-wrap: wrap; /* allows wrapping on small screens */
   justify-content: space-between;
   align-items: center;
-  row-gap: 1rem;
-  column-gap: 1.5rem;
+  gap: 1rem;
   padding: 0 1rem;
+  width: 100%;
+  flex-wrap: nowrap;
 }
 
 .month-and-tabs {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  gap: 20px;
-  flex-shrink: 1;
-  flex-wrap: nowrap;
+  gap: 1rem;
+  flex: 1 1 0;      /* allow it to grow and shrink */
+  min-width: 0;     /* allows proper shrinking */
 }
+
 
 .calendar-month {
   color: #A23E8C;
@@ -117,6 +132,56 @@
   font-weight: 600;
 }
 
+/* Style the popup container */
+.rbc-overlay {
+  background-color: #f6e3ef; /* pastel pink like your theme */
+  border: 2px solid #A23E8C; /* purple border */
+  font-family: "Work Sans";
+  color: #A23E8C;
+  font-weight: 500;
+  border-radius: 12px;
+  margin-top: 0.5rem;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+  animation: fadeSlideIn 0.3s ease-out forwards;
+}
+
+/* Define the animation */
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Style individual events inside popup */
+.rbc-overlay .rbc-event {
+  background: none;
+  color: #5e2750; /* dark purple text */
+  font-family: 'Work Sans', sans-serif;
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+/* Make event chips inside popup look consistent */
+.rbc-overlay .rbc-event-content {
+  color: #5e2750;
+  font-size: 0.9rem;
+}
+
+/* Style the "More" link text */
+.rbc-show-more {
+  font-size: clamp(0.6rem, 1.2vw, 0.9rem);
+  background: transparent;
+  color: #A23E8C;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
 /* ======================================== END OF CALENDAR CONTENTS ELEMENTS ======================================== */
 
 /* ======================================== EVENT CHIP ELEMENTS ======================================== */
@@ -138,8 +203,8 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  white-space: nowrap; /* */
-  overflow: hidden;
+  white-space: nowrap;
+  overflow: hiddten;
   text-overflow: ellipsis;
   min-width: 0;
   max-width: 100%;
@@ -221,7 +286,8 @@
   background-color: #f6e3ef;
   border-radius: 15px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  max-width: 350px;
+  max-width: 360px;
+  min-width: 250px;
   margin-top: 0; /* Aligns the top of the module with top of calendar */
 }
 
@@ -233,19 +299,34 @@
   border: none;
   font-size: 24px;
   font-weight: bold;
-  color: #A23E8C;
+  color: #D02F9E;
   cursor: pointer;
   transition: color 0.2s ease-in-out;
 }
 
 .close-icon:hover {
-  color: #E155AD;
+  color: #A23E8C;
 }
 
 .event-module h3 {
   margin-top: 0;
+  padding-right: 2rem;       /* prevents title from colliding with the × */
   color: #A23E8C;
+  word-break: break-word;    /* ensures long words wrap */
 }
+
+.event-description {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #A23E8C;
+  letter-spacing: 0.01rem;
+}
+
+.event-details {
+  color: #A23E8C;
+  margin: 5px 0;
+}
+
 
 .rsvp-form {
   display: flex;
@@ -284,12 +365,14 @@
 
 .filter-tabs-container {
   display: flex;
-  width: 100%;
+  width: auto;
+  flex-shrink: 1;
   align-items: center;
   flex-wrap: nowrap;
   transform: translateY(-7px);
-  justify-content: center;
+  justify-content: flex-start;
   margin-top: 1rem;
+  min-width: 0;
 }
 
 /* Hide scrollbar on WebKit */
@@ -304,7 +387,12 @@
   box-shadow: 0 0 1px 0 rgba(24, 94, 224, 0.15), 0 6px 12px 0 rgba(24, 94, 224, 0.15);
   padding: 0.75rem;
   border-radius: 99px;
+  white-space: nowrap;
+
+  width: 100%;
+  overflow-x: auto; /* Just in case it needs to scroll before dropdown kicks in */
 }
+
 
 .tabs * {
   z-index: 2;
@@ -337,4 +425,40 @@ input[type="radio"] {
   z-index: 1;
   border-radius: 99px;
   transition: 0.25s ease-out;
+}
+
+.filter-dropdown {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  background-color: #F0C7E1;
+  color: #5e2750;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+/* ======================================== RESPONSIVENESS FOR CALENDAR CONTENT ======================================== */
+
+@media (max-width: 768px) {
+  .calendar-content {
+    flex-direction: column;
+    align-items: center; /* Center both the calendar and event module */
+  }
+
+  .event-module {
+    max-width: 100%; /* Make it expand more nicely on mobile */
+    margin-top: 20px; /* Add some space between the calendar and module */
+    width: 95vw;
+    margin: 20px auto 0 auto; /* centers horizontally */
+    border-radius: 20px;
+  }
+
+  .rbc-calendar {
+    width: 100%;
+    flex: unset !important;
+    width: 100% !important;
+  }
 }
