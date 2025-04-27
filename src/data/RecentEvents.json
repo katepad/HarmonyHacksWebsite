@@ -28,5 +28,10 @@
         "eventname": "Hackathon Awards",
         "eventdesc": "blah blah blah blah",
         "eventpic": "../assets/pictures/firstHackathon/firstWomensHackathonShowcase1.jpg"
+    },
+    {
+        "eventname": "Caps and Vision Maps",
+        "eventdesc": "blah blah blah blah",
+        "eventpic": "../assets/pictures/capsAndVisionMaps/capsAndVisionMaps13.jpg"
     }
 ]
