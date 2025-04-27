@@ -18,7 +18,7 @@ const AboutMusicInfo = () => {
                 <img className="about-music-img" src="/assets/pictures/firstHackathon/firstWomensHackathonKickoff8.jpg" alt= "1st Harmony Hackathon Picture" />
             </div>
             <div className = "about-music-right-div">
-                <h2 className = "page-h2 color-purple"> Curious about where this music is from? </h2>
+                <h2 className = "page-h2 color-purple">♡ Curious about where this music is from? </h2>
                 <br/>
                 <p className = "page-p color-darkpurple"> The music featured on this website was created by high school women who participated in previous Harmony Hackathons. These compositions are more than just melodies; They are encrypted messages coded in Python via Tunepad, a programming music tool. Each piece is a creative expression of empowerment, resilience, and innovation, encoded with powerful phrases such as:
                 </p>

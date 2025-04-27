@@ -2,37 +2,79 @@
     {
         "id": 1,
         "hackathonStep_title": "Creating a Club",
-        "hackathonStep_description": "Establishing Harmony Hacks club to create an organization that can find mentors & students to participate in the event + faculty to facilitate. Go through school process to create a formal club etc.",
+        "hackathonStep_description": "We officially established our club by going through the university’s student organization process. This involved submitting an application, writing a constitution, and getting recognized as an official campus organization. Becoming an official club made it much easier for us to build a community, access funding for our Harmony Hackathon, and recruit members to support our efforts.",
         "hackathonStep_image": "/assets/logos/harmonyHacksLogoNoText.png"
     },
     {
         "id": 2,
-        "hackathonStep_title": "Build the Club",
-        "hackathonStep_description": "Build up the club first, focus on figuring out how it will be managed + finding members who might be interested in mentoring later on (host club meetings and events)",
+        "hackathonStep_title": "Building the Club",
+        "hackathonStep_description": "After Harmony Hacks was established, we focused on building it up by hosting events and outreaching. Info sessions, small social events, and club fairs helped us attract people who were interested in mentoring opportunities, coding, or just building a supportive community for women in computing. Having an active presence on campus makes it easier to later recruit mentors and volunteers for the hackathon.",
         "hackathonStep_image": "/assets/logos/harmonyHacksLogoNoText.png"
     },
     {
         "id": 3,
-        "hackathonStep_title": "Finding & Funding Mentors.",
-        "hackathonStep_description": "Have faculty send out application for any club member to apply as a mentor (although im not what this should includedbecause i dont know what the funding looks like for other schools? but i think its important to be transparent that this hackathon is heavilty funded by NSF and our mentors get paid)",
+        "hackathonStep_title": "Recruiting Members.",
+        "hackathonStep_description": "Mentor recruitment is important because mentors are the main support for participants during the hackathon. The club faculty advisors created the mentor application form, which Harmony Hacks board members promoted through emails and announcements. Emphasizing that mentors would get hands-on experience helping students helped attract strong applicants. Final mentor selections were made by the faculty advisors.",
         "hackathonStep_image": "/assets/logos/harmonyHacksLogoNoText.png"
     },
     {
         "id": 4,
         "hackathonStep_title": "Outreaching Locally",
-        "hackathonStep_description": "Start outreach to schools at least 2 months in advance to see highschooler interest & prepare (making flyers and contacting former teachers and local school admins)",
+        "hackathonStep_description": "Our goal was to attract local high school girls to participate in the hackathon, making outreach a top priority. We created flyers that clearly explained the event and included a QR code linking to the hackathon registration form. These flyers were shared both physically and digitally. In addition, we contacted high school teachers, counselors, and administrators directly to encourage student participation. Promoting the event through the club’s Instagram and other social media platforms also helped spread the word quickly, but direct communication with schools proved to be the most effective strategy.",
         "hackathonStep_image": "/assets/logos/harmonyHacksLogoNoText.png"
     },
     {
         "id": 5,
-        "hackathonStep_title": "Training",
-        "hackathonStep_description": "Go through training to familiarize yourself with hackathon tools & language (tunepad and python) prior to the hackathon / create a music theory & encryption demo for the students",
+        "hackathonStep_title": "Preparing for the Hackathon",
+        "hackathonStep_description": "Thanks to NSF grant funding, mentors were able to be paid for their work. Before getting started, they needed to complete onboarding paperwork through CSUSM, live scan fingerprinting, and youth safety training. Mentors and club faculty advisors also held weekly meetings to review the hackathon workflow, mentor expectations, and troubleshooting strategies. Mentors also spent time exploring Tunepad, the platform we used to teach coding through music, and helped develop training documents to guide participants.",
         "hackathonStep_image": "/assets/logos/harmonyHacksLogoNoText.png"
     },
     {
         "id": 6,
-        "hackathonStep_title": "Hackathon Stuff",
-        "hackathonStep_description": "Hackathon stuff ? basically just assisting the students conceptually and technically in the project, making sure everyones working as a team and regularly check in on them / get them ready to present their final piece",
+        "hackathonStep_title": "Establishing a Rubric",
+        "hackathonStep_description": "Having a clear rubric early on helped hackathon participants, mentors, and judges stay aligned on what made a strong project. Our rubric included guidelines for clarity of encryption key, musicality, creativity, technical complexity, teamwork, and presentation quality. Sharing the rubric with hackathon participants gave them a clear idea of what they were working toward.",
+        "hackathonStep_image": "/assets/logos/harmonyHacksLogoNoText.png"
+    },
+    {
+        "id": 7,
+        "hackathonStep_title": "Creating Awards",
+        "hackathonStep_description": "We created category awards based on parts of the rubric. This helped recognize teams' specific strengths, such as “Outstanding Musicality” or “Outstanding Creativity.” First place also received a special award for the overall strongest performance across all areas. Linking awards directly to the rubric would make the judging process fair and transparent. The awards were designed by the club’s media team via Canva.",
+        "hackathonStep_image": "/assets/logos/harmonyHacksLogoNoText.png"
+    },
+    {
+        "id": 8,
+        "hackathonStep_title": "Hosting Pre-Workshops",
+        "hackathonStep_description": "Before the hackathon officially started, we held optional, online pre-workshops via Zoom where participants could learn Tunepad and basic coding functions. These workshops were designed to make sure all participants, no matter their experience level, had the tools they needed to succeed. Mentors ran short lessons and answered questions.",
+        "hackathonStep_image": "/assets/logos/harmonyHacksLogoNoText.png"
+    },
+    {
+        "id": 8,
+        "hackathonStep_title": "Hosting Pre-Workshops",
+        "hackathonStep_description": "Before the hackathon officially started, we held optional, online pre-workshops via Zoom where participants could learn Tunepad and basic coding functions. These workshops were designed to make sure all participants, no matter their experience level, had the tools they needed to succeed. Mentors ran short lessons and answered questions.",
+        "hackathonStep_image": "/assets/logos/harmonyHacksLogoNoText.png"
+    },
+    {
+        "id": 9,
+        "hackathonStep_title": "Hackathon Kickoff",
+        "hackathonStep_description": "The hackathon officially began with a kickoff event that opened with an overview of the schedule and an inspirational talk about the intersection of encryption and music. To help participants feel comfortable, we ran a few icebreaker activities before assigning teams of three to four girls. Following team assignments, mentors led brief workshops: music mentors introduced fundamental music concepts, while coding mentors gave a lesson on encryption. These sessions provided participants with the foundational knowledge they needed to start brainstorming ideas for their projects. Food was provided for the kickoff.",
+        "hackathonStep_image": "/assets/logos/harmonyHacksLogoNoText.png"
+    },
+    {
+        "id": 10,
+        "hackathonStep_title": "Office Hours",
+        "hackathonStep_description": "Throughout the hackathon days, we offered optional, online \"office hours\" via Zoom where mentors were available to meet with teams. These flexible help sessions let teams ask technical or project-related questions without interrupting their workflow. Office hours also gave teams a regular check-in point to stay on track with their projects.",
+        "hackathonStep_image": "/assets/logos/harmonyHacksLogoNoText.png"
+    },
+    {
+        "id": 10,
+        "hackathonStep_title": "Hackathon Showcase",
+        "hackathonStep_description": "During the second day of the hackathon, students spent the first half finalizing their projects, with mentors available to support them during this final push. This dedicated work session gave teams time to polish their presentations, receive feedback, and make final improvements. Once work time ended, participants moved to the venue for the evening showcase. Dinner was provided, and family members were invited to celebrate the students' achievements. Each team presented their project and answered questions from the audience. Judges evaluated the presentations using the established rubric, determining both the overall winning team and recipients of the category awards. While the judges deliberated, participants enjoyed dinner, engaged with guest speakers, and filled out a feedback survey. The evening concluded with an awards ceremony where each team was recognized, and the overall winner was announced.",
+        "hackathonStep_image": "/assets/logos/harmonyHacksLogoNoText.png"
+    },
+    {
+        "id": 11,
+        "hackathonStep_title": "Post-Event Reflections",
+        "hackathonStep_description": "After the hackathon, mentors completed a short end-of-event survey to share their experiences, reflect on what was successful, and suggest changes for future events. Then, we held a debrief meeting with mentors and club faculty advisors to debrief. Feedback from both the meeting and the surveys will guide improvements to the hackathon process in the coming years.",
         "hackathonStep_image": "/assets/logos/harmonyHacksLogoNoText.png"
     }
 ]

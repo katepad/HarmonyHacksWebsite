@@ -13,6 +13,10 @@
 
 /* ======================================== CALENDAR + HEADER ELEMENTS ======================================== */
 .calendar-container {
+  padding-top:3rem;
+  padding-left:4rem;
+  padding-right:4rem;
+  padding-bottom: 5rem;
   border-radius: 16px; 
   padding: 1rem;
   min-width: 510px; /* or whatever min width feels right for your layout */
@@ -31,6 +35,10 @@
 
 .month-and-tabs {
   display: flex;
+  gap: 2rem;
+  flex-shrink: 1;
+  flex-wrap: nowrap;
+  margin-bottom: 1rem;
   flex-direction: row;
   align-items: center;
   gap: 1rem;
@@ -409,7 +417,7 @@ input[type="radio"] {
   height: 30px;
   width: 100px;
   font-size: 0.8rem;
-  color: black;
+  color: #633160;
   font-weight: 500;
   border-radius: 99px;
   cursor: pointer;

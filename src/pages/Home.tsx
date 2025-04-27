@@ -81,7 +81,7 @@ const ClubOverview = () => {
     <section className="club-overview">
       <div className="club-overview-container">
         <div className="club-overview-content-div">
-          <h2 className="page-h2">Club Overview</h2>
+          <h2 className="page-h2">♡ Club Overview</h2>
             <p className="page-p color-darkpurple">
               Harmony Hacks is a student led organization at California State University San Marcos.We are dedicated to empowering women in computing and fostering a supportive community for those that are interested in technology. We host a variety of events throughout the semester, including hackathons,social bonding activities, tabling for outreach, and technical workshops to come. Our club meets bi-weekly, usually in the ViaSat building and is open to all students.
             </p>
@@ -104,7 +104,7 @@ const MissionStatement = () => {
       <img className="mission-statement-img" src="/assets/pictures/firstHackathon/firstWomensHackathonKickoff4.jpg" />
         <div className="mission-statement-content-div">
           <div>
-            <h2 className = "page-h2 mission-statement-h2 "> Mission Statement </h2>
+            <h2 className = "page-h2 mission-statement-h2 ">♡ Mission Statement </h2>
             <p className = "page-p mission-statement-p"> At Harmony Hacks, our mission is to create an inclusive and empowering community where women in computing can thrive. We aim to cultivate confidence, creativity, and curiosity—not perfection—through meaningful experiences that encourage personal growth and technical exploration.
             </p>
             <p className = "page-p mission-statement-p"> Through workshops, events, and outreach, we challenge outdated stereotypes and amplify diverse voices in tech. While our focus is on uplifting women and underrepresented groups in computing, we welcome all students who believe in building a more inclusive, collaborative, and inspiring future.
@@ -187,7 +187,7 @@ const JoinUs = () => {
         <br></br>
           <div className="join-statement-div"></div>
           <div>
-            <h2 className = "join-us-h2 page-h2 color-green"> Join Us </h2>
+            <h2 className = "join-us-h2 page-h2 color-green">♡ Join Us </h2>
             <p className = "join-us-p page-p color-white"> We have biweekly meetings on Tuesdays during U-Hour in VEP 5107. In these meetings, we go over important information, upcoming events, and opportunities to get involved! Become an official member here!
             </p>
             <p className = "join-us-p page-p color-white"> Join our Discord and follow our Instagram using the footer links below for any meeting updates and announcements of upcoming events!

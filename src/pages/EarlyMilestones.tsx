@@ -15,7 +15,7 @@ type Milestone = {
 const EarlyMilestones = () => {
     return (
         <>
-        <h1 className="page-h1 color-purple" style={{ marginLeft: "5rem" }}> Early Milestones </h1>
+        <h1 className="page-h1 color-purple" style={{ marginLeft: "5rem" }}>♡ Early Milestones </h1>
         <EarlyMilestonesList />
         </>
     );
