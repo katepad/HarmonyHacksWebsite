@@ -64,12 +64,13 @@
     height: auto;
     width: auto;
 
-
     background-color: #F5F5F5;
     box-shadow: 0 1.563rem 1.563rem #DF9DCF;
     border-radius: 2rem;
 
-    padding:2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
 }
 
 .contact-form {
@@ -137,6 +138,11 @@
     min-height: 2rem;
     width: 18rem;
     height: 6rem;
+}
+
+.result-message {
+    margin-top: 2rem;
+    margin-left: 2rem;
 }
 
 /* ============================== END OF CONTACT FORM SECTION ============================== */
