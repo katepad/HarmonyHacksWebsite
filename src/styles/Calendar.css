@@ -1,9 +1,9 @@
 /* ======================================== CALENDAR + HEADER ELEMENTS ======================================== */
 .calendar-container {
-  padding: 20px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* soft drop shadow */
-  border-radius: 16px; 
-  padding: 1rem;
+  padding-top:3rem;
+  padding-left:4rem;
+  padding-right:4rem;
+  padding-bottom: 5rem;
 }
 
 .calendar-header.clean-align {
@@ -18,10 +18,10 @@
 
 .month-and-tabs {
   display: flex;
-  align-items: center;
-  gap: 20px;
+  gap: 2rem;
   flex-shrink: 1;
   flex-wrap: nowrap;
+  margin-bottom: 1rem;
 }
 
 .calendar-month {
@@ -313,7 +313,7 @@ input[type="radio"] {
   height: 30px;
   width: 100px;
   font-size: 0.8rem;
-  color: black;
+  color: #633160;
   font-weight: 500;
   border-radius: 99px;
   cursor: pointer;
