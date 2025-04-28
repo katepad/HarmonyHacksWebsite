@@ -1,0 +1,14 @@
+declare const useWeb3forms: <T extends {}>({ access_key, settings, onSuccess, onError, }: {
+    access_key: string;
+    settings?: any;
+    onSuccess: (successMessage: string, data: Response<T>) => void;
+    onError: (errorMessage: string, data: Response<T>) => void;
+}) => {
+    submit: (formData: T) => Promise<void>;
+};
+export default useWeb3forms;
+interface Response<T> {
+    success: boolean;
+    message: string;
+    data: T;
+}
