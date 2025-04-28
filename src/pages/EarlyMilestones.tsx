@@ -26,7 +26,9 @@ const EarlyMilestonesList = () => {
       <section className= "milestones-section" >
         <div>
           <h3 className = "page-h3 color-darkpurple"> From the very beginning, Harmony Hacks hit the ground running with events that embodied our mission and touched the community: </h3>
-          
+          <br/>
+          <br/>
+
           <VerticalTimeline lineColor = "#633160" layout ={'1-column-left'}>
 
             {contactData.map((member: Milestone) => (
@@ -50,7 +52,8 @@ const EarlyMilestonesList = () => {
           </VerticalTimeline>
         
           <br/>
-          <p className = "page-p color-darkpurple"> Each of these early milestones was more than just an event – it was a statement of purpose. With every hackathon, club event, and collaboration, the founders reinforced what Harmony Hacks stood for. They built confidence in others and in themselves, proving that a supportive community can transform intimidation into inspiration. </p>
+          <br/>
+          <p className = "page-p color-darkpurple"> Each of these early milestones was more than just an event; It was a statement of purpose. With every hackathon, club event, and collaboration, the founders reinforced what Harmony Hacks stood for. They built confidence in others and in themselves, proving that a supportive community can transform intimidation into inspiration. </p>
         </div>
       </section>
     );

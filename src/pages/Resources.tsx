@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/Resources.css";
 import resourceData from "../Data/Resources.json";
 import { FaArrowLeft } from "react-icons/fa";
@@ -15,16 +15,17 @@ interface Resource {
 
 const Filters: React.FC<{ filter: string; setFilter: (filter: string) => void }> = ({ filter, setFilter }) => {
   const filters = ["All", "Harmony Hacks", "Student Resources", "Financial Aid", "Academic", "Food", "Career"];
+  const [isMobile, setIsMobile] = useState(false);
 
-  return (
-    <div
-      className="filters-container"
-      style={
-        {
-          "--tab-index": filters.indexOf(filter),
-        } as React.CSSProperties
-      }
-    >
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 768);
+    window.addEventListener('resize', handleResize);
+    handleResize(); // initialize on first load
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const renderTabs = () => (
+    <>
       <div className="filters-tabs">
         {filters.map((type, index) => (
           <React.Fragment key={type}>
@@ -47,9 +48,37 @@ const Filters: React.FC<{ filter: string; setFilter: (filter: string) => void }>
         ))}
       </div>
       <div className="tab-indicator" />
+    </>
+  );
+
+  const renderDropdown = () => (
+    <select
+      className="filters-dropdown"
+      value={filter}
+      onChange={(e) => setFilter(e.target.value)}
+    >
+      {filters.map((type) => (
+        <option key={type} value={type}>
+          {type}
+        </option>
+      ))}
+    </select>
+  );
+
+  return (
+    <div
+      className="filters-container"
+      style={
+        {
+          "--tab-index": filters.indexOf(filter),
+        } as React.CSSProperties
+      }
+    >
+      {isMobile ? renderDropdown() : renderTabs()}
     </div>
   );
 };
+
 
 const Resources: React.FC = () => {
   const [filter, setFilter] = useState<string>("All");

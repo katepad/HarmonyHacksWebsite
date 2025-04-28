@@ -9,13 +9,18 @@
     padding-top: 2rem;
 }
 
+.hackathon-guide-img-div {
+    height: auto;
+    width: 17rem;
+}
+
 .hackathon-guide-img {
-    align-self: left;
+    align-self: center;
     border-radius: 1rem;
 
     height: auto;
     width: auto; 
-    max-height: 12rem; 
+    max-width: 15rem;
 
     margin-top:2rem;
     margin-right: 2rem;
