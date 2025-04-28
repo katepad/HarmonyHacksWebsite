@@ -1,3 +1,5 @@
+/* ======================================== PAGE TRANSITION ELEMENTS ======================================== */
+
 .page-fade {
   opacity: 0;
   transform: translateY(10px);
@@ -11,15 +13,15 @@
   }
 }
 
+/* ======================================== END OF PAGE TRANSITION ELEMENTS ======================================== */
+
+
 /* ======================================== CALENDAR + HEADER ELEMENTS ======================================== */
+
 .calendar-container {
-  padding-top:3rem;
-  padding-left:4rem;
-  padding-right:4rem;
-  padding-bottom: 5rem;
   border-radius: 16px; 
   padding: 1rem;
-  min-width: 510px; /* or whatever min width feels right for your layout */
+  min-width: 510px;
   justify-content: center;
 }
 
@@ -42,10 +44,9 @@
   flex-direction: row;
   align-items: center;
   gap: 1rem;
-  flex: 1 1 0;      /* allow it to grow and shrink */
-  min-width: 0;     /* allows proper shrinking */
+  flex: 1 1 0;
+  min-width: 0;
 }
-
 
 .calendar-month {
   color: #A23E8C;
@@ -70,23 +71,13 @@
   display: flex;
   gap: 20px;
   align-items: flex-start; /* Top alignment */
-  margin-top: 10px; /* Add spacing from header if needed */
+  margin-top: 10px; /* Add spacing from header */
 }
 
 /* ======================================== END OF CALENDAR + HEADER ELEMENTS ======================================== */
 
 
 /* ======================================== CALENDAR CONTENTS ELEMENTS ======================================== */
-
-.rbc-month-view {
-  background-color:#f6e3ef;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
-}
-
-/* Global changes for calendar*/
-.rbc-calendar {
-  flex: 3;
-}
 
 /* Override default event styles from react-big-calendar */
 .rbc-event, .rbc-event-content {
@@ -95,10 +86,28 @@
   padding: 0 !important;        /* Prevent unwanted spacing */
 }
 
+/* Override background for the current day's full tile */
+.rbc-day-bg.rbc-today {
+  background-color: #f6e3ef !important; /* match calendar background */
+}
+
+/* Global changes for calendar*/
+.rbc-calendar {
+  flex: 3;
+}
+
+/* Edit in-month tiles */
+.rbc-month-view {
+  background-color:#f6e3ef;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+/* Edit out-month tiles*/
 .rbc-off-range-bg {
   background: #f6e3ef;
 }
 
+/* Edit border between weekday names and calendar tiles*/
 .rbc-time-content {
   border-top: 1px solid #f0d9e6;
 }
@@ -113,11 +122,7 @@
   font-weight: normal;  
 }
 
-/* Override background for the current day's full tile */
-.rbc-day-bg.rbc-today {
-  background-color: #f6e3ef !important; /* match calendar background */
-}
-
+/* Edit date of current day cell */
 .rbc-now {
   font-weight: normal !important; /* ensure font isn't bolded */
 }
@@ -127,12 +132,12 @@
   color: #e4c0d4 !important;
 }
 
-/* Style the row container */
+/* Edit the header row */
 .rbc-month-header {
   background-color: #F0C7E1;  /* pastel pink for the whole header row */
 }
 
-/* Style the day names (each column) */
+/* Edit the header row weekday text */
 .rbc-header {
   color: #A23E8C;
   font-family: "Work Sans";
@@ -140,7 +145,7 @@
   font-weight: 600;
 }
 
-/* Style the popup container */
+/* Edit "+ more" popup when there are too many events in one cell */
 .rbc-overlay {
   background-color: #f6e3ef; /* pastel pink like your theme */
   border: 2px solid #A23E8C; /* purple border */
@@ -151,11 +156,10 @@
   margin-top: 0.5rem;
   padding: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-
   animation: fadeSlideIn 0.3s ease-out forwards;
 }
 
-/* Define the animation */
+/* Animation for popup */
 @keyframes fadeSlideIn {
   from {
     opacity: 0;
@@ -165,7 +169,7 @@
   }
 }
 
-/* Style individual events inside popup */
+/* Edit individual events inside popup */
 .rbc-overlay .rbc-event {
   background: none;
   color: #5e2750; /* dark purple text */
@@ -189,20 +193,22 @@
   cursor: pointer;
 }
 
-
 /* ======================================== END OF CALENDAR CONTENTS ELEMENTS ======================================== */
 
 /* ======================================== EVENT CHIP ELEMENTS ======================================== */
 
+/* Animation for event chip */
+.rbc-event {
+  transition: all 0.3s ease-out;
+}
+
+/* Animation for event chip */
 .rbc-event:hover {
   filter: brightness(96%);
   transition: all 0.3s ease-in;
 }
 
-.rbc-event {
-  transition: all 0.3s ease-out;
-}
-
+/* Event chip */
 .event-chip {
   border-radius: 20px;
   padding: 4px 10px;
@@ -219,6 +225,7 @@
   box-sizing: border-box;
 }
 
+/* The little circle thing before each event name */
 .event-chip::before {
   content: "";
   border-radius: 50%;
@@ -228,65 +235,64 @@
 }
 
 .event-chip.gbmevents {
-  background-color: #dfe6d5; /* soft gray-green */
-  color: #5d7a24;           /* bold green text */
+  background-color: #dfe6d5;
+  color: #5d7a24;
 }
 
 .event-chip.gbmevents::before {
-  background-color: #6a8e0e;  /* green circle */
+  background-color: #6a8e0e;
 }
 
-/* Workshops */
 .event-chip.workshops {
-  background-color: #eec9e5; /* pastel pink */
-  color: #5e2750;            /* deep purple text */
+  background-color: #eec9e5;
+  color: #5e2750;
 }
 
 .event-chip.workshops::before {
-  background-color: #5e2750; /* purple circle */
+  background-color: #5e2750;
 }
 
-/* Fundraisers */
 .event-chip.fundraisers {
-  background-color: #ffdddf; /* light orange background */
-  color: #911e1e;            /* deep red text */
+  background-color: #ffdddf;
+  color: #911e1e;
 }
 
 .event-chip.fundraisers::before {
-  background-color: #911e1e;  /* red circle */
+  background-color: #911e1e;
 }
 
 .event-chip.socials {
-  background-color: #FFEADD; /* light yellow background */
-  color: #C79A64; /* deep yellow text */
+  background-color: #FFEADD;
+  color: #C79A64;
 }
 
 .event-chip.socials::before {
-  background-color: #C79A64;  /* yellow circle */
+  background-color: #C79A64;
 }
 
 .event-chip.hackathons {
-  background-color: #C7CBF9; /* light blue background */
-  color: #6A72C7; /* deep blue text */
+  background-color: #C7CBF9;
+  color: #6A72C7;
 }
 
 .event-chip.hackathons::before {
-  background-color: #6A72C7;  /* blue circle */
+  background-color: #6A72C7;
 }
 
 .event-chip.misc {
-  background-color: #DBDBDB; /* light grey background */
-  color: #86888a; /* deep grey text */
+  background-color: #DBDBDB;
+  color: #86888a;
 }
 
 .event-chip.misc::before {
-  background-color: #86888a;  /* grey circle */
+  background-color: #86888a;
 }
 
 /* ======================================== END OF EVENT CHIP ELEMENTS ======================================== */
 
 /* ======================================== EVENT MODULE ELEMENTS ======================================== */
 
+/* Edits for event popup module */
 .event-module { 
   position: relative; /* Makes sure the close icon is in position */
   flex: 1;
@@ -299,6 +305,7 @@
   margin-top: 0; /* Aligns the top of the module with top of calendar */
 }
 
+/* The "x" close icon */
 .close-icon {
   position: absolute;
   top: 10px;
@@ -316,13 +323,15 @@
   color: #A23E8C;
 }
 
+/* Title of event */
 .event-module h3 {
   margin-top: 0;
-  padding-right: 2rem;       /* prevents title from colliding with the × */
+  padding-right: 2rem; /* prevents title from colliding with the × */
   color: #A23E8C;
-  word-break: break-word;    /* ensures long words wrap */
+  word-break: break-word; /* ensures long words wrap */
 }
 
+/* Paragraph description for each event */
 .event-description {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -330,12 +339,13 @@
   letter-spacing: 0.01rem;
 }
 
+/* Date, time, location for each event */
 .event-details {
   color: #A23E8C;
   margin: 5px 0;
 }
 
-
+/* Edits for the name, email, and submit area */
 .rsvp-form {
   display: flex;
   flex-direction: column;
@@ -343,12 +353,14 @@
   margin-top: 15px;
 }
 
+/* Name and Email input fields */
 .rsvp-form input {
   padding: 10px;
   border-radius: 8px;
   border: 1px solid #ccc;
 }
 
+/* RSVP button */
 .rsvp-form button {
   background-color: #D02F9E;
   color: white;
@@ -370,7 +382,7 @@
 
 /* ======================================== FILTER BAR ELEMENTS ======================================== */
 
-
+/* Spacing for navigation bar */
 .filter-tabs-container {
   display: flex;
   width: auto;
@@ -388,6 +400,7 @@
   display: none;
 }
 
+/* The "bar" part of the navigation bar */
 .tabs {
   display: flex;
   position: relative;
@@ -396,20 +409,20 @@
   padding: 0.75rem;
   border-radius: 99px;
   white-space: nowrap;
-
   width: 100%;
   overflow-x: auto; /* Just in case it needs to scroll before dropdown kicks in */
 }
-
 
 .tabs * {
   z-index: 2;
 }
 
+/* Removes checkboxes */
 input[type="radio"] {
   display: none;
 }
 
+/* The "words" part of the navigation bar*/
 .tab {
   display: flex;
   align-items: center;
@@ -424,6 +437,7 @@ input[type="radio"] {
   transition: color 0.15s ease-in;
 }
 
+/* Highlight for each tab */
 .glider {
   position: absolute;
   display: flex;
@@ -435,6 +449,7 @@ input[type="radio"] {
   transition: 0.25s ease-out;
 }
 
+/* Edits for dropdown menu form*/
 .filter-dropdown {
   padding: 0.5rem 1rem;
   font-size: 0.9rem;
@@ -446,6 +461,8 @@ input[type="radio"] {
   font-weight: 600;
   cursor: pointer;
 }
+
+/* ======================================== END OF FILTER BAR ELEMENTS ======================================== */
 
 
 /* ======================================== RESPONSIVENESS FOR CALENDAR CONTENT ======================================== */
@@ -468,5 +485,56 @@ input[type="radio"] {
     width: 100%;
     flex: unset !important;
     width: 100% !important;
+  }
+}
+
+/* ======================================== END OF RESPONSIVENESS FOR CALENDAR CONTENT ======================================== */
+
+/* Notification popup for RSVPs */
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 16px 24px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  z-index: 9999;
+  animation: slideInFade 0.5s ease forwards;
+}
+
+.notification.fade-out {
+  animation: slideOutFade 0.5s ease forwards;
+}
+
+.notification.success {
+  background-color: #4BB543; /* green */
+  color: white;
+}
+
+.notification.error {
+  background-color: #FF5C5C; /* red */
+  color: white;
+}
+
+@keyframes slideInFade {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutFade {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
   }
 }

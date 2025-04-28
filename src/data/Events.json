@@ -1,74 +1,65 @@
 [
-    {
-      "id": "1",
-      "title": "Leadership Workshop",
-      "start": "2025-04-10T14:00:00",
-      "end": "2025-04-10T16:00:00",
-      "location": "Room 101, Tech Building",
-      "type": "Workshops",
-      "description": "Example text"
-    },
-    {
-      "id": "2",
-      "title": "Urbane Cafe Fundy",
-      "start": "2025-04-15T18:00:00",
-      "end": "2025-04-15T21:00:00",
-      "location": "Community Hall",
-      "type": "Fundraisers",
-      "description": "Example text"
-    },
-    {
-      "id": "3",
-      "title": "3rd GBM",
-      "start": "2025-04-17T18:00:00",
-      "end": "2025-04-17T21:00:00",
-      "location": "SBSB 1102",
-      "type": "GBM Events",
-      "description": "Example text"
-    },
-    {
-      "id": "5",
-      "title": "HH Hackathon",
-      "start": "2025-04-13T09:00:00",
-      "end": "2025-04-13T17:00:00",
-      "location": "USU Ballroom",
-      "type": "Hackathons",
-      "description": "A one-day hackathon focused on building tech for positive social impact"
-    },
-    {
-      "id": "6",
-      "title": "Banquet",
-      "start": "2025-04-20T10:00:00",
-      "end": "2025-04-20T12:00:00",
-      "location": "McMan House",
-      "type": "Misc",
-      "description": "Come join us for the end of the year event to celebrate our year!"
-    },
-    {
-      "id": "7",
-      "title": "4th GBM",
-      "start": "2025-04-24T12:00:00",
-      "end":  "2025-04-24T13:00:00",
-      "location": "SBSB 1102",
-      "type": "GBM Events",
-      "description": "4th GBM of the semester"
-    },
-    {
-      "id": "8",
-      "title": "Harmony Hacks Mixer",
-      "start": "2025-04-17T13:00:00",
-      "end": "2025-04-17T15:00:00",
-      "location": "Grass Dome",
-      "type": "Socials",
-      "description": "Meet your mentors!"
-    },
-    {
-      "id": "9",
-      "title": "Testing RSVP",
-      "start": "2025-04-30T13:00:00",
-      "end": "2025-04-30T15:00:00",
-      "location": "Grass Dome",
-      "type": "Socials",
-      "description": "Meet your mentors!"
-    }
-  ]  
+  {
+    "id": "1",
+    "title": "Leadership Workshop",
+    "start": "2025-04-10T14:00:00",
+    "end": "2025-04-10T16:00:00",
+    "location": "Room 101, Tech Building",
+    "type": "Workshops",
+    "description": "Example text"
+  },
+  {
+    "id": "2",
+    "title": "Urbane Cafe Fundy",
+    "start": "2025-04-15T18:00:00",
+    "end": "2025-04-15T21:00:00",
+    "location": "Community Hall",
+    "type": "Fundraisers",
+    "description": "Example text"
+  },
+  {
+    "id": "5",
+    "title": "HH Hackathon",
+    "start": "2025-04-13T09:00:00",
+    "end": "2025-04-13T17:00:00",
+    "location": "USU Ballroom",
+    "type": "Hackathons",
+    "description": "A one-day hackathon focused on building tech for positive social impact"
+  },
+  {
+    "id": "6",
+    "title": "Banquet",
+    "start": "2025-04-20T10:00:00",
+    "end": "2025-04-20T12:00:00",
+    "location": "McMan House",
+    "type": "Misc",
+    "description": "Come join us for the end of the year event to celebrate our year!"
+  },
+  {
+    "id": "3",
+    "title": "4th GBM",
+    "start": "2025-04-24T12:00:00",
+    "end":  "2025-04-24T13:00:00",
+    "location": "SBSB 1102",
+    "type": "GBM Events",
+    "description": "4th GBM of the semester"
+  },
+  {
+    "id": "8",
+    "title": "Harmony Hacks Mixer",
+    "start": "2025-04-17T13:00:00",
+    "end": "2025-04-17T15:00:00",
+    "location": "Grass Dome",
+    "type": "Socials",
+    "description": "Meet your mentors!"
+  },
+  {
+    "id": "9",
+    "title": "Testing RSVP",
+    "start": "2025-04-30T13:00:00",
+    "end": "2025-04-30T15:00:00",
+    "location": "Grass Dome",
+    "type": "Socials",
+    "description": "Meet your mentors!"
+  }
+]  
