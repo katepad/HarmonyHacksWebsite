@@ -91,7 +91,7 @@
 
 .card-btn:hover {
   background-color: #633160; /* Change background color on hover */
-  transform: translateX(10px); /* Slide the button slightly to the right */
+  
 }
 
 .card-btn.selected {
@@ -273,7 +273,7 @@ color: #ffe1fa;
 
 .modal-back-btn {
   background-color: transparent;
-  color: white;
+  color: rgb(66, 0, 65);
   border: none;
   font-size: 1rem;
   display: flex;
