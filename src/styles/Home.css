@@ -87,7 +87,7 @@
 }
 
 .club-overview{
-    font-family: 'Ubuntu';
+    font-family: 'Ubuntu', sans-serif;
     font-style: normal;
     font-size: 70px;
     color: #A23E8C;
@@ -118,7 +118,7 @@
 }
 
 .mission-statement{
-    font-family: 'Ubuntu';
+    font-family: 'Ubuntu', sans-serif;
     font-style: normal;
     font-size: 70px;
     background: #A23E8C;
@@ -219,20 +219,21 @@
     border-radius: 10px;
 }
 
-.recent-events-text-div .card-title {
-  color: #633160;
+.recent-events-card-title {
+  color: #A23E8C;
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
 
-.card-description {
-  color: var(--description-color);
+.recent-events-card-description {
+  color: #633160;
+  font-family: "Work Sans", sans-serif;
   font-size: 1rem;
 }
   
 
 .join-us {
-  font-family: 'Ubuntu';
+  font-family: 'Ubuntu', sans-serif;
   font-style: normal;
   font-size: 70px;
   background: #DF9DCF;

@@ -96,29 +96,29 @@ const Resources: React.FC = () => {
         <Filters filter={filter} setFilter={setFilter} />
       </div>
 
-      <div className="card-container">
+      <div className="resources-card-container">
         {filteredResources.length === 0 ? (
           <p>No resources found.</p>
         ) : (
           filteredResources.map((resource) => (
             <div
               key={resource.id}
-              className="card"
+              className="resources-card"
               onClick={() => setSelectedResource(resource)}
               style={{ cursor: "pointer" }}
             >
               <img
                 src={resource.resource_image}
                 alt={resource.resource_title}
-                className="card-img"
+                className="resources-card-img"
               />
-              <h1 className="card-title">{resource.resource_title}</h1>
-              <p className="card-description">{resource.resource_summary}</p>
+              <h1 className="resources-card-title">{resource.resource_title}</h1>
+              <p className="resources-card-description">{resource.resource_summary}</p>
               <a
                 href={resource.resource_link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="card-btn"
+                className="resources-card-btn"
                 onClick={(e) => e.stopPropagation()} // Prevent modal from opening
               >
                 Learn More

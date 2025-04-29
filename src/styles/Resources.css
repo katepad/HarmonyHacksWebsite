@@ -22,55 +22,72 @@
 }
 
 
-.card-container {
+.resources-card-container {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
   padding: 20px;
+  padding-bottom: 5rem;
 }
 
-.card {
-  background-color: #F6E3EF;
+.resources-card {
+  background-color: #f5f5f5;
   border-radius: 8px;
   box-shadow: 0 4px 8px #71296c80;
+
   width: 300px;
+  height: auto;
+
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
   position: relative;
-  padding-bottom: 60px; /* Add space for button */
+
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers content horizontally */
+  justify-content: flex-start; /* keeps top alignment for content */
+  /* existing styles */
 }
 
-.card:hover {
+.resources-card:hover {
   transform: scale(1.05);
 }
 
-.card-img {
-  width: 20rem;
-  min-height: 10rem;
-  max-height: 10rem;
+.resources-card-img {
+  width: 100%;
+  height: 8rem;
+  border-radius: 0.8rem;
   object-fit: fill;
   object-fit: cover;
+  justify-content: center;
 }
 
-.card .card-title {
+.resources-card .resources-card-title {
   color: #71296c; 
   text-decoration: none;
   font-family: "Ubuntu", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   font-weight: 700; /* Semi-Bold */
-  padding-bottom: 0.5rem;
-  padding-top: 0.5rem;
+  padding-top: 1rem;
+  height: 3rem;
+  align-content: center;
+  text-align: center;
 }
 
-.card-description {
+.resources-card-description {
   color: #A52B93;
   font-family: "Work Sans", sans-serif;
   font-size: 1rem;
   text-decoration: none;
+  height: 7rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
-.card-btn {
+.resources-card-btn {
   display: block;
   background-color: #D02F9E;
   color: #F5F5F5;
@@ -89,17 +106,19 @@
   transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Smooth transition for sliding and color */
 }
 
-.card-btn:hover {
+.resources-card-btn:hover {
   background-color: #633160; /* Change background color on hover */
   
 }
 
-.card-btn.selected {
+.resources-card-btn.selected {
   background-color: #71296c; /* Selected background color */
   color: white; /* Selected text color */
   transform: translateY(-5px); /* Slide the button slightly upward when selected */
   transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
+
+/* ===================================================== FILTER CSS ===================================================== */
 
 .filters-container {
   display: flex;
