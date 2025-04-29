@@ -96,19 +96,17 @@
 .club-overview-img{
     box-shadow: 0 1.563rem 1.563rem #DF9DCF;
     border-radius: 2rem;
-    flex: 1;
     width: auto;
     height: auto;
-    max-width: 625px;
-    margin-left:5rem;
+    max-width: 35rem;
 }
 
 .club-overview-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
-    gap: 20px;
+
+    gap: 4rem;
     padding-bottom: 5rem;
     padding-top: 5rem;
     padding-left: 5rem;
@@ -116,68 +114,61 @@
 }
 
 .club-overview-content-div {
-    flex: 1;
-    min-width: 300px;
+    width:auto;
 }
 
 .mission-statement{
     font-family: 'Ubuntu';
     font-style: normal;
     font-size: 70px;
-    display: flex;
     background: #A23E8C;
 }
 
 .mission-statement-img{
     box-shadow: 0 1.563rem 1.563rem #CBEFD7;
     border-radius: 2rem;
+
     object-fit: cover;
     object-position: 0% 35%;
-    width: 500px;
-    height: 400px;
+
+    width: 26rem;
+    height: 26rem;
 }
 
 .mission-statement-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-between; 
-    gap: 20px;
+
+    gap: 4rem;
     padding-bottom: 5rem;
-    padding-top: 5rem;
-    padding-left: 5rem;
+    padding-top: 4rem;
+    padding-left: 4rem;
     padding-right: 5rem;
 }
 
 .mission-statement-content-div {
-    flex: 1;
-    min-width: 300px;
+    width: auto;
 }
 
 .mission-statement-h2 {
     color: #CBEFD7;
-    margin-left: 5rem;
 }
 
 .mission-statement-p {
     color: #fdfffe;
-    margin-left: 5rem;
 }
 
 .recent-events-container {
+    position: relative;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding-bottom: 5rem;
     padding-top: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
-}
-
-.recent-events-content-div {
-    flex: 1;
-    min-width: 300px;
 }
 
 .recent-events-h2 {
@@ -192,73 +183,51 @@
     color: #fdfffe;
 }
 
-.recent-events-img{
-    flex: 1;
-    width: 450px;
-    height: 450px;
+.recent-events-cards-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 30rem;
+    width: 100%;
+    gap: 6rem;
 }
 
-.carousel-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  width: 100%;
+.recent-events-card {
+    height: auto;
+    width: 20rem;
+    background-color: #F5F5F5;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #DF9DCF;
+    text-align: center;
+
+    transition: transform 0.3s ease-in-out;
 }
 
-.cards-display {
-  display: flex;
-  justify-content: center; /* This centers the cards */
-  gap: 6rem;
-  width: 80%;
-  height:450px;
+.recent-events-card:hover {
+    transform: scale(1.05);
 }
 
-.card {
-  background-color: var(--card-bg, #fff);
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  max-width: 300px;
-  transition: transform 0.3s ease-in-out;
+.recent-events-img-div {
+    margin-bottom: 1rem;
 }
 
-.card img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
+.recent-events-img {
+    width: auto;
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
-.card-title {
-  color: var(--title-color, #000);
+.recent-events-text-div .card-title {
+  color: #633160;
   font-size: 1.2rem;
-  margin: 10px 0;
+  margin-bottom: 1rem;
 }
 
 .card-description {
-  color: var(--description-color, #555);
+  color: var(--description-color);
   font-size: 1rem;
-}
-  
-.arrow {
-    background: none;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out;
-}
-  
-.arrow:hover {
-    transform: scale(1.2);
-}
-  
-.left {
-    margin-right: 10px;
-}
-  
-.right {
-    margin-left: 10px;
 }
   
 
@@ -272,41 +241,24 @@
 .join-us-img {
     box-shadow: 0 1.563rem 1.563rem #CBEFD7;
     border-radius: 2rem;
-    flex: 1;
-    width: auto;
+    width: 26rem;
     height: auto;
-    max-width: 500px;
 }
 
 .join-us-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  padding: 20px;
-  flex-wrap: wrap; 
-  padding-bottom: 6rem;
-  padding-top: 5rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
+    display: flex;
+    align-items: center;
   
-}
+    gap: 4rem;
 
-.join-us-h2 {
-  margin-left: 5rem;
-}
-
-.join-us-p {
-  margin-left: 5rem;
-}
-
-.join-us-content-div {
-  display: flex;
-  align-items: center;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 
 .join-statement-div {
-  flex: 1;
+    width: auto;
 }
 
 .arrow-left, .arrow-right {
@@ -315,7 +267,7 @@
     transform: translateY(-50%);
     
     cursor: pointer;
-    color: #DF9DCF;
+    color: #A23E8C;
     background: none;
     border: none;
     
@@ -340,5 +292,96 @@
 }
 
 .arrow-left:hover, .arrow-right:hover {
-    color: #A23E8C;
+    color: #DF9DCF;
+}
+
+/* ================================================== RESPONSIVE SCREEN #1 ================================================== */
+
+@media only screen and (max-width: 1500px) {
+    .recent-events-cards-div {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 2.5rem;
+    }
+
+    .recent-events-card {
+        width: 50rem;
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+    .recent-events-text-div {
+        align-self: center;
+    }
+}      
+
+
+/* ================================================== RESPONSIVE SCREEN #2 ==================================================*/
+
+@media only screen and (max-width: 1300px) {
+    .club-overview-container {
+        flex-direction: column;
+        margin:0rem;
+        padding: 5rem 4rem;
+    }
+
+    .club-overview-img {
+        margin: 0rem;
+        max-width: 26rem;
+    }
+
+    .mission-statement-container {
+        flex-direction: column-reverse;
+        margin: 0rem;
+        padding: 5rem 4rem;
+    }
+
+    .join-us-container {
+        flex-direction: column-reverse;
+    }
+
+    .recent-events-card {
+        width: 40rem;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .recent-events-card {
+        width: 35rem;
+    }
+
+    .recent-events-img-div {
+        height: 10rem;
+        align-self: center;
+        align-content: center;
+        margin: 0rem;
+        height: auto;
+    }
+
+}
+
+@media only screen and (max-width: 875px) {
+
+    .recent-events-h2 {
+        font-size: 1.75rem;
+    }
+
+    .recent-events-card {
+        flex-direction: column;
+        width: 17rem;
+        gap: 1.5rem;
+    }
+
+    .recent-events-img-div {
+        margin-bottom: 0rem;
+    }
+
+    .recent-events-img {
+        height: 10rem;
+    }
+
 }

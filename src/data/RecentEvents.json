@@ -1,42 +1,37 @@
 [
     {
-        "eventname": "First GBM",
-        "eventdesc": "blah blah blah blah",
-        "eventpic": "../assets/pictures/firstGbm/firstGbm1.jpg"
+        "eventname": "Caps and Vision Maps",
+        "eventdesc": "04/25/2025 -- Celebrated graduating members by decorating grad caps, creating vision boards, and passing out Harmony Hacks graduation cords.",
+        "eventpic": "/assets/pictures/capsAndVisionMaps/capsAndVisionMaps13.jpg"
     },
     {
-        "eventname": "Super STEM Saturday",
-        "eventdesc": "blah blah blah blah",
-        "eventpic": "../assets/pictures/superStemSaturday/superStemSaturday3.jpg"
-    },
-    {
-        "eventname": "Galentines GBM",
-        "eventdesc": "02/11/2025 --  Fun Galentine's day event inluding coloring pages, valentine cards, and crafts. ",
-        "eventpic": "../assets/pictures/galentines/galentines3.jpg"
-    },
-    {
-        "eventname": "First Student Org Fair",
-        "eventdesc": "01/30/2025 -- New member recruitment at the bi-annual Student Organization Fair.",
-        "eventpic": "../assets/pictures/firstStudentOrgFair/firstStudentOrgFair4.jpg"
+        "eventname": "Hackathon Showcase",
+        "eventdesc": "04/19/2025 -- Day 2 of our First Annual Harmony Hackathon! Students finished up their projects and got the opportunity to present to a panel of judges. Hackathon awards were presented.",
+        "eventpic": "/assets/pictures/firstHackathon/firstWomensHackathonShowcase1.jpg"
     },
     {
         "eventname": "Hackathon Kickoff",
         "eventdesc": "04/12/2025 -- Day 1 of our First Annual Harmony Hackathon! Students received the assignment details, met their groups, and began working on their projects.",
-        "eventpic": "../assets/pictures/firstHackathon/firstWomensHackathonKickoff1.jpg"
-    },
-    {
-        "eventname": "Hackathon Awards",
-        "eventdesc": "04/19/2025 -- Day 2 of our First Annual Harmony Hackathon! Students finished up their projects and got the opportunity to present to a panel of judges. Hackathon awards were presented.",
-        "eventpic": "../assets/pictures/firstHackathon/firstWomensHackathonShowcase1.jpg"
+        "eventpic": "/assets/pictures/firstHackathon/firstWomensHackathonKickoff1.jpg"
     },
     {
         "eventname": "Resume Workshop",
         "eventdesc": "04/10/2025 -- In-person resume feedback, tips, and tricks, with guest speaker Moses Maddox. Members learned how to optimize their resumes for recruiters. ",
-        "eventpic": "../assets/pictures/capsAndVisionMaps/capsAndVisionMaps13.jpg"
+        "eventpic": "/assets/logos/harmonyHacksLogoNoText.png"
     },
     {
-        "eventname": "Caps and Vision Maps",
-        "eventdesc": "04/25/2025 -- Celebrated graduating members by decorating grad caps, creating vision boards, and passing out Harmony Hacks graduation cords.",
-        "eventpic": "../assets/pictures/capsAndVisionMaps/capsAndVisionMaps13.jpg"
+        "eventname": "Super STEM Saturday",
+        "eventdesc": "03/08/2025 -- Boothed for CSUSM's Super Stem Saturday event and ran a Magic Milk experiment!",
+        "eventpic": "/assets/pictures/superStemSaturday/superStemSaturday3.jpg"
+    },
+    {
+        "eventname": "Galentine's GBM",
+        "eventdesc": "02/11/2025 --  Fun Galentine's day event inluding coloring pages, valentine cards, and crafts. ",
+        "eventpic": "/assets/pictures/galentines/galentines3.jpg"
+    },
+    {
+        "eventname": "First Student Org Fair",
+        "eventdesc": "01/30/2025 -- New member recruitment at the bi-annual Student Organization Fair.",
+        "eventpic": "/assets/pictures/firstStudentOrgFair/firstStudentOrgFair4.jpg"
     }
 ]
