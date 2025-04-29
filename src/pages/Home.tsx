@@ -16,12 +16,12 @@ const Home = () => {
 };
 
 const images = [
-  "/website/assets/pictures/firstHackathon/firstWomensHackathonShowcase4.jpg",
-  "/website/assets/pictures/firstStudentOrgFair/firstStudentOrgFair4.jpg",
-  "/website/assets/pictures/firstGbm/firstGbm2.jpg",
-  "/website/assets/pictures/superStemSaturday/superStemSaturday3.jpg",
-  "/website/assets/pictures/galentines/galentines5.jpg",
-  "/website/assets/pictures/firstGbm/firstGbm7.jpg",
+  "/assets/pictures/firstHackathon/firstWomensHackathonShowcase4.jpg",
+  "/assets/pictures/firstStudentOrgFair/firstStudentOrgFair4.jpg",
+  "/assets/pictures/firstGbm/firstGbm2.jpg",
+  "/assets/pictures/superStemSaturday/superStemSaturday3.jpg",
+  "/assets/pictures/galentines/galentines5.jpg",
+  "/assets/pictures/firstGbm/firstGbm7.jpg",
 ];
 
 const PhotoGalleryHeader: React.FC = () => {
@@ -90,7 +90,7 @@ const ClubOverview = () => {
           </p>
         </div>
         <div>
-          <img className="club-overview-img" src="/website/assets/pictures/firstStudentOrgFair/firstStudentOrgFair4.jpg" />
+          <img className="club-overview-img" src="/assets/pictures/firstStudentOrgFair/firstStudentOrgFair4.jpg" />
         </div>
       </div>
     </section>
@@ -102,7 +102,7 @@ const MissionStatement = () => {
     <section className="mission-statement">
       <div className="mission-statement-container">
         <div>
-          <img className="mission-statement-img" src="/website/assets/pictures/firstHackathon/firstWomensHackathonKickoff4.jpg" />
+          <img className="mission-statement-img" src="/assets/pictures/firstHackathon/firstWomensHackathonKickoff4.jpg" />
         </div>
         <div className="mission-statement-content-div">
           <h2 className="page-h2 mission-statement-h2">♡ Mission Statement</h2>
@@ -195,7 +195,7 @@ const JoinUs = () => {
     <section className="join-us">
       <div className="join-us-container section-purple">
         <div>
-          <img className="join-us-img" src="/website/assets/pictures/firstGbm/firstGbm10.jpg" />
+          <img className="join-us-img" src="/assets/pictures/firstGbm/firstGbm10.jpg" />
         </div>
         <div className="join-statement-div">
           <h2 className="join-us-h2 page-h2 color-green">♡ Join Us</h2>

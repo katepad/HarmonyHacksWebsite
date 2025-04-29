@@ -37,6 +37,15 @@
   },
   {
     "id": "5",
+    "title": "Harmony Hacks GBM",
+    "start": "2025-04-29T12:00:00",
+    "end":  "2025-04-29T13:00:00",
+    "location": "Viasat Engineering Pavillion 5107",
+    "type": "GBM Events",
+    "description": "Come hangout and hear about our upcoming events!"
+  },
+  {
+    "id": "6",
     "title": "Board Campaign & Elections",
     "start": "2025-05-06T12:00:00",
     "end": "2025-05-06T13:00:00",

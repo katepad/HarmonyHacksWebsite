@@ -1,39 +1,39 @@
 [
   {
     "id": 1,
-    "resource_image": "/HarmonyHacksWebsite/assets/logos/harmonyHacksLogoNoText.png",
-    "resource_title": "Board Positions",
-    "resource_summary": "Harmony Hacks",
-    "resource_description": "Harmony Hacks is a student-driven platform designed to provide accessible resources, academic guidance, and career opportunities to high school and university students. By curating relevant content across various categories such as financial aid, technology, food programs, and more, the platform empowers learners to explore, grow, and connect within a supportive community. Whether you're preparing for college, navigating coursework, or seeking inspiration from mentors, Harmony Hacks aims to be your go-to hub for success. Harmony Hacks is a student-driven platform designed to provide accessible resources, academic guidance, and career opportunities to high school and university students. By curating relevant content across various categories such as financial aid, technology, food programs, and more, the platform empowers learners to explore, grow, and connect within a supportive community. Whether you're preparing for college, navigating coursework, or seeking inspiration from mentors, Harmony Hacks aims to be your go-to hub for success.",
+    "resource_image": "/assets/logos/harmonyHacksLogoNoText.png",
+    "resource_title": "Board Positions Interest Form",
+    "resource_summary": "Harmony Hacks Board Application",
+    "resource_description": "Apply for Harmony Hacks board positions here! Deadline is May 5th.",
     "resource_tag": "Harmony Hacks",
-    "resource_link": "https://www.csusm.edu/harmonyhacks/index.html"
+    "resource_link": "https://forms.gle/1rL1E5VZeoZKy4Lo6"
   },
   {
     "id": 2,
     "resource_image": "https://www.csusm.edu/police/images/universitypolicebuilding.jpg",
     "resource_title": "University Police",
     "resource_summary": "Student Resources",
-    "resource_description": "Safety Escorts - Safety Escorts are provided by UPD. Call 760-750-4567 to arrange for an escort. A Community Service Officer (CSO) will escort you to and from any campus building, parking lot, or residence hall. Live Scan services - by appointment. Lost & Found",
+    "resource_description": "Provides Safety Escorts through UPD if you call 760-750-4567 to have a Community Service Officer walk with you to or from campus locations, offers Live Scan fingerprinting services by appointment, and helps you find or report lost items through Lost & Found.",
     "resource_tag": "Student Resources",
-    "resource_link": "https://www.csusm.edu/harmonyhacks/index.html"
+    "resource_link": "http://www.csusm.edu/police/"
   },
   {
     "id": 3,
     "resource_image": "https://content.presspage.com/uploads/1093/1920_02-student-relief-fund.jpg?10000",
     "resource_title": "Financial Aid",
     "resource_summary": "Financial Support",
-    "resource_description": "Harmony Hacks is a student-driven platform designed to provide accessible resources, academic guidance, and career opportunities to high school and university students. By curating relevant content across various categories such as financial aid, technology, food programs, and more, the platform empowers learners to explore, grow, and connect within a supportive community. Whether you're preparing for college, navigating coursework, or seeking inspiration from mentors, Harmony Hacks aims to be your go-to hub for success.",
+    "resource_description": "Encourages students to contact Financial Aid to check for additional funding if needed, with appointments available by scheduling online or calling (760) 750-4850 between 9 AM and 2 PM.",
     "resource_tag": "Financial Aid",
-    "resource_link": "https://www.csusm.edu/harmonyhacks/index.html"
+    "resource_link": "https://www.csusm.edu/finaid/"
   },
   {
     "id": 4,
     "resource_image": "https://www.csusm.edu/el/images/general/el_building_photo_cover_web.jpg",
     "resource_title": "Academic Success Center (ASC)",
     "resource_summary": "Academic",
-    "resource_description": "Harmony Hacks is a student-driven platform designed to provide accessible resources, academic guidance, and career opportunities to high school and university students. By curating relevant content across various categories such as financial aid, technology, food programs, and more, the platform empowers learners to explore, grow, and connect within a supportive community. Whether you're preparing for college, navigating coursework, or seeking inspiration from mentors, Harmony Hacks aims to be your go-to hub for success.",
+    "resource_description": "Offers group study rooms with technology, academic programming like Supplemental Instruction and SPSS/statistics support, workshops focused on student well-being such as transfer meet-ups and mindfulness sessions, and a main shared space where you can study and connect with classmates.",
     "resource_tag": "Academic",
-    "resource_link": "https://www.csusm.edu/harmonyhacks/index.html"
+    "resource_link": "http://www.csusm.edu/asc/"
   },
   
   {
@@ -41,7 +41,7 @@
     "resource_image": "https://www.csusm.edu/el/programs/aspiringscholars/images/group-photo-2024-lr.jpg",
     "resource_title": "Disability Support Services (DSS)",
     "resource_summary": "Student Resources",
-    "resource_description": "Harmony Hacks is a student-driven platform designed to provide accessible resources, academic guidance, and career opportunities to high school and university students. By curating relevant content across various categories such as financial aid, technology, food programs, and more, the platform empowers learners to explore, grow, and connect within a supportive community. Whether you're preparing for college, navigating coursework, or seeking inspiration from mentors, Harmony Hacks aims to be your go-to hub for success.",
+    "resource_description": "Supports students with disabilities by providing academic accommodations. Students approved for accommodations are encouraged to reach out to their instructors during the first two weeks of the course.",
     "resource_tag": "Student Resources",
     "resource_link": "https://www.csusm.edu/harmonyhacks/index.html"
   },
@@ -49,46 +49,46 @@
     "id": 6,
     "resource_image": "https://kgo-asset-cache.modolabs.net/csusanmarcos/production/resource_storage/proxy/modulepage/health_safety-_/cougar_pantry/kgoui_Rcontent_I0_Rcontent_I0_Rcontent_I0%3Aproperty%3Aurl_common/pantry.045546a1292790cf9e1512469fc8be9a.png",
     "resource_title": "ASI Cougar Pantry",
-    "resource_summary": "Food",
-    "resource_description": "Harmony Hacks is a student-driven platform designed to provide accessible resources, academic guidance, and career opportunities to high school and university students. By curating relevant content across various categories such as financial aid, technology, food programs, and more, the platform empowers learners to explore, grow, and connect within a supportive community. Whether you're preparing for college, navigating coursework, or seeking inspiration from mentors, Harmony Hacks aims to be your go-to hub for success.",
+    "resource_summary": "Free Food",
+    "resource_description": "offers free food and supplies for students in 104 Commons (near the University Bookstore) Monday through Thursday from 10 AM to 5 PM, where you can drop by with your ID to shop once a week, and free snacks are also available through Cougar Pantry on the Go in mini fridges around campus.",
     "resource_tag": "Food",
-    "resource_link": "https://www.csusm.edu/harmonyhacks/index.html"
+    "resource_link": "https://www.csusm.edu/asi/pantry/index.html"
   },
   {
     "id": 7,
     "resource_image": "https://content.presspage.com/uploads/1093/25d2c52d-8566-4ec4-bf0f-8d4a7713981a/1920_yasminefarley-kr-2024.9.jpg?10000",
     "resource_title": "Career Center",
-    "resource_summary": "Career",
-    "resource_description": "Harmony Hacks is a student-driven platform designed to provide accessible resources, academic guidance, and career opportunities to high school and university students. By curating relevant content across various categories such as financial aid, technology, food programs, and more, the platform empowers learners to explore, grow, and connect within a supportive community. Whether you're preparing for college, navigating coursework, or seeking inspiration from mentors, Harmony Hacks aims to be your go-to hub for success.",
+    "resource_summary": "Career Resources",
+    "resource_description": "You can make an appointment with a Career Counselor, search for jobs, get feedback on your resume and cover letter, and register for career events.",
     "resource_tag": "Career",
-    "resource_link": "https://www.csusm.edu/harmonyhacks/index.html"
+    "resource_link": "http://www.csusm.edu/careers/"
   },
   {
     "id": 8,
     "resource_image": "https://media.licdn.com/dms/image/v2/C561BAQFI0KORE9775Q/company-background_10000/company-background_10000/0/1604948554410/csusm_university_library_cover?e=2147483647&v=beta&t=kYRPvnY1br9nS_1zfPEV18xFFumtmXfRmRv8dHSDa64",
     "resource_title": "Linkedln",
     "resource_summary": "Career",
-    "resource_description": "Harmony Hacks is a student-driven platform designed to provide accessible resources, academic guidance, and career opportunities to high school and university students. By curating relevant content across various categories such as financial aid, technology, food programs, and more, the platform empowers learners to explore, grow, and connect within a supportive community. Whether you're preparing for college, navigating coursework, or seeking inspiration from mentors, Harmony Hacks aims to be your go-to hub for success.",
+    "resource_description": "Connects professionals worldwide to help them be more productive and successful while creating economic opportunities for every member of the global workforce.",
     "resource_tag": "Career",
-    "resource_link": "https://www.csusm.edu/harmonyhacks/index.html"
+    "resource_link": "https://www.linkedin.com/signup"
   },
   {
     "id": 9,
     "resource_image": "https://www.csusm.edu/shcs/images/shcsnew.jpg",
     "resource_title": "Student Health and Counseling Services",
     "resource_summary": "Student Resources",
-    "resource_description": "Harmony Hacks is a student-driven platform designed to provide accessible resources, academic guidance, and career opportunities to high school and university students. By curating relevant content across various categories such as financial aid, technology, food programs, and more, the platform empowers learners to explore, grow, and connect within a supportive community. Whether you're preparing for college, navigating coursework, or seeking inspiration from mentors, Harmony Hacks aims to be your go-to hub for success.",
+    "resource_description": "Offers a holistic and collaborative approach to healthcare, including primary care, preventive services, wellness education, and mental health support for the University community, with appointments required except for pharmacy and urgent care injuries.",
     "resource_tag": "Student Resources",
-    "resource_link": "https://www.csusm.edu/harmonyhacks/index.html"
+    "resource_link": "http://www.csusm.edu/shcs/"
   },
   {
     "id": 10,
     "resource_image": "https://content.presspage.com/uploads/1093/1920_seancapshaw12442-2.jpg?10000",
     "resource_title": "CSUSM Library",
     "resource_summary": "Library Information",
-    "resource_description": "Harmony Hacks is a student-driven platform designed to provide accessible resources, academic guidance, and career opportunities to high school and university students. By curating relevant content across various categories such as financial aid, technology, food programs, and more, the platform empowers learners to explore, grow, and connect within a supportive community. Whether you're preparing for college, navigating coursework, or seeking inspiration from mentors, Harmony Hacks aims to be your go-to hub for success.",
+    "resource_description": "Reserve group study rooms, find available computers, and access the 24/5 Zone for your study needs.",
     "resource_tag": "Academic",
-    "resource_link": "https://www.csusm.edu/harmonyhacks/index.html"
+    "resource_link": "http://biblio.csusm.edu/"
   },
   {
     "id": 11,
@@ -104,8 +104,54 @@
     "resource_image": "https://eccentric-orbit.com/content/images/2022/04/Screen-Shot-2022-04-22-at-4.54.45-PM-min.png",
     "resource_title": "Tunepad",
     "resource_summary": "Harmony Hackathon Tool",
-    "resource_description": "Harmony Hacks is a student-driven platform designed to provide accessible resources, academic guidance, and career opportunities to high school and university students. By curating relevant content across various categories such as financial aid, technology, food programs, and more, the platform empowers learners to explore, grow, and connect within a supportive community. Whether you're preparing for college, navigating coursework, or seeking inspiration from mentors, Harmony Hacks aims to be your go-to hub for success.",
+    "resource_description": "Tunepad is a tool that Harmony Hacks uses for their Harmony Hackathons. This web app allows users to make music through python code.",
     "resource_tag": "Harmony Hacks",
     "resource_link": "https://tunepad.com/"
+  },
+  {
+    "id": 13,
+    "resource_image": "https://www.csusm.edu/dos/images/cougar-care-network-02.jpg",
+    "resource_title": "Student Outreach and Referral (SOAR) & Cougar Care Network (CCN)",
+    "resource_summary": "Student Resource",
+    "resource_description": "SOAR and CCN are both initiatives to support and promote students’ academic and personal success. SOAR is the front door for students and their families to access resources (self-referral). CCN is focused on supporting students through faculty/staff referrals. You can contact them via phone at 1-760-750-SOAR (7627), Monday through Friday from 8:00 a.m.  - 5:00 p.m. or by email at soar@csusm.edu or ccn@csusm.edu. You can also visit in the Dean of Students suite, University Student Union 3500.",
+    "resource_tag": "Student Resources",
+    "resource_link": "http://www.csusm.edu/soar/"
+  },
+  {
+    "id": 14,
+    "resource_image": "https://www.csusm.edu/iits/images/helpdesk-staff-2023.jpg",
+    "resource_title": "CSUSM Student Technology Help Desk (IITS)",
+    "resource_summary": "Technology Assistance",
+    "resource_description": "CSUSM Student Technology Help Desk (IITS) offers technical support through the Help Desk, which assists with all technology-related issues via phone, email, and online tools. You can reach them at 760-750-6505 or email techsupport@csusm.edu for assistance.",
+    "resource_tag": "Student Resources",
+    "resource_link": "https://www.csusm.edu/iits/iitsforyou/students.html"
+  },
+  {
+    "id": 15,
+    "resource_image": "https://www.csusm.edu/academicadvising/images/gradmontage.jpg",
+    "resource_title": "CSUSM Academic Advising",
+    "resource_summary": "Academic Resource",
+    "resource_description": "CSUSM Academic Advising provides advising services by college, allowing you to ask an eAdvisor any questions, use the Degree Planner to track your academic progress, and connect with peer advisors for additional support.",
+    "resource_tag": "Academic",
+    "resource_link": "http://www.csusm.edu/academicadvising/index.html"
+  },
+  {
+    "id": 16,
+    "resource_image": "https://www.csusm.edu/asi/images/services/calfresh/asixcalfresh_logo.png",
+    "resource_title": "CalFresh",
+    "resource_summary": "Food Resource",
+    "resource_description": "CalFresh provides monthly food benefits to help students purchase groceries through the CalFresh program. A San Diego County representative is available on campus every week to assist with applications. You can schedule an appointment online, or walk in on Tuesdays from 10 AM to 3 PM at the ASI Cougar Pantry on a first-come, first-served basis. Virtual appointments are also available on Tuesday and Wednesday. Additionally, you can now use your CalFresh benefits at Crash's Market located at the USU.",
+    "resource_tag": "Food",
+    "resource_link": "https://www.csusm.edu/asi/services/calfresh/index.html"
+  },
+  
+  {
+    "id": 17,
+    "resource_image": "https://www.csusm.edu/careers/handshakelogos/round.png",
+    "resource_title": "Handshake",
+    "resource_summary": "Career Resource",
+    "resource_description": "Handshake is the career platform for Gen Z. With a community of over 17 million students, alumni, employers, and career educators, Handshake’s network is where career advice and discovery turn into first, second, and third jobs.",
+    "resource_tag": "Career",
+    "resource_link": "https://joinhandshake.com/"
   }
 ]
