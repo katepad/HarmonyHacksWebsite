@@ -1,56 +1,65 @@
 [
   {
     "id": "1",
-    "title": "Resume Workshop",
-    "start": "2025-04-10T12:00:00",
-    "end": "2025-04-10T13:30:00",
-    "location": "University Hall 101",
+    "title": "Leadership Workshop",
+    "start": "2025-04-10T14:00:00",
+    "end": "2025-04-10T16:00:00",
+    "location": "Room 101, Tech Building",
     "type": "Workshops",
-    "description": "Join us for a fun resume building workshop where you'll create or improve your resume with others! Food will be provided!"
+    "description": "Example text"
   },
   {
     "id": "2",
-    "title": "Harmony Hackathon Showcase",
-    "start": "2025-04-19T18:00:00",
-    "end": "2025-04-19T20:00:00",
-    "location": "McMahan House",
-    "type": "Hackathons",
-    "description": "The hackathon showcase features projects created by high school girls from the past week! Food will be provided."
-  },
-  {
-    "id": "3",
-    "title": "Harmony Hacks GBM",
-    "start": "2025-04-15T12:00:00",
-    "end":  "2025-04-15T13:00:00",
-    "location": "Viasat Engineering Pavillion 5107",
-    "type": "GBM Events",
-    "description": "Come hangout and hear about our upcoming events!"
-  },
-  {
-    "id": "4",
-    "title": "Harmony Hacks x AWM: Caps & Vision Maps",
-    "start": "2025-04-25T12:00:00",
-    "end": "2025-04-25T14:00:00",
-    "location": "CSUSM Makery",
-    "type": "Socials",
-    "description": "De-stress and get inspired through vision board making and graduation cap decorating! Set your goals for summer and beyond!"
+    "title": "Urbane Cafe Fundy",
+    "start": "2025-04-15T18:00:00",
+    "end": "2025-04-15T21:00:00",
+    "location": "Community Hall",
+    "type": "Fundraisers",
+    "description": "Example text"
   },
   {
     "id": "5",
-    "title": "Harmony Hacks GBM",
-    "start": "2025-04-29T12:00:00",
-    "end":  "2025-04-29T13:00:00",
-    "location": "Viasat Engineering Pavillion 5107",
-    "type": "GBM Events",
-    "description": "Come hangout and hear about our upcoming events!"
+    "title": "HH Hackathon",
+    "start": "2025-04-13T09:00:00",
+    "end": "2025-04-13T17:00:00",
+    "location": "USU Ballroom",
+    "type": "Hackathons",
+    "description": "A one-day hackathon focused on building tech for positive social impact"
   },
   {
     "id": "6",
-    "title": "Board Campaign & Elections",
-    "start": "2025-05-06T12:00:00",
-    "end": "2025-05-06T13:00:00",
-    "location": "Viasat Engineering Pavillion 5107",
+    "title": "Banquet",
+    "start": "2025-04-20T10:00:00",
+    "end": "2025-04-20T12:00:00",
+    "location": "McMan House",
     "type": "Misc",
-    "description": "Come and listen to the Harmony Hacks board candidates' campaign, and vote for positions for next semester!"
+    "description": "Come join us for the end of the year event to celebrate our year!"
+  },
+  {
+    "id": "3",
+    "title": "4th GBM",
+    "start": "2025-04-24T12:00:00",
+    "end":  "2025-04-24T13:00:00",
+    "location": "SBSB 1102",
+    "type": "GBM Events",
+    "description": "4th GBM of the semester"
+  },
+  {
+    "id": "8",
+    "title": "Harmony Hacks Mixer",
+    "start": "2025-04-17T13:00:00",
+    "end": "2025-04-17T15:00:00",
+    "location": "Grass Dome",
+    "type": "Socials",
+    "description": "Meet your mentors!"
+  },
+  {
+    "id": "9",
+    "title": "Testing RSVP",
+    "start": "2025-04-30T13:00:00",
+    "end": "2025-04-30T15:00:00",
+    "location": "Grass Dome",
+    "type": "Socials",
+    "description": "Meet your mentors!"
   }
 ]
